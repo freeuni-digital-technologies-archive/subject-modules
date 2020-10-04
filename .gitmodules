@@ -1,0 +1,21 @@
+[submodule "classroom-api"]
+	path = classroom-api
+	url = https://github.com/freeuni-digital-technologies/classroom-api.git
+[submodule "jskarel"]
+	path = jskarel
+	url = https://github.com/freeuni-digital-technologies/jskarel.git
+[submodule "jskarel-tester"]
+	path = jskarel-tester
+	url = https://github.com/freeuni-digital-technologies/jskarel-tester.git
+[submodule "module-karel"]
+	path = module-karel
+	url = https://github.com/freeuni-digital-technologies/module-karel.git
+[submodule "dt-utils"]
+	path = dt-utils
+	url = https://github.com/freeuni-digital-technologies/dt-utils.git
+[submodule "website-tester"]
+	path = website-tester
+	url = https://github.com/freeuni-digital-technologies/website-tester.git
+[submodule "module-js"]
+	path = module-js
+	url = https://github.com/freeuni-digital-technologies/module-js.git
