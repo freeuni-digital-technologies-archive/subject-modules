@@ -1,0 +1,4 @@
+{
+  "private": true,
+  "workspaces": ["classroom-api", "dt-utils", "jskarel", "jskarel-tester", "module-js", "module-karel", "website-tester"]
+}
