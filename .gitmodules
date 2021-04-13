@@ -19,3 +19,6 @@
 [submodule "module-js"]
 	path = module-js
 	url = https://github.com/freeuni-digital-technologies/module-js.git
+[submodule "codehskarel-tester"]
+	path = codehskarel-tester
+	url = https://github.com/freeuni-digital-technologies/codehskarel-tester
