@@ -4,9 +4,6 @@
 [submodule "jskarel"]
 	path = jskarel
 	url = https://github.com/freeuni-digital-technologies/jskarel.git
-[submodule "jskarel-tester"]
-	path = jskarel-tester
-	url = https://github.com/freeuni-digital-technologies/jskarel-tester.git
 [submodule "module-karel"]
 	path = module-karel
 	url = https://github.com/freeuni-digital-technologies/module-karel.git
