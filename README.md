@@ -2,12 +2,40 @@
 
 All in one project for all digital technologies modules. 
 
-It's recommended to update all submodules indepentently but if needed use:
+## Setting up workspace
 
-`git submodule  update --recursive --remote`
+clone main repo
+```
+git clone https://github.com/freeuni-digital-technologies/subject-modules
+```
 
-simply run:
+clone all module repos with `fetch.sh` script
+```
+./fetch.sh
+```
 
-`yarn` 
+link all the modules together with yarn workspace
+```
+yarn
+```
 
-to set up workspace but you still need to run `yarn build` in every module first time. 
+After this run build command in relevant modules:
+```
+cd my-module
+yarn build
+```
+
+## adding new module
+create repo at `freeuni-digital-technologies/my-new-module`
+
+add "my-new-module" in package.json "workspaces"
+
+run:
+```
+./fetch.sh
+yarn
+```
+
+
+
+
