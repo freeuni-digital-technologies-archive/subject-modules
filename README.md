@@ -16,6 +16,7 @@ git clone https://github.com/freeuni-digital-technologies/subject-modules
 
 clone all module repos with `fetch.sh` script
 ```
+cd subject-modules
 ./fetch.sh
 ```
 
