@@ -48,7 +48,7 @@ yarn
 
 ## Google API Credentials:
 ### Generate credentials.json
-რორამე მითხარით და ჩემსას მოგცემთ ან:
+ცოტა საჩალიჩო გასაკეთებელია და რორამე მე მითხარით და ჩემსას მოგცემთ ან:
 
 Generate by following this:
 
@@ -68,7 +68,12 @@ If run first time this will ask you to follow a link to generate token.json. Ask
 ### Create `data` folder
 
 * Create data folder anwhere and create `submissions` folder inside.
-* Copy data folder path to `module-karel/runs.ts`. 
+* Copy data folder path to `module-karel/src/runs.ts`. 
+```js
+...
+const data_path = `/home/khokho/work/dt/guide/subject-modules/data`
+...
+```
 
 ### Test Karel hw1
 Build module and all its dependencies. 
@@ -82,6 +87,7 @@ yarn build
 ```
 #### Run HW1 Tests
 ```bash
+cd module-karel
 yarn start --hw hw1
 ```
 Logs and Homeworks will all be inside `data` folder.
