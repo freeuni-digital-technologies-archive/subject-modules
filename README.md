@@ -2,6 +2,11 @@
 
 All in one project for all digital technologies modules. 
 
+## Requirements
+
+1. node + npm installed
+2. yarn installed 
+
 ## Setting up workspace
 
 clone main repo
