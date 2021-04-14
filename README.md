@@ -31,7 +31,7 @@ cd my-module
 yarn build
 ```
 
-## adding new module
+## Adding new module
 create repo at `freeuni-digital-technologies/my-new-module`
 
 add "my-new-module" in package.json "workspaces"
