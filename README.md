@@ -1,4 +1,4 @@
-# subject-modules
+# subject-modules 
 
 All in one project for all digital technologies modules. 
 
@@ -9,18 +9,18 @@ All in one project for all digital technologies modules.
 
 ## Setting up workspace
 
-clone main repo
+Clone main repo
 ```
 git clone https://github.com/freeuni-digital-technologies/subject-modules
 ```
 
-clone all module repos with `fetch.sh` script
+Clone all module repos with `fetch.sh` script
 ```
 cd subject-modules
 ./fetch.sh
 ```
 
-link all the modules together with yarn workspace
+Link all the modules together with yarn workspace
 ```
 yarn
 ```
@@ -32,9 +32,9 @@ yarn build
 ```
 
 ## Adding new module
-create repo at `freeuni-digital-technologies/my-new-module`
+Create repo at `freeuni-digital-technologies/my-new-module`
 
-add "my-new-module" in package.json "workspaces"
+Add "my-new-module" in package.json's "workspaces" property. 
 
 run:
 ```
@@ -44,4 +44,53 @@ yarn
 
 
 
+# Testing Submissions Locally
 
+## Google API Credentials:
+### Generate credentials.json
+რორამე მითხარით და ჩემსას მოგცემთ ან:
+
+Generate by following this:
+
+https://developers.google.com/workspace/guides/create-credentials
+
+Put credentials.json in classrom-api/
+
+### Get student list(TO BE REMOVED)
+
+```bash
+cd classroom-api
+yarn build
+yarn getlist -p ./ -c "შესავალი ციფრულ ტექნოლოგიებში 2021 გაზაფხული"
+```
+If run first time this will ask you to follow a link to generate token.json. Ask me if you have problems. 
+
+### Create `data` folder
+
+* Create data folder anwhere and create `submissions` folder inside.
+* Copy data folder path to `module-karel/runs.ts`. 
+
+### Test Karel hw1
+Build module and all its dependencies. 
+```bash
+cd jskarel
+yarn build
+cd ../codehskarel-tester
+yarn build
+cd ../module-karel
+yarn build
+```
+#### Run HW1 Tests
+```bash
+yarn start --hw hw1
+```
+Logs and Homeworks will all be inside `data` folder.
+To check what emails would be sent you can run:
+```bash
+yarn notify --hw hw1 --trial true
+```
+
+## Sending emails
+
+TODO
+```
