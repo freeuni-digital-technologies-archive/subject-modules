@@ -1,4 +1,14 @@
 # subject-modules 
+ამ გვერდზე არის მთავარი მიმოხილვა საგნის ყველა ნაწილის
+
+## საჭირო ანგარიშები
+ასისტენტი/ლექტორი დასამატებელია პროექტზე/კურსზე ამ პლათფორმებზე
+- github
+- google classroom
+- codehs (courses > click `...` > settings > scroll down)
+- google console (project > permissions > add member)
+
+
 
 All in one project for all digital technologies modules. 
 
