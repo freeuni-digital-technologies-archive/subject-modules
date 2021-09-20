@@ -14,6 +14,9 @@ Clone main repo
 git clone https://github.com/freeuni-digital-technologies/subject-modules
 ```
 
+You'll need to set up github with ssh keys(since github disabled password login).
+Links that might help: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+
 Clone all module repos with `fetch.sh` script
 ```
 cd subject-modules
@@ -27,9 +30,25 @@ yarn
 
 After this run build command in relevant modules:
 ```
-cd my-module
+cd classroom-api
+yarn build
+
+cd ../
+cd SOME_OTHER_MODULE
 yarn build
 ```
+
+მოკლე აღწერა მოდულების(ასევე ამ მიმდევრობით შეგიძლია დაბილდვა):
+
+* classroom-api - გუგლის კლასრუმის ჯავასკრიპის ბიბლიოთეკაზე დაშენებული ლეიერი შედარებით მარტივად გამოსაყენებელი ფუნქციებით. 
+* jskarel - კარელის პროგრამების სიმულაციის/გაშვების ბიბლიოთეკა
+* codehskarel-tester - აქვს ერთადერთი public ფუნქცია testSubmission რომელიც იღებს კარელის პროგამას და ტესტ ფაილს. უშვებს ამ ტესტს და აბრუნებს შედეგს. გამოყენების მაგალითები `test/`-ში არის და ასევე module-karel-ის `resources/`-ში. 
+* module-karel - ეს მოდული კრავს რეალურად ყველაფერს. იწერს ყველა სტუდენტის ამოხსნებს, უშვებს ყველას codehskarel-tester-ით resources/-ში არსებული ტესტებით და საბოლოოდ შედეგებს ინახავს `src/runs.ts`-ით.(data ფოლდერში შეინახავს რომლის დაკონფიგურირება ბოლოსკენ წერია.)
+* website-tester - იდეურად იგივე რაც codehskarel-tester ოღონდ ჯს-ის დავალებებისთვის
+* module-js - იდეურად იგივე რაც module-karel ოღონდ ჯს-ის დავალებებისთვის. (კოდის დიდი ნაწილი მეორდება :) ჯერ კიდევ... )
+* peer-review - ეშვება დედლაინის შემდეგ. იწერს ყველა დავალებას; ყველა სტუდენტს უძებნის ზუსტად n პროექტს შესაფასებლად. notify-ს ნაწილი ტვირთავს ყველა პროექტს დრაივზე და უგზავნის შემფასებლებს ლინკებს. 
+* peer-review-grader - module-js-ის მსგავსი კლასი უბრალოდ სტუდენტების შეფასებების მიხედვით წერს ქულებს. 
+* dt-utils - მემგონი აღარ არის საჭირო?! :)
 
 ## Adding new module
 Create repo at `freeuni-digital-technologies/my-new-module`
@@ -48,15 +67,21 @@ yarn
 
 ## Google API Credentials:
 ### Generate credentials.json
-ცოტა საჩალიჩო გასაკეთებელია და რორამე მე მითხარით და ჩემსას მოგცემთ ან:
 
-Generate by following this:
 
-https://developers.google.com/workspace/guides/create-credentials
+Generate by following this(with email that is associated with course google classroom):
+ცოტა საჩალიჩოა და მომწერე რორამე. 
+
+https://developers.google.com/workspace/guides/create-credentials#desktop
 
 Put credentials.json in classrom-api/
 
-### Get student list(TO BE REMOVED)
+Might be helpful if you want to upload file to server. 
+```bash
+scp ./credentials.json someuser@123.123.123.123:/home/someuser/
+```
+
+### Get student list (FOR NOW REQURIED. `getlist` ALSO NEEDS TO BE RERUN IF STUDENTS ARE BEING ADDED TO CLASSROOM)
 
 ```bash
 cd classroom-api
