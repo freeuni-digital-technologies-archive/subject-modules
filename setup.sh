@@ -1,1 +1,1 @@
-node getList.js | xargs -I {} sh -c "cd {} && yarn install && yarn test"
+node getList.js | xargs -I {} sh -c "cd {} && yarn install && yarn build"
