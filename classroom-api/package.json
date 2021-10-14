@@ -1,0 +1,36 @@
+{
+  "name": "classroom-api",
+  "version": "1.0.2",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "ts-mocha test/*.test.ts",
+    "watch": "ts-mocha -w test/*.test.ts --watch-files test/*test.ts,src/**/*.ts",
+    "coverage": "nyc ts-mocha test/*.test.ts",
+    "getlist": "node lib/downloadStudentList.js",
+    "download": "node lib/downloadHW.js"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.8",
+    "@types/nodemailer": "^6.4.0",
+    "@types/unzipper": "^0.10.3",
+    "@types/yargs": "^15.0.7",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "ts-mocha": "^7.0.0",
+    "typescript": "^3.8.3",
+    "unzipper": "^0.10.11"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "39",
+    "nodemailer": "^6.4.0",
+    "path": "^0.12.7",
+    "translitit-latin-to-mkhedruli-georgian": "^1.0.0",
+    "yargs": "^16.0.3"
+  }
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=Digital Technologies tester daemon
+
+[Service]
+ExecStart=/usr/bin/yarn daemon
+Restart=always
+User=user1
+# Note Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
+Group=user1
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/user1/spring/subject-modules/module-karel
+
+[Install]
+WantedBy=multi-user.target*

@@ -1,0 +1,2866 @@
+[
+	{
+		"id": "Cg4IzfzG2PoEENfytbqmBg",
+		"emailId": "mtish20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzczNzkxMzA5",
+		"late": true,
+		"results": [],
+		"attachment": {
+			"id": "1MMtkbM-lzb0M2Y0tLjpYB0A8HQhBTJzH",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1MMtkbM-lzb0M2Y0tLjpYB0A8HQhBTJzH&export=download",
+			"title": "mtish20 final-project-forked..zip"
+		},
+		"timeStamp": "2021-02-04T07:26:22.561Z"
+	},
+	{
+		"id": "Cg0Iw9a_okQQ1_K1uqYG",
+		"emailId": "ainau18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTgzMjU5NTc0NDNa",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1ksWDQa1uX8Ao7IGRPK3j2-bg0hyv-6fM",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1ksWDQa1uX8Ao7IGRPK3j2-bg0hyv-6fM&export=download",
+			"title": "ainau18.zip"
+		},
+		"timeStamp": "2020-12-25T16:42:01.104Z"
+	},
+	{
+		"id": "Cg4I3pWT64wBENfytbqmBg",
+		"emailId": "akhub18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/Mzc4MDU2NzMxODJa",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1yQTJcPX_S1fmGPDnKzzuKdt99-nISWfr",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1yQTJcPX_S1fmGPDnKzzuKdt99-nISWfr&export=download",
+			"title": "akhub18_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T15:23:06.079Z"
+	},
+	{
+		"id": "Cg4I7_q32I0BENfytbqmBg",
+		"emailId": "dvada18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MzgwMzQ4NjU1MTla",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1RsvoGF2nhtp7gMprb6QGQWjIlQ6ypFTX",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1RsvoGF2nhtp7gMprb6QGQWjIlQ6ypFTX&export=download",
+			"title": "dvada18_homework6.zip"
+		},
+		"timeStamp": "2020-12-20T18:38:09.275Z"
+	},
+	{
+		"id": "Cg4I29vR7JMBENfytbqmBg",
+		"emailId": "lkord18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/Mzk2ODc4NDMyOTFa",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Mlv-G5kD9pF78RRfK6jMJcwI699tdpDj",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Mlv-G5kD9pF78RRfK6jMJcwI699tdpDj&export=download",
+			"title": "lkord18_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:44:33.491Z"
+	},
+	{
+		"id": "Cg4I6OLc35UBENfytbqmBg",
+		"emailId": "tgorg19",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/NDAxOTc2MzIzNjBa",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "18v3dsQsgdRs3cdwgKUJr7MddNaxnhEtE",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=18v3dsQsgdRs3cdwgKUJr7MddNaxnhEtE&export=download",
+			"title": "tgorg19.zip"
+		},
+		"timeStamp": "2020-12-20T19:04:57.972Z"
+	},
+	{
+		"id": "Cg4I5KDrnZwBENfytbqmBg",
+		"emailId": "glapi18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/NDE5Mzg1MDU4Mjha",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1pR3s03a3LEwJHqO5k6GpkavdLgLcziqQ",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1pR3s03a3LEwJHqO5k6GpkavdLgLcziqQ&export=download",
+			"title": "glapi 18. homework6-webapp1-forked.zip"
+		},
+		"timeStamp": "2020-12-23T16:21:49.482Z"
+	},
+	{
+		"id": "Cg4IpvCj354EENfytbqmBg",
+		"emailId": "mchim20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NjkxODM0NDA2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1n_Rq17_xFCuVtTBVOuOa_lBa8upaxnAq",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1n_Rq17_xFCuVtTBVOuOa_lBa8upaxnAq&export=download",
+			"title": "mchim20_#6.zip"
+		},
+		"timeStamp": "2020-12-18T23:30:42.492Z"
+	},
+	{
+		"id": "Cg4I0JrY454EENfytbqmBg",
+		"emailId": "nkard20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzAxMDgwNDAw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1mgfHn9jsCUEXDoWjg8yNKHZW42Wz-QDx",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1mgfHn9jsCUEXDoWjg8yNKHZW42Wz-QDx&export=download",
+			"title": "nkard20.hw1.zip"
+		},
+		"timeStamp": "2020-12-20T17:51:38.166Z"
+	},
+	{
+		"id": "Cg4IzKHH554EENfytbqmBg",
+		"emailId": "gsurm20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzA5MTkxMzcy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1YSKhJGpzmmRtdxqbewwuXCU5735ShSQ7",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1YSKhJGpzmmRtdxqbewwuXCU5735ShSQ7&export=download",
+			"title": "gsurm20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:32:45.523Z"
+	},
+	{
+		"id": "Cg4Iy8rH554EENfytbqmBg",
+		"emailId": "akava20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzA5MTk2NjE5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1y5YY9QNi_Go2brvqQgGpM0MQgnF5c1G2",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1y5YY9QNi_Go2brvqQgGpM0MQgnF5c1G2&export=download",
+			"title": "akava20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T13:37:14.774Z"
+	},
+	{
+		"id": "Cg4Iid7q6J4EENfytbqmBg",
+		"emailId": "nkats20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzExODY5NzA1",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1tbG6tfDPgJAO4CuBEpoAxjuC-FlR6sSD",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1tbG6tfDPgJAO4CuBEpoAxjuC-FlR6sSD&export=download",
+			"title": "homework6-nkats20.zip"
+		},
+		"timeStamp": "2020-12-20T18:24:23.686Z"
+	},
+	{
+		"id": "Cg4Igvzx6J4EENfytbqmBg",
+		"emailId": "gdzam20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzExOTg4MjI2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Fgy55_FNI4Q2si4Gz5HxQNi7CpoiXdsJ",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Fgy55_FNI4Q2si4Gz5HxQNi7CpoiXdsJ&export=download",
+			"title": "gdzm20-hw6.zip"
+		},
+		"timeStamp": "2020-12-21T13:02:22.158Z"
+	},
+	{
+		"id": "Cg4I65X26J4EENfytbqmBg",
+		"emailId": "mkila20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzEyMDU3MDY3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "16DINHEsYT2cxDyYDbVhvUrq0ZwnO7Lgz",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=16DINHEsYT2cxDyYDbVhvUrq0ZwnO7Lgz&export=download",
+			"title": "mkila20@davaleba-6.zip"
+		},
+		"timeStamp": "2020-12-20T14:59:26.349Z"
+	},
+	{
+		"id": "Cg4IpNOR6Z4EENfytbqmBg",
+		"emailId": "mtoro20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzEyNTA3MzAw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1iJDRWVWW8anD98zgHk4hhQOKympaQhl1",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1iJDRWVWW8anD98zgHk4hhQOKympaQhl1&export=download",
+			"title": "Mtoro20.homework6.zip"
+		},
+		"timeStamp": "2020-12-20T14:50:22.863Z"
+	},
+	{
+		"id": "Cg4Iwe-a6p4EENfytbqmBg",
+		"emailId": "nkukh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzE0NzU1NTIx",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1IyHZY7PttCgPjcQTmIHbXYovHBMy3A0h",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1IyHZY7PttCgPjcQTmIHbXYovHBMy3A0h&export=download",
+			"title": "nkukh20hw6.zip"
+		},
+		"timeStamp": "2020-12-22T15:22:09.600Z"
+	},
+	{
+		"id": "Cg4Iiaj86p4EENfytbqmBg",
+		"emailId": "atsik20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzE2MzUyMDA5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1a02dlpGw1h8op6C63tAsK5N9RTtwlazw",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1a02dlpGw1h8op6C63tAsK5N9RTtwlazw&export=download",
+			"title": "atsik20.txt.zip"
+		},
+		"timeStamp": "2020-12-20T14:13:21.578Z"
+	},
+	{
+		"id": "Cg4IssWt654EENfytbqmBg",
+		"emailId": "maberi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzE3MTU4NTc4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1sJL3zU7jZFnALakTnA7tO450N_NWudtB",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1sJL3zU7jZFnALakTnA7tO450N_NWudtB&export=download",
+			"title": "maberi20.zip"
+		},
+		"timeStamp": "2020-12-25T19:45:29.172Z"
+	},
+	{
+		"id": "Cg4IutyC754EENfytbqmBg",
+		"emailId": "tchik20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzI0ODQ1NjI2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1N8Gg-Qq2juTTxJtp_cCtLu8jJf9xyLM-",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1N8Gg-Qq2juTTxJtp_cCtLu8jJf9xyLM-&export=download",
+			"title": "tchik20_6th.zip"
+		},
+		"timeStamp": "2020-12-20T19:05:29.784Z"
+	},
+	{
+		"id": "Cg4IzIj58J4EENfytbqmBg",
+		"emailId": "dende20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzI4ODgxNzQw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "144I8dCFBfWZstuHjovKJPWhZL5j4cgJE",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=144I8dCFBfWZstuHjovKJPWhZL5j4cgJE&export=download",
+			"title": "dende20@.zip"
+		},
+		"timeStamp": "2020-12-19T21:17:44.774Z"
+	},
+	{
+		"id": "Cg4IzLKz8Z4EENfytbqmBg",
+		"emailId": "aotin18",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzI5ODM3Mzg4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1oFaA40gQFgk-ZcExbo1pZpoutR_usePh",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1oFaA40gQFgk-ZcExbo1pZpoutR_usePh&export=download",
+			"title": "aotin18_homework6-webapp1-forked.zip"
+		},
+		"timeStamp": "2020-12-20T14:48:38.458Z"
+	},
+	{
+		"id": "Cg4IqYev8p4EENfytbqmBg",
+		"emailId": "ateni20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzMxODYzNDY1",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Tw2VoZR-trN681SgCmTYbH2FG1SrPMjd",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Tw2VoZR-trN681SgCmTYbH2FG1SrPMjd&export=download",
+			"title": "ateni20.task6.zip"
+		},
+		"timeStamp": "2020-12-20T14:33:35.484Z"
+	},
+	{
+		"id": "Cg4IxauK854EENfytbqmBg",
+		"emailId": "mshat20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzMzMzU5MDQ1",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1u74eZnUQ1ZSTfxDaAK2uvhpdtRdZsU-J",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1u74eZnUQ1ZSTfxDaAK2uvhpdtRdZsU-J&export=download",
+			"title": "mshat20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:30:47.429Z"
+	},
+	{
+		"id": "Cg4I54PE854EENfytbqmBg",
+		"emailId": "nimach20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzM0MzA0MjMx",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1lNbl8F0Z8hK6N19DdmHHFjs85T0TM-Pj",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1lNbl8F0Z8hK6N19DdmHHFjs85T0TM-Pj&export=download",
+			"title": "nimach20_hw6.zip.zip"
+		},
+		"timeStamp": "2020-12-20T15:59:53.487Z"
+	},
+	{
+		"id": "Cg4I6dLK954EENfytbqmBg",
+		"emailId": "akura20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzQyODAxMjU3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1By561vrXQCjrTBfQqq8rtlXADQmTOgaP",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1By561vrXQCjrTBfQqq8rtlXADQmTOgaP&export=download",
+			"title": "akura20homework6.zip"
+		},
+		"timeStamp": "2020-12-20T14:35:20.062Z"
+	},
+	{
+		"id": "Cg4I8daQ-Z4EENfytbqmBg",
+		"emailId": "mtavk20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzQ2MDQ1ODA5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1MC8o0RzM3OZeeEKxMwoBq4DrB_PxizN0",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1MC8o0RzM3OZeeEKxMwoBq4DrB_PxizN0&export=download",
+			"title": "mtavk20-2.zip"
+		},
+		"timeStamp": "2020-12-20T18:50:01.554Z"
+	},
+	{
+		"id": "Cg4Ix7iO-p4EENfytbqmBg",
+		"emailId": "msolo20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzQ4MTA2MzEx",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1cjuhYdi0v8JokhypJxGm61JloJiiUV60",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1cjuhYdi0v8JokhypJxGm61JloJiiUV60&export=download",
+			"title": "msolo20 (me-6 davaleba).zip"
+		},
+		"timeStamp": "2020-12-20T13:41:09.787Z"
+	},
+	{
+		"id": "Cg4I6NrZgZ8EENfytbqmBg",
+		"emailId": "schin20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1NzY0MDE5NTYw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1WFi-jKS2hQ6Ex9ECXR1fEGnbV3kd9XTT",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1WFi-jKS2hQ6Ex9ECXR1fEGnbV3kd9XTT&export=download",
+			"title": "schin20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T15:12:12.572Z"
+	},
+	{
+		"id": "Cg4Iu_760Z8EENfytbqmBg",
+		"emailId": "ngugu20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ1OTMyMzM2OTU1",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1SguZTnt-l0Gfc1jb5pJXzqwglXQrwghM",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1SguZTnt-l0Gfc1jb5pJXzqwglXQrwghM&export=download",
+			"title": "homework6 -ngugu20.zip"
+		},
+		"timeStamp": "2020-12-19T17:03:42.323Z"
+	},
+	{
+		"id": "Cg4I5dLFgKAEENfytbqmBg",
+		"emailId": "etsin20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ2MDMwMDI5MTU3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1kE-57VoMGVF0xlrPpYqCWRp1QI5rC5HT",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1kE-57VoMGVF0xlrPpYqCWRp1QI5rC5HT&export=download",
+			"title": "etsinin20_homework6.zip"
+		},
+		"timeStamp": "2020-12-20T15:52:48.380Z"
+	},
+	{
+		"id": "Cg4IpIHMpKEEENfytbqmBg",
+		"emailId": "nabsh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ2Mzc0MDY2MzQw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1KaKwEcpZTOZ-oWxMBEh27hmJ1LQxw-d-",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1KaKwEcpZTOZ-oWxMBEh27hmJ1LQxw-d-&export=download",
+			"title": "nabsh20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T19:16:05.594Z"
+	},
+	{
+		"id": "Cg4Igvui7qIEENfytbqmBg",
+		"emailId": "mvard20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ2Nzk3MDE4NDk4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1bvSQ0ULwnNyIsL720EwTr7t9w0SH2bb6",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1bvSQ0ULwnNyIsL720EwTr7t9w0SH2bb6&export=download",
+			"title": "homework6-mvard20.zip"
+		},
+		"timeStamp": "2020-12-24T16:04:00.907Z"
+	},
+	{
+		"id": "Cg4I_ICO96IEENfytbqmBg",
+		"emailId": "vgvar20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTQ2ODE1NTQ5NTY0",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1udDj3ZRZcnbBSrRHs8lXR7g79pW5Rvja",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1udDj3ZRZcnbBSrRHs8lXR7g79pW5Rvja&export=download",
+			"title": "vgvar20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:34:50.095Z"
+	},
+	{
+		"id": "Cg4I0pTc5vIEENfytbqmBg",
+		"emailId": "sasagh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4MjU2MDE0OTMw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "15eZCOlWgV5bmlgs8vxW8-5GTv1g6DiJ5",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=15eZCOlWgV5bmlgs8vxW8-5GTv1g6DiJ5&export=download",
+			"title": "sasagh20#6.zip"
+		},
+		"timeStamp": "2020-12-19T16:17:33.417Z"
+	},
+	{
+		"id": "Cg4Iu8u8uPQEENfytbqmBg",
+		"emailId": "mgord20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4Njk1ODk5NTc5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1HVUox0QQDjraPlEmDJTtyQ1raZysqpKJ",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1HVUox0QQDjraPlEmDJTtyQ1raZysqpKJ&export=download",
+			"title": "mgord20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T17:33:05.812Z"
+	},
+	{
+		"id": "Cg4ImZr3xPQEENfytbqmBg",
+		"emailId": "kbard20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4NzIyMDI1NzUz",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1I8Rf6cOBx2mMBiPLDn-7sGG2GvRYZ1IQ",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1I8Rf6cOBx2mMBiPLDn-7sGG2GvRYZ1IQ&export=download",
+			"title": "kbard20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:25:52.920Z"
+	},
+	{
+		"id": "Cg4I0Z7B6fQEENfytbqmBg",
+		"emailId": "mtsik20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4Nzk4NzM2MjA5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1xCcf9hkoQ2LdSVEYsUzrucWAdz0gAxRE",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1xCcf9hkoQ2LdSVEYsUzrucWAdz0gAxRE&export=download",
+			"title": "mtsik20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:44:18.510Z"
+	},
+	{
+		"id": "Cg4Ir4KuofUEENfytbqmBg",
+		"emailId": "nmagh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4OTE1ODYxODA3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1KHvjPq3aeQNv32l8cPkleVBWoiQfcHDe",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1KHvjPq3aeQNv32l8cPkleVBWoiQfcHDe&export=download",
+			"title": "nmagh20-homework6-webapp1-forked (2).zip"
+		},
+		"timeStamp": "2020-12-20T20:28:45.796Z"
+	},
+	{
+		"id": "Cg4I2PaOo_UEENfytbqmBg",
+		"emailId": "nchig20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY4OTE5NTQ2NzEy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "134nULegA01lROstXI2kwgvjX3dpBaY1j",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=134nULegA01lROstXI2kwgvjX3dpBaY1j&export=download",
+			"title": "nchig20.zip"
+		},
+		"timeStamp": "2020-12-20T16:43:01.021Z"
+	},
+	{
+		"id": "Cg4I1IXJ9_YEENfytbqmBg",
+		"emailId": "mugul20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTY5MzY1MDk1MTI0",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1UT78-9XWTDJyO55fvx32eBgDr7RLw8k2",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1UT78-9XWTDJyO55fvx32eBgDr7RLw8k2&export=download",
+			"title": "mugul20- hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:30:25.308Z"
+	},
+	{
+		"id": "Cg4IubiZv_oEENfytbqmBg",
+		"emailId": "nbits20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzIwNjE2NTA1",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1TKFozV1dximwh9O8bMPRdOGmojFEBGcA",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1TKFozV1dximwh9O8bMPRdOGmojFEBGcA&export=download",
+			"title": "nbits20_hw6.zip"
+		},
+		"timeStamp": "2020-12-21T00:10:58.397Z"
+	},
+	{
+		"id": "Cg4IuoGEwPoEENfytbqmBg",
+		"emailId": "tniko20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzIyMzYyNTU0",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1XUdGYIVvohV61YETHc3E2279Jstz02M-",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1XUdGYIVvohV61YETHc3E2279Jstz02M-&export=download",
+			"title": "tniko20hw6.zip"
+		},
+		"timeStamp": "2020-12-20T18:42:18.883Z"
+	},
+	{
+		"id": "Cg4IjruKwPoEENfytbqmBg",
+		"emailId": "gakhv20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzIyNDY4MjM4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "19eb8SdoWesEN670DMqAlGpJYcJlbRJYl",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=19eb8SdoWesEN670DMqAlGpJYcJlbRJYl&export=download",
+			"title": "gakhv20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T18:02:08.782Z"
+	},
+	{
+		"id": "Cg4IwMKawPoEENfytbqmBg",
+		"emailId": "stsno20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzIyNzMxMzI4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1X_gFs0SCnIHBvVdkNJManiD28ocXgZOi",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1X_gFs0SCnIHBvVdkNJManiD28ocXgZOi&export=download",
+			"title": "stsno20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:24:14.805Z"
+	},
+	{
+		"id": "Cg4Iqszo1foEENfytbqmBg",
+		"emailId": "nsebi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzY4MDUwNzMw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1JUh-vyOMC9G9Nin4KeEOo9H_XCHdYCuL",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1JUh-vyOMC9G9Nin4KeEOo9H_XCHdYCuL&export=download",
+			"title": "nsebi20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T13:28:50.139Z"
+	},
+	{
+		"id": "Cg4I46z81foEENfytbqmBg",
+		"emailId": "akapa20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzY4Mzc0Mzcx",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1wVwvX5B7YpOhG0D4uo3OJPCw4bMl3e8s",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1wVwvX5B7YpOhG0D4uo3OJPCw4bMl3e8s&export=download",
+			"title": "akapa20_hw6.zip"
+		},
+		"timeStamp": "2020-12-24T20:40:40.757Z"
+	},
+	{
+		"id": "Cg4IiOq91voEENfytbqmBg",
+		"emailId": "gtula20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzY5NDQ3MTc2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1GZADpQCcYql561u41iMpnK0zFMeLIAzo",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1GZADpQCcYql561u41iMpnK0zFMeLIAzo&export=download",
+			"title": "gtula20.hw6.zip"
+		},
+		"timeStamp": "2020-12-20T19:14:27.194Z"
+	},
+	{
+		"id": "Cg4ItoSJ1_oEENfytbqmBg",
+		"emailId": "mmosi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzcwNjc5MzUw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1D7tbrHS8f0fOjCsOcoxzjyrEUE7OqG76",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1D7tbrHS8f0fOjCsOcoxzjyrEUE7OqG76&export=download",
+			"title": "homework6-mmosi20.zip"
+		},
+		"timeStamp": "2020-12-20T16:41:48.867Z"
+	},
+	{
+		"id": "Cg4I19iW1_oEENfytbqmBg",
+		"emailId": "mmind20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzcwOTAzMTI3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "115qQHdOrrP2TPAJb8fvsb84RGTTtqYPW",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=115qQHdOrrP2TPAJb8fvsb84RGTTtqYPW&export=download",
+			"title": "mmind20_hw6.zip"
+		},
+		"timeStamp": "2020-12-21T10:58:34.011Z"
+	},
+	{
+		"id": "Cg4IvaHR1_oEENfytbqmBg",
+		"emailId": "abukh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzcxODYyNzE3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1g_DySHUxjgMejBW6oxvL0LCy7v8w8XOA",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1g_DySHUxjgMejBW6oxvL0LCy7v8w8XOA&export=download",
+			"title": "abukh20_hw6.zip"
+		},
+		"timeStamp": "2020-12-19T18:02:07.599Z"
+	},
+	{
+		"id": "Cg4IjvqH2PoEENfytbqmBg",
+		"emailId": "tvakh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzcyNzU4Nzk4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1dBn9ac0w56r5BdOqv-MzKyn_SXPA2fvk",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1dBn9ac0w56r5BdOqv-MzKyn_SXPA2fvk&export=download",
+			"title": "tvakh20- homework6-webapp1-forked (1).zip"
+		},
+		"timeStamp": "2020-12-19T19:58:50.995Z"
+	},
+	{
+		"id": "Cg4IuLeP2PoEENfytbqmBg",
+		"emailId": "lkeva20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzcyODgxMzM2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1WGD8lukDZOYc_K9lVH1HQAJ66H9dOY_-",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1WGD8lukDZOYc_K9lVH1HQAJ66H9dOY_-&export=download",
+			"title": "lkeva20_homework6.zip"
+		},
+		"timeStamp": "2020-12-20T19:29:41.444Z"
+	},
+	{
+		"id": "Cg4Ilryt2PoEENfytbqmBg",
+		"emailId": "madavi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzczMzczNDYy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1xawEzCpPtP1YLqPyDgmQ3WhdNCNmB2nu",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1xawEzCpPtP1YLqPyDgmQ3WhdNCNmB2nu&export=download",
+			"title": "madavi20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T13:30:52.551Z"
+	},
+	{
+		"id": "Cg4IkrvJ2PoEENfytbqmBg",
+		"emailId": "nghel20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzczODMyMDgy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1UXXwlNmopDvQLoABst5LJ5tadLit6dh7",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1UXXwlNmopDvQLoABst5LJ5tadLit6dh7&export=download",
+			"title": "nghel20-hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:42:10.301Z"
+	},
+	{
+		"id": "Cg4I_pDZ2PoEENfytbqmBg",
+		"emailId": "rshen20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc0MDg4ODMw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1AR2ejwsn30nkcswDK6n3pTAcEybdwbGe",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1AR2ejwsn30nkcswDK6n3pTAcEybdwbGe&export=download",
+			"title": "rshen20@freeuni.edu.ge hw_6.zip"
+		},
+		"timeStamp": "2020-12-20T18:36:29.917Z"
+	},
+	{
+		"id": "Cg4ImNng2PoEENfytbqmBg",
+		"emailId": "lchik20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc0MjEyNzYw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Bz-mjatKqVQxtIZgfiQLNHKyTj0-ommj",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Bz-mjatKqVQxtIZgfiQLNHKyTj0-ommj&export=download",
+			"title": "lchik20.txt.zip"
+		},
+		"timeStamp": "2020-12-20T14:13:06.964Z"
+	},
+	{
+		"id": "Cg4Iktec2foEENfytbqmBg",
+		"emailId": "nlogu20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc1MTk1NTM4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "12RTYlx7ZpPyZN5mOj573_EARNiuucST7",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=12RTYlx7ZpPyZN5mOj573_EARNiuucST7&export=download",
+			"title": "nlogu20homework6.zip"
+		},
+		"timeStamp": "2020-12-22T09:53:38.996Z"
+	},
+	{
+		"id": "Cg4Ixoad2foEENfytbqmBg",
+		"emailId": "mlomi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc1MjAxNjA2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1xxjkhrqKou9ORMdpnDqhjKH21he-Ss-w",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1xxjkhrqKou9ORMdpnDqhjKH21he-Ss-w&export=download",
+			"title": "mlomi20-webapp1-forked.zip"
+		},
+		"timeStamp": "2020-12-20T14:22:06.344Z"
+	},
+	{
+		"id": "Cg4Is8ij2foEENfytbqmBg",
+		"emailId": "gmais20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc1MzA4MzM5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "14tB8tDkGLXSoXO3P3NF4xYjBY1b1jsde",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=14tB8tDkGLXSoXO3P3NF4xYjBY1b1jsde&export=download",
+			"title": "gmais20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:52:19.436Z"
+	},
+	{
+		"id": "Cg4In-SV2voEENfytbqmBg",
+		"emailId": "nmike20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc3MTc5Njc5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1KKGnsic8aqBrdu4dcsoTNgNiQYELrZ-a",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1KKGnsic8aqBrdu4dcsoTNgNiQYELrZ-a&export=download",
+			"title": "nmike20_homework6.zip"
+		},
+		"timeStamp": "2020-12-19T23:55:15.256Z"
+	},
+	{
+		"id": "Cg4I6-202voEENfytbqmBg",
+		"emailId": "schkh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc3Njg4ODEx",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "10EGHoHQnOihiF9ytu3XsKQP_Pga2ii4M",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=10EGHoHQnOihiF9ytu3XsKQP_Pga2ii4M&export=download",
+			"title": "homework6-webapp1-forked.zip"
+		},
+		"timeStamp": "2020-12-20T13:14:21.461Z"
+	},
+	{
+		"id": "Cg4InP_b2voEENfytbqmBg",
+		"emailId": "mptsk20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc4MzMwMDEy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1PyfhkpsFAujKQOqLFbfeU8V2VEuIIzOy",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1PyfhkpsFAujKQOqLFbfeU8V2VEuIIzOy&export=download",
+			"title": "mptsk20.zip"
+		},
+		"timeStamp": "2020-12-20T13:28:15.922Z"
+	},
+	{
+		"id": "Cg4InPHt2voEENfytbqmBg",
+		"emailId": "sshon19",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc4NjIzMTMy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1kcv6ak-tcX_ZPJ_9rUALAoEDMsIxK8Jg",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1kcv6ak-tcX_ZPJ_9rUALAoEDMsIxK8Jg&export=download",
+			"title": "sshon19_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:14:49.709Z"
+	},
+	{
+		"id": "Cg4Ik5ix2_oEENfytbqmBg",
+		"emailId": "atsag20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzc5NzI1ODQz",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1kikTp96jZil6aOCp2m2DcIDVCYJafTWo",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1kikTp96jZil6aOCp2m2DcIDVCYJafTWo&export=download",
+			"title": "atsag20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T18:35:40.828Z"
+	},
+	{
+		"id": "Cg4Ikdjn2_oEENfytbqmBg",
+		"emailId": "edevi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzgwNjE4NzY5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1UIcpKsxZ_nI_L3Q-Rzk2bzsRJVJF8t3d",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1UIcpKsxZ_nI_L3Q-Rzk2bzsRJVJF8t3d&export=download",
+			"title": "edevi20_hw6.zip"
+		},
+		"timeStamp": "2020-12-19T18:34:40.165Z"
+	},
+	{
+		"id": "Cg4Ixvjn2_oEENfytbqmBg",
+		"emailId": "ndias20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzgwNjIyOTE4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1yDyVL4Q1RKhP0mR1Q5U_5IAEotw3zAx4",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1yDyVL4Q1RKhP0mR1Q5U_5IAEotw3zAx4&export=download",
+			"title": "ndias_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:29:53.711Z"
+	},
+	{
+		"id": "Cg4It76o3PoEENfytbqmBg",
+		"emailId": "tlobz20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzgxNjgwNDM5",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Fv2Ihm5wiotm7o44_aN4iAodjILqFyOc",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Fv2Ihm5wiotm7o44_aN4iAodjILqFyOc&export=download",
+			"title": "tlobz20.hw6.zip"
+		},
+		"timeStamp": "2020-12-20T18:33:33.560Z"
+	},
+	{
+		"id": "Cg4Igcuv3PoEENfytbqmBg",
+		"emailId": "lloma20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzgxNzk2NzM3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1JGA9FVdrcPq-aMAAW6yUtZRehgcEQQCn",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1JGA9FVdrcPq-aMAAW6yUtZRehgcEQQCn&export=download",
+			"title": "lloma20_hw6.zip"
+		},
+		"timeStamp": "2020-12-20T16:20:22.930Z"
+	},
+	{
+		"id": "Cg4IgrLf4PoEENfytbqmBg",
+		"emailId": "tivan20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzkwOTY4NTc4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1c_cunPTvpAvccl3IXvbyIIQXyPvuOeel",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1c_cunPTvpAvccl3IXvbyIIQXyPvuOeel&export=download",
+			"title": "tivan20-hw6.zip"
+		},
+		"timeStamp": "2020-12-20T14:42:37.274Z"
+	},
+	{
+		"id": "Cg4I0Ib-4PoEENfytbqmBg",
+		"emailId": "apiti20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzkxNDcwOTI4",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "18knBLwmZ3fX5Hs5H_QhYKY5roF3lREnI",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=18knBLwmZ3fX5Hs5H_QhYKY5roF3lREnI&export=download",
+			"title": "apiti20-hw6-webapp1-forked (2).zip"
+		},
+		"timeStamp": "2020-12-20T15:26:42.062Z"
+	},
+	{
+		"id": "Cg4I7qSk4foEENfytbqmBg",
+		"emailId": "msukh20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTcwMzkyMDk3Mzkw",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1SzG3zshKy_4FZUL6RYsCfdc-Aoqudqa7",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1SzG3zshKy_4FZUL6RYsCfdc-Aoqudqa7&export=download",
+			"title": "msukh20.zip"
+		},
+		"timeStamp": "2020-12-20T17:34:36.312Z"
+	},
+	{
+		"id": "Cg4IltL4rI8FENfytbqmBg",
+		"emailId": "tbasi20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTc1OTE5NDc0OTY2",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1ICRxjyqsr2RhatXN6zItIS5ZZ_gcP_e0",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1ICRxjyqsr2RhatXN6zItIS5ZZ_gcP_e0&export=download",
+			"title": "tbasi20hw6.zip"
+		},
+		"timeStamp": "2020-12-20T19:19:21.594Z"
+	},
+	{
+		"id": "Cg4I6LTG-Y8FENfytbqmBg",
+		"emailId": "egagn20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTc2MDgwMTMyNzEy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1FGQi2XChIl--o1gdifJsfJfFAv5wmBaJ",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1FGQi2XChIl--o1gdifJsfJfFAv5wmBaJ&export=download",
+			"title": "egagn20-homework6.zip"
+		},
+		"timeStamp": "2020-12-20T14:38:36.116Z"
+	},
+	{
+		"id": "Cg4I6MaI-48FENfytbqmBg",
+		"emailId": "narab20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTc2MDgzMzEzNTEy",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1Z3wTWE_75emYFvDFkOw5SN1hfS4oJ7xX",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Z3wTWE_75emYFvDFkOw5SN1hfS4oJ7xX&export=download",
+			"title": "narab20.zip"
+		},
+		"timeStamp": "2020-12-21T19:53:07.417Z"
+	},
+	{
+		"id": "Cg4It6j4gpMFENfytbqmBg",
+		"emailId": "ltsev20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTc2OTA1MTMxMDYz",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1fge6tl0FeiU_iuwWmarTWSp_JituCQFH",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1fge6tl0FeiU_iuwWmarTWSp_JituCQFH&export=download",
+			"title": "ltsev20homework6.zip"
+		},
+		"timeStamp": "2020-12-20T16:43:42.408Z"
+	},
+	{
+		"id": "Cg4I7YTHrJMFENfytbqmBg",
+		"emailId": "nkada20",
+		"state": "TURNED_IN",
+		"alternateLink": "https://classroom.google.com/c/MTcwMzM0NjcxNzcz/a/MjE2NDgxNDk1Mzgz/submissions/student/MTc2OTkyNDA0MDc3",
+		"results": [
+			{
+				"passed": true,
+				"message": "ელემენტები: დოკუმენტს უნდა ქონდეს პოსტების ელემენტი, რომლის id \n                არის post_container.\n\n                post_container ელემენტში არსებობს textarea, რომლის id არის \n                post_text.\n\n                post_container ელემენტში არსებობს ღილაკი, რომლის\n                id არის new_post\n\n                post_container ელემენტში დაპოსტილი პოსტებისთვის არსებობს div ელემენტი,\n                რომლის id არის posts\n\n                "
+			},
+			{
+				"passed": true,
+				"message": "ამ ღილაკზე დაჭერის შემდეგ პოსტის ველში შეყვანილი ტექსტი უნდა \n                დაემატოს პოსტების ფიდში (დაპოსტილი პოსტები). \n                თითოეული პოსტისთვის შექმენით ახალი ელემენტი, რომელსაც ექნება კლასი \n                post. აქ შეგიძლიათ სხვადასხვა ელემენტები იყოს. მთავარია, \n                უშუალოდ პოსტის ტექსტის div-ს ქონდეს კლასი post_text"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. აპლიკაციაში არის input ელემენტი, \n\t\tრომლის id არის username."
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. input ელემენტში სანამ მომხმარებელი ტექსტს ჩაწერს, გამოაჩინე\n\t\tკითხვა \"რა გქვია?\" (როგორც პოსტზე ჩანს \"what's up)\""
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. ახალი პოსტის დადების შემდეგ, post ელემენტში არის span ელემენტი, \n    \tრომლის კლასი არის post_user. ელემენტში წერია იგივე, რაც \n    \tusername-ში"
+			},
+			{
+				"passed": true,
+				"message": "1 ქულა. username-ის შეცვლის შემთხვევაში \n    \tშემდეგ პოსტზეც შეიცვლება სახელი"
+			}
+		],
+		"attachment": {
+			"id": "1qbVlQRt2PguC_eCQZGPDW1MoUXECEwdI",
+			"downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1qbVlQRt2PguC_eCQZGPDW1MoUXECEwdI&export=download",
+			"title": "nkada20-webapp1-forked (2).zip"
+		},
+		"timeStamp": "2020-12-20T14:23:57.126Z"
+	}
+]

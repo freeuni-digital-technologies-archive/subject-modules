@@ -1,0 +1,33 @@
+{
+  "name": "module-karel",
+  "version": "1.0.0",
+  "description": "Karel module for digital technologies subject",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/index.js",
+    "notify": "node lib/notifications.js",
+    "test": "ts-mocha test/*.test.ts",
+    "daemon": "node lib/daemon.js"
+  },
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "classroom-api": "^1.0.2",
+    "codehskarel-tester": "^1.0.0",
+    "cron": "^1.8.2",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/argparse": "^1.0.38",
+    "@types/chai": "^4.2.11",
+    "@types/cron": "^1.7.2",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.8",
+    "@types/shelljs": "^0.8.8",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "ts-mocha": "^7.0.0",
+    "typescript": "^3.8.3"
+  }
+}

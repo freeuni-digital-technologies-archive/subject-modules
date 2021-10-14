@@ -1,0 +1,37 @@
+#app {
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+	font-family: sans-serif;
+}
+
+#post_text {
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+}
+
+#new_post {
+	float: right;
+}
+
+#username {
+	float: right;
+}
+
+.container {
+	margin: 10px;
+	padding: 10px;
+}
+
+.post_title {
+	font-weight: bold;
+}
+
+.post_like_button {
+	float: right;
+}
+
+.post_likes_container {
+	
+}

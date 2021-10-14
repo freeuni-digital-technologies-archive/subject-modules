@@ -1,0 +1,8 @@
+/**
+
+**/
+
+function start() {
+	move()
+	move()
+}

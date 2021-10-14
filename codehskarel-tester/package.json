@@ -1,0 +1,31 @@
+{
+  "name": "codehskarel-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "ts-mocha test/*.test.ts",
+    "watch": "ts-mocha --reporter min -w test/*test.ts --watch-files test/*test.ts,src/**/*.ts",
+    "coverage": "nyc yarn test && rm -r .nyc_output",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/rewire": "^2.5.28",
+    "commander": "^5.0.0",
+    "rewire": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.8",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0",
+    "ts-mocha": "^7.0.0",
+    "typescript": "^3.8.3"
+  }
+}

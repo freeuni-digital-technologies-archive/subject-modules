@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- for tests, DO NOT MODIFY next line -->
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+</head>
+<body>
+
+<!-- DO NOT MODIFY THESE LINES -->
+<!-- START tests -->
+<div id="tests" class="container">
+    <button onclick="mocha.run()">run tests</button>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+        chai.config.includeStack = false
+        chai.config.showDiff = false
+        console.log(chai.config)
+        mocha.setup('bdd');
+        // mocha.checkLeaks();
+
+
+    </script>
+    <script src="./tests.js"></script>
+</div>
+<!-- END tests -->
+<!-- You can modify lines after this -->
+<div id="app">
+    <div id="user_container" class="container">
+        <input type="text" id="username" placeholder="what's your name?">
+    </div>
+    <div id="post_container" class="container">
+        <textarea id="post_text" placeholder="hey, what's up?"></textarea>
+        <button id="new_post" onclick="newPost()">post</button>
+    </div>
+    <div class="container">
+        my posts
+        <div id="posts">
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</div>
+</body>
+</html>
