@@ -1,12 +1,13 @@
 {
   "private": true,
   "workspaces": [
-	  "classroom-api", 
-	  "dt-utils",
-	  "jskarel",
-	  "module-js",
-	  "module-karel",
-	  "website-tester",
-	  "codehskarel-tester"
+    "classroom-api",
+    "dt-utils",
+    "jskarel",
+    "module-js",
+    "module-karel",
+    "website-tester",
+    "codehskarel-tester",
+    "peer-review-grader"
   ]
 }

@@ -118,10 +118,3 @@ dist
 .pnp.*
 
 .DS_Store
-classroom-api/
-dt-utils/
-jskarel/
-module-js/
-module-karel/
-website-tester/
-codehskarel-tester/
