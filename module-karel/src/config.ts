@@ -32,7 +32,6 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-f', '--force'], {help: 'force check of id'})
     parser.addArgument(['-k', '--skip'], {help: 'skip check of id'})
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
-    parser.addArgument(['-p', '--config-path', {help: 'location of homework config'}])
     const args = parser.parseArgs()
     const hwId: string = args['hw']
 
@@ -41,18 +40,7 @@ export function getArgs(): EnvOptions {
         process.exit(1)
     }
 
-    const configPath: string = args['config-path']
-    if (!configPath) {
-        // TODO რამე default path-იც იყოს სადაც შეეცდება მოძებნას, მაგალითად 
-        // ამ მოდულის გარეთ '../hwConfigs/:hwid'. ანუ subject-modules-ში
-        // იყოს დირექტორია და იმაში მოძებნოს hwId ფოლდერი.
-        console.log('provide hw config')
-        process.exit(1)
-    }
-
-    const hwConfig = readHwConfig() 
-    // TODO ტესტ ფაილის path index.ts-ში თუ სადაც ვიყენებთ, აქ 
-    // წაკითხული path-ით უნდა ჩანაცვლდეს
+    const hwConfig = homeworks.find(e => e.id == hwId)!
 
     if (!hwConfig) {
         console.log('provide valid submission id')
@@ -112,7 +100,7 @@ export function testerPath(hwId: string) {
 export function getCurrentHWs() {
     var now = new Date()
     var aWeekAfterNow = new Date()
-    aWeekAfterNow.setDate(aWeekAfterNow.getDate()+7)
+    aWeekAfterNow.setDate(aWeekAfterNow.getDate()+10)
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
             hw.deadlineMinutes = 'T23:59:59+04:00'
@@ -126,30 +114,18 @@ export function getCurrentHWs() {
 export interface HwConfig {
     id: string,
     name: string,
-    deadline: string, //YYYY-mm-dd preferably,
-
-    // TODO ესენი აღარ უნდა იყოს საჭირო
+    deadline: string, //YYYY-mm-dd preferably
     deadlineMinutes?: string, //T23:59:00+04:00 if not set 
     exceptions?: Partitions<string[]>,
     manualChecks?: string[],
     force?: string[],
     skip?: string[],
 }
-
-
-// TODO დააეროროს თუ ვერ იპოვა ფაილები ან რამე წევრი არ იყო
-// თუ config.jsში ტესტ ფაილის სახელი არ უწერია, 
-// სცადოს დირექტორიაში tester.js ფაილის მოძებნა
-function readHwConfig(path: string): HwConfig {
-
-}
-
-// TODO ბოლოს ეს წასაშლელია
 export const homeworks: HwConfig[] = [
     {
         id: 'hw1',
         name: 'დავალება 1',
-        deadline: '2021-10-07'
+        deadline: '2021-10-10'
     },
     {
         id: 'hw2',
