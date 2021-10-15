@@ -1,5 +1,6 @@
 import { Submission } from "classroom-api"
 import { HwConfig } from "./config"
+import { Run, log, RunOpts } from './runs'
 
 type S = Submission
 export interface Partitions<T> {
@@ -48,4 +49,18 @@ export function partitionResults(results: Submission[], hw: HwConfig) {
         }
     })
     return output
+}
+
+export function mergeResults(hw: HwConfig, runOpts: RunOpts) {
+    const latestRun = new Run(hw, runOpts)
+    let finalResults: Submission[] = []
+    for (let i = latestRun.lastRun; i > 0; i--) {
+        const run = new Run(hw, runOpts, i)
+        const results = run.previousRunInfo
+        const merged = Object.values(results).flat()
+        const newResult = (e: Submission) => !finalResults.find(r => r.emailId == e.emailId)
+        const res = merged.filter(newResult)
+        finalResults = finalResults.concat(res)
+    }
+    return finalResults
 }
