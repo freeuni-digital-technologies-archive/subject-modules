@@ -2,8 +2,10 @@ import { getCurrentHWs } from './config'
 import shell from 'shelljs'
 import {CronJob} from 'cron'
 
+// TODO იმის შემოწმება, ახლა გაეშვას თუ არა დავალება, აქ უნდა მოხდეს და არა yarn start-ში
 async function go(){
 	var homework = getCurrentHWs()
+	console.log(homework)
 	homework.forEach(async v => {
 		console.log('yarn start --hw ' + v.id)
 		var res = shell.exec('yarn start --hw ' + v.id).stdout
@@ -21,7 +23,7 @@ async function go(){
 }
 
 async function main() {
-	console.log()
+console.log("starting cron job")
 	go()
 	var job = new CronJob('0 28 * * * *', go, null, true, 'Asia/Tbilisi')
 	job.start()
