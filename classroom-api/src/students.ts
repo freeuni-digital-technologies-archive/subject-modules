@@ -6,8 +6,10 @@ const path = process.env.STUDENTS_DATA_PATH || 'students.json'
 // TODO: create file if doesn't exist
 let students: UserProfile[] = [];
 try {
+	// TODO აქ კონფიგ ფაილიდან წაკითხვაც უნდა დაემატოს
 	students = JSON.parse(fs.readFileSync(path, 'utf-8'));
-} catch {
+} catch (e) {
+	console.log(e)
 }
 
 export function getStudentByEmail(emailId: string) {
