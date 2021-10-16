@@ -15,6 +15,7 @@ export const env = {
 
 /* Default Directory For Homework Configuration Files */
 const DEFAULT_HW_CONFIG_PATH: string =  `../../hwConfigs`;
+const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 interface EnvOptions {
     hw: HwConfig,
@@ -49,7 +50,7 @@ export function getArgs(): EnvOptions {
     /* Configuration Folder Path */
     let configPath: string = args['config-path']
     if (!configPath) {
-        configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/config.js`;
+        configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`;
     }
 
     const hwConfig = readHomeworkConfiguration(configPath);
@@ -109,7 +110,13 @@ export function testerPath(hwId: string) {
     return path.resolve(__dirname, `../resources/${hwId}tester.js`)
 }
 
+/*
+    Reads the default path of homework configurations.
+    Name of the subfolders does not matter.
 
+    Default structure:
+        Root Folder of Homework Configuration -> Subfolder for each homework configuration -> Homework Configuration File
+*/
 function getConfigsOfCurrentHomeworks(): HwConfig[] {
     let homeworks: HwConfig[] = [];
     
