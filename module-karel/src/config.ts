@@ -10,6 +10,10 @@ export const env = {
     CLASSROOM_CREDENTIALS_PATH: `../../classroom-api/credentials.json`,
     CLASSROOM_TOKEN_PATH: `../../classroom-api/token.json`
 }
+
+/* Default Directory For Homework Configuration Files */
+const DEFAULT_HW_CONFIG_PATH: string =  `../../hwConfigs`;
+
 interface EnvOptions {
     hw: HwConfig,
     slice?: number,
@@ -40,7 +44,13 @@ export function getArgs(): EnvOptions {
         process.exit(1)
     }
 
-    const hwConfig = homeworks.find(e => e.id == hwId)!
+    /* Configuration Folder Path */
+    let configPath: string = args['config-path']
+    if (!configPath) {
+        configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/config.js`;
+    }
+
+    const hwConfig = readHomeworkConfiguration(configPath);
 
     if (!hwConfig) {
         console.log('provide valid submission id')
@@ -115,6 +125,7 @@ export interface HwConfig {
     id: string,
     name: string,
     deadline: string, //YYYY-mm-dd preferably
+    testFileName: string,
     deadlineMinutes?: string, //T23:59:00+04:00 if not set 
     exceptions?: Partitions<string[]>,
     manualChecks?: string[],
@@ -125,22 +136,27 @@ export const homeworks: HwConfig[] = [
     {
         id: 'hw1',
         name: 'დავალება 1',
-        deadline: '2021-10-10'
+        deadline: '2021-10-10',
+        testFileName: 'hw1tester.js'
     },
     {
         id: 'hw2',
         name: 'დავალება 2',
-        deadline: '2021-10-14'
+        deadline: '2021-10-14',
+        testFileName: 'hw2tester.js',
+
     },
     {
         id: 'hw3',
         name: 'დავალება 3',
-        deadline: '2021-10-21'  
+        deadline: '2021-10-21',
+        testFileName: 'hw3tester.js',
     },
     {
         id: 'hw4',
         name: 'დავალება 4',
-        deadline: '2021-10-28'  
+        deadline: '2021-10-28',
+        testFileName: 'hw4tester.js'
     },
  //   {
  //       id: 'bonus1',
@@ -168,3 +184,91 @@ export const homeworks: HwConfig[] = [
  //       name: 'ბონუსი - დიაგონალები (3%)',
  //   }
 ];
+
+
+
+/* Homework Configuration Property Interface */
+type HwConfigProperty = {
+    name: string,
+    type: string
+}
+
+const properHwConfigProperties: HwConfigProperty[] = [
+    {
+        name: "id",
+        type: "string"
+    },
+    {
+        name: "classroomName",
+        type: "string"
+    },
+    {
+        name: "deadline",
+        type: "string"
+    },
+    {
+        name: "testFileName",
+        type: "string"
+    },
+    {
+        name: "emailTemplate",
+        type: "function"
+    },
+];
+
+
+/* Message Constructors for not existence properties and invalid properties */
+
+function printPropertyDoesNotExistMessage(propertyName: string){
+    console.log(`Config object does not have '${propertyName}' property`);
+}
+function printPropertyIllegalTypeMessage(propertyName: string, propertyType: string){
+    console.log(`Property '${propertyName}' should be type of '${propertyType}'`);
+}
+
+/* Checks if given configuration of homework is valid */
+
+function checkGivenHwConfigroperties(preHwConfig: any){
+    if(!preHwConfig){
+        console.log("Could not find config object in configuration file");
+        process.exit(-1);
+    }
+
+    properHwConfigProperties.forEach(currentConfigProperties => {
+        let {name , type} = currentConfigProperties;
+
+        if(!preHwConfig.hasOwnProperty(name)){
+            printPropertyDoesNotExistMessage(type);
+            process.exit(-1);
+        }
+        if(typeof preHwConfig[name] != type){
+            printPropertyIllegalTypeMessage(name,type);
+            process.exit(-1);
+        }
+    })
+}
+
+/* Convert given configuration file to local interface (Locally interface will be deleted soon) */
+
+function convertGivenHwConfigToInterface(preHwConfig: any){
+    const rvConfig: HwConfig = { 
+        id: preHwConfig.id, 
+        name: preHwConfig.classroomName, 
+        deadline: preHwConfig.deadline, 
+        testFileName: preHwConfig.testFileName 
+    };
+    return rvConfig;
+}
+
+function readHomeworkConfiguration(configPath: string): HwConfig {
+    const configFile = require(configPath);
+    if(!configFile){
+        console.log("Could not find homework configuration file");
+        process.exit(-1);
+    }
+
+    const preHwConfig = configFile.config;
+    checkGivenHwConfigroperties(preHwConfig);
+
+    return convertGivenHwConfigToInterface(preHwConfig);
+}
