@@ -2,6 +2,8 @@ import path from 'path'
 import { ArgumentParser } from 'argparse'
 import { Partitions } from './partitions'
 import { RunOpts } from './runs'
+import fs from "fs";
+
 export const config = {
     subject: '21f შესავალი ციფრულ ტექნოლოგიებში'
 }
@@ -107,10 +109,29 @@ export function testerPath(hwId: string) {
     return path.resolve(__dirname, `../resources/${hwId}tester.js`)
 }
 
+
+function getConfigsOfCurrentHomeworks(): HwConfig[] {
+    let homeworks: HwConfig[] = [];
+    
+    fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+
+        fs.readdirSync( path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${subfolder}`) ).forEach(file => {
+            let currConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${file}`;
+            let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currConfigPath);
+            homeworks.push(currentHomeworkConfig);
+        })
+
+    })
+    return homeworks;
+}
+
 export function getCurrentHWs() {
     var now = new Date()
     var aWeekAfterNow = new Date()
     aWeekAfterNow.setDate(aWeekAfterNow.getDate()+10)
+
+    const homeworks = getConfigsOfCurrentHomeworks();
+
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
             hw.deadlineMinutes = 'T23:59:59+04:00'
@@ -132,60 +153,6 @@ export interface HwConfig {
     force?: string[],
     skip?: string[],
 }
-export const homeworks: HwConfig[] = [
-    {
-        id: 'hw1',
-        name: 'დავალება 1',
-        deadline: '2021-10-10',
-        testFileName: 'hw1tester.js'
-    },
-    {
-        id: 'hw2',
-        name: 'დავალება 2',
-        deadline: '2021-10-14',
-        testFileName: 'hw2tester.js',
-
-    },
-    {
-        id: 'hw3',
-        name: 'დავალება 3',
-        deadline: '2021-10-21',
-        testFileName: 'hw3tester.js',
-    },
-    {
-        id: 'hw4',
-        name: 'დავალება 4',
-        deadline: '2021-10-28',
-        testFileName: 'hw4tester.js'
-    },
- //   {
- //       id: 'bonus1',
- //       name: 'ბონუსი 1',
- //       deadline: '2021-9-29'
- //   },
- //   {
- //       id: 'hw3',
- //       name: 'დავალება 3 დაფის შევსება',
- //       deadline: '2020-10-13'
- //   },
- //   {
- //       id: 'hw4',
- //       name: 'დავალება 4 თაღების შეკეთება',
- //       deadline: '2020-10-20',
- //   },
- //   {
- //       id: 'bonus-middle',
- //       deadline: '2021-9-29',
- //       name: 'ბონუსი-შუა წერტილი (3%)'
- //   },
- //   {
- //       id: 'bonus-diagonal',
- //       deadline: '2021-9-29',
- //       name: 'ბონუსი - დიაგონალები (3%)',
- //   }
-];
-
-
 
 /* Homework Configuration Property Interface */
 type HwConfigProperty = {
