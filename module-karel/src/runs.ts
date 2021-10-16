@@ -14,7 +14,7 @@ export function log<T>(e: T, message: string) {
     console.log(message)
     return e
 }
-const data_path = `/home/user1/spring/data`
+const data_path = `/home/gigi/Desktop/subject-modules/data`
 const results_path = `${data_path}/output`
 const submissions_path = `${data_path}/submissions`
 

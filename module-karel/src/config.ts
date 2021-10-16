@@ -2,6 +2,8 @@ import path from 'path'
 import { ArgumentParser } from 'argparse'
 import { Partitions } from './partitions'
 import { RunOpts } from './runs'
+import fs from "fs";
+
 export const config = {
     subject: '21f შესავალი ციფრულ ტექნოლოგიებში'
 }
@@ -10,6 +12,11 @@ export const env = {
     CLASSROOM_CREDENTIALS_PATH: `../../classroom-api/credentials.json`,
     CLASSROOM_TOKEN_PATH: `../../classroom-api/token.json`
 }
+
+/* Default Directory For Homework Configuration Files */
+const DEFAULT_HW_CONFIG_PATH: string =  `../../hwConfigs`;
+const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
+
 interface EnvOptions {
     hw: HwConfig,
     slice?: number,
@@ -40,7 +47,13 @@ export function getArgs(): EnvOptions {
         process.exit(1)
     }
 
-    const hwConfig = homeworks.find(e => e.id == hwId)!
+    /* Configuration Folder Path */
+    let configPath: string = args['config-path']
+    if (!configPath) {
+        configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`;
+    }
+
+    const hwConfig = readHomeworkConfiguration(configPath);
 
     if (!hwConfig) {
         console.log('provide valid submission id')
@@ -97,10 +110,35 @@ export function testerPath(hwId: string) {
     return path.resolve(__dirname, `../resources/${hwId}tester.js`)
 }
 
+/*
+    Reads the default path of homework configurations.
+    Name of the subfolders does not matter.
+
+    Default structure:
+        Root Folder of Homework Configuration -> Subfolder for each homework configuration -> Homework Configuration File
+*/
+function getConfigsOfCurrentHomeworks(): HwConfig[] {
+    let homeworks: HwConfig[] = [];
+    
+    fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+
+        fs.readdirSync( path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${subfolder}`) ).forEach(file => {
+            let currConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${file}`;
+            let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currConfigPath);
+            homeworks.push(currentHomeworkConfig);
+        })
+
+    })
+    return homeworks;
+}
+
 export function getCurrentHWs() {
     var now = new Date()
     var aWeekAfterNow = new Date()
     aWeekAfterNow.setDate(aWeekAfterNow.getDate()+10)
+
+    const homeworks = getConfigsOfCurrentHomeworks();
+
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
             hw.deadlineMinutes = 'T23:59:59+04:00'
@@ -115,56 +153,96 @@ export interface HwConfig {
     id: string,
     name: string,
     deadline: string, //YYYY-mm-dd preferably
+    testFileName: string,
     deadlineMinutes?: string, //T23:59:00+04:00 if not set 
     exceptions?: Partitions<string[]>,
     manualChecks?: string[],
     force?: string[],
     skip?: string[],
 }
-export const homeworks: HwConfig[] = [
+
+/* Homework Configuration Property Interface */
+type HwConfigProperty = {
+    name: string,
+    type: string
+}
+
+const properHwConfigProperties: HwConfigProperty[] = [
     {
-        id: 'hw1',
-        name: 'დავალება 1',
-        deadline: '2021-10-10'
+        name: "id",
+        type: "string"
     },
     {
-        id: 'hw2',
-        name: 'დავალება 2',
-        deadline: '2021-10-14'
+        name: "classroomName",
+        type: "string"
     },
     {
-        id: 'hw3',
-        name: 'დავალება 3',
-        deadline: '2021-10-21'  
+        name: "deadline",
+        type: "string"
     },
     {
-        id: 'hw4',
-        name: 'დავალება 4',
-        deadline: '2021-10-28'  
+        name: "testFileName",
+        type: "string"
     },
- //   {
- //       id: 'bonus1',
- //       name: 'ბონუსი 1',
- //       deadline: '2021-9-29'
- //   },
- //   {
- //       id: 'hw3',
- //       name: 'დავალება 3 დაფის შევსება',
- //       deadline: '2020-10-13'
- //   },
- //   {
- //       id: 'hw4',
- //       name: 'დავალება 4 თაღების შეკეთება',
- //       deadline: '2020-10-20',
- //   },
- //   {
- //       id: 'bonus-middle',
- //       deadline: '2021-9-29',
- //       name: 'ბონუსი-შუა წერტილი (3%)'
- //   },
- //   {
- //       id: 'bonus-diagonal',
- //       deadline: '2021-9-29',
- //       name: 'ბონუსი - დიაგონალები (3%)',
- //   }
+    {
+        name: "emailTemplate",
+        type: "function"
+    },
 ];
+
+
+/* Message Constructors for not existence properties and invalid properties */
+
+function printPropertyDoesNotExistMessage(propertyName: string){
+    console.log(`Config object does not have '${propertyName}' property`);
+}
+function printPropertyIllegalTypeMessage(propertyName: string, propertyType: string){
+    console.log(`Property '${propertyName}' should be type of '${propertyType}'`);
+}
+
+/* Checks if given configuration of homework is valid */
+
+function checkGivenHwConfigroperties(preHwConfig: any){
+    if(!preHwConfig){
+        console.log("Could not find config object in configuration file");
+        process.exit(-1);
+    }
+
+    properHwConfigProperties.forEach(currentConfigProperties => {
+        let {name , type} = currentConfigProperties;
+
+        if(!preHwConfig.hasOwnProperty(name)){
+            printPropertyDoesNotExistMessage(type);
+            process.exit(-1);
+        }
+        if(typeof preHwConfig[name] != type){
+            printPropertyIllegalTypeMessage(name,type);
+            process.exit(-1);
+        }
+    })
+}
+
+/* Convert given configuration file to local interface (Locally interface will be deleted soon) */
+
+function convertGivenHwConfigToInterface(preHwConfig: any){
+    const rvConfig: HwConfig = { 
+        id: preHwConfig.id, 
+        name: preHwConfig.classroomName, 
+        deadline: preHwConfig.deadline, 
+        testFileName: preHwConfig.testFileName 
+    };
+    return rvConfig;
+}
+
+function readHomeworkConfiguration(configPath: string): HwConfig {
+    const configFile = require(configPath);
+    if(!configFile){
+        console.log("Could not find homework configuration file");
+        process.exit(-1);
+    }
+
+    const preHwConfig = configFile.config;
+    checkGivenHwConfigroperties(preHwConfig);
+
+    return convertGivenHwConfigToInterface(preHwConfig);
+}
