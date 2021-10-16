@@ -14,7 +14,7 @@ export const env = {
 }
 
 /* Default Directory For Homework Configuration Files */
-const DEFAULT_HW_CONFIG_PATH: string =  `../../hwConfigs`;
+const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
 const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 interface EnvOptions {
@@ -39,6 +39,7 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-f', '--force'], {help: 'force check of id'})
     parser.addArgument(['-k', '--skip'], {help: 'skip check of id'})
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
+    parser.addArgument(['-p', '--config-path'], {help: 'location of homework config'})
     const args = parser.parseArgs()
     const hwId: string = args['hw']
 
@@ -121,14 +122,15 @@ function getConfigsOfCurrentHomeworks(): HwConfig[] {
     let homeworks: HwConfig[] = [];
     
     fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+        
+        if(subfolder == "README.md")
+            return;
 
-        fs.readdirSync( path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${subfolder}`) ).forEach(file => {
-            let currConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${file}`;
-            let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currConfigPath);
-            homeworks.push(currentHomeworkConfig);
-        })
-
+        let currentConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${DEFAULT_HW_CONFIG_FILENAME}`;
+        let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currentConfigPath);
+        homeworks.push(currentHomeworkConfig);
     })
+    console.log(homeworks);
     return homeworks;
 }
 
@@ -241,7 +243,7 @@ function readHomeworkConfiguration(configPath: string): HwConfig {
         process.exit(-1);
     }
 
-    const preHwConfig = configFile.config;
+    const preHwConfig = configFile;
     checkGivenHwConfigroperties(preHwConfig);
 
     return convertGivenHwConfigToInterface(preHwConfig);
