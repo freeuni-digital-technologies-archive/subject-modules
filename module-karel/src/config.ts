@@ -49,10 +49,11 @@ export function getArgs(): EnvOptions {
     }
 
     /* Configuration Folder Path */
-    let configPath: string = args['config-path']
+    let configPath: string = args['config_path']
     if (!configPath) {
         configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`;
     }
+    configPath = path.resolve(__dirname, configPath)
 
     const hwConfig = readHomeworkConfiguration(configPath);
 
