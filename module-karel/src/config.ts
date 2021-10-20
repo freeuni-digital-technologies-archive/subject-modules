@@ -55,9 +55,11 @@ export function getArgs(): EnvOptions {
     let configPath: string = args['config_path']
     if (!configPath) {
         configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`;
+        configPath = path.resolve(__dirname, configPath)
+    } else {
+        configPath = path.resolve(process.cwd(), configPath)
     }
-    configPath = path.resolve(__dirname, configPath)
-
+    
     const hwConfig = readHomeworkConfiguration(configPath);
 
     if (!hwConfig) {
