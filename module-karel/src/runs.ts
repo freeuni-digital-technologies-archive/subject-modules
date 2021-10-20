@@ -1,4 +1,5 @@
 import fs from 'fs'
+import path from 'path'
 import {Submission} from 'classroom-api'
 import {Partitions} from './partitions'
 import {HwConfig} from './config'
@@ -14,7 +15,13 @@ export function log<T>(e: T, message: string) {
     console.log(message)
     return e
 }
-const data_path = `/home/gigi/Desktop/subject-modules/data`
+
+
+// TODO NEXT data_path უნდა გადაეცეს არგუმენტად
+// RunOpts-დან წაიკითხოს
+// results_path და submissions_path
+// იყოს class Run წევრები
+const data_path = path.resolve(__dirname, `../../../data`)
 const results_path = `${data_path}/output`
 const submissions_path = `${data_path}/submissions`
 

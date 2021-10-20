@@ -14,7 +14,7 @@ export const env = {
 }
 
 /* Default Directory For Homework Configuration Files */
-const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
+const DEFAULT_HW_CONFIG_PATH: string =  `../../../dt-homeworks`;
 const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 interface EnvOptions {
@@ -48,6 +48,9 @@ export function getArgs(): EnvOptions {
         process.exit(1)
     }
 
+
+    // TODO NEXT hwId-ის მიწოდება ტავტოლოგიაა თუ
+    // კონკრეტული დავალების კონფიგურაციას აწვდი
     /* Configuration Folder Path */
     let configPath: string = args['config_path']
     if (!configPath) {
