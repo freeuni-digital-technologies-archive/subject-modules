@@ -39,11 +39,7 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-f', '--force'], {help: 'force check of id'})
     parser.addArgument(['-k', '--skip'], {help: 'skip check of id'})
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
-<<<<<<< HEAD
-    parser.addArgument(['-p', '--config-path'], {help: 'homework config path'})
-=======
     parser.addArgument(['-p', '--config-path'], {help: 'location of homework config'})
->>>>>>> dt-homeworks-config
     const args = parser.parseArgs()
     const hwId: string = args['hw']
 
