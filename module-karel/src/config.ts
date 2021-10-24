@@ -39,6 +39,7 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-f', '--force'], {help: 'force check of id'})
     parser.addArgument(['-k', '--skip'], {help: 'skip check of id'})
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
+    parser.addArgument(['-p', '--config-path'], {help: 'homework config path'})
     const args = parser.parseArgs()
     const hwId: string = args['hw']
 
@@ -48,10 +49,11 @@ export function getArgs(): EnvOptions {
     }
 
     /* Configuration Folder Path */
-    let configPath: string = args['config-path']
+    let configPath: string = args['config_path']
     if (!configPath) {
         configPath = `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`;
     }
+    configPath = path.resolve(__dirname, configPath)
 
     const hwConfig = readHomeworkConfiguration(configPath);
 
