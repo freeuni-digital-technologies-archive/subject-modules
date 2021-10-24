@@ -9,5 +9,6 @@
     "website-tester",
     "codehskarel-tester",
     "peer-review-grader"
-  ]
+  ],
+  "packageManager": "yarn@3.0.2"
 }

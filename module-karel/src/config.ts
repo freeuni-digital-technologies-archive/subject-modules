@@ -39,7 +39,11 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-f', '--force'], {help: 'force check of id'})
     parser.addArgument(['-k', '--skip'], {help: 'skip check of id'})
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
+<<<<<<< HEAD
     parser.addArgument(['-p', '--config-path'], {help: 'homework config path'})
+=======
+    parser.addArgument(['-p', '--config-path'], {help: 'location of homework config'})
+>>>>>>> dt-homeworks-config
     const args = parser.parseArgs()
     const hwId: string = args['hw']
 
@@ -109,6 +113,10 @@ export function setEnv(): EnvOptions {
 }
 
 export function testerPath(hwId: string) {
+    // const currHomeworkConfig: HwConfig = readHomeworkConfiguration(`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`);
+    // const testFileName: string = currHomeworkConfig.testFileName;
+    // return path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${testFileName}`);
+    
     return path.resolve(__dirname, `../resources/${hwId}tester.js`)
 }
 
@@ -123,14 +131,15 @@ function getConfigsOfCurrentHomeworks(): HwConfig[] {
     let homeworks: HwConfig[] = [];
     
     fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+        
+        if(subfolder == "README.md")
+            return;
 
-        fs.readdirSync( path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${subfolder}`) ).forEach(file => {
-            let currConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${file}`;
-            let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currConfigPath);
-            homeworks.push(currentHomeworkConfig);
-        })
-
+        let currentConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${DEFAULT_HW_CONFIG_FILENAME}`;
+        let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currentConfigPath);
+        homeworks.push(currentHomeworkConfig);
     })
+    //console.log(homeworks);
     return homeworks;
 }
 
@@ -237,11 +246,11 @@ function convertGivenHwConfigToInterface(preHwConfig: any){
 }
 
 function readHomeworkConfiguration(configPath: string): HwConfig {
-    const configFile = require(configPath);
-    // if(!configFile){
-    //     console.log("Could not find homework configuration file");
-    //     process.exit(-1);
-    // }
+    const configFile = require(path.resolve(__dirname,configPath));
+    if(!configFile){
+        console.log("Could not find homework configuration file");
+        process.exit(-1);
+    }
 
     const preHwConfig = configFile;
     checkGivenHwConfigroperties(preHwConfig);
