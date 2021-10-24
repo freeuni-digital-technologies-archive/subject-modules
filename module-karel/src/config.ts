@@ -14,7 +14,7 @@ export const env = {
 }
 
 /* Default Directory For Homework Configuration Files */
-const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
+const DEFAULT_HW_CONFIG_PATH: string =  `../../../dt-homeworks`;
 const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 interface EnvOptions {
@@ -109,6 +109,10 @@ export function setEnv(): EnvOptions {
 }
 
 export function testerPath(hwId: string) {
+    // const currHomeworkConfig: HwConfig = readHomeworkConfiguration(`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`);
+    // const testFileName: string = currHomeworkConfig.testFileName;
+    // return path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${testFileName}`);
+    
     return path.resolve(__dirname, `../resources/${hwId}tester.js`)
 }
 
@@ -131,7 +135,7 @@ function getConfigsOfCurrentHomeworks(): HwConfig[] {
         let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currentConfigPath);
         homeworks.push(currentHomeworkConfig);
     })
-    console.log(homeworks);
+    //console.log(homeworks);
     return homeworks;
 }
 
@@ -238,7 +242,7 @@ function convertGivenHwConfigToInterface(preHwConfig: any){
 }
 
 function readHomeworkConfiguration(configPath: string): HwConfig {
-    const configFile = require(configPath);
+    const configFile = require(path.resolve(__dirname,configPath));
     if(!configFile){
         console.log("Could not find homework configuration file");
         process.exit(-1);
