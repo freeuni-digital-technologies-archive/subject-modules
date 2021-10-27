@@ -16,7 +16,6 @@ function downloadAndTest(submission: Submission, drive: Drive, index: number, te
     if (!run.forceCheck(submission) && !submission.qualifies()) {
         return new Promise(r => r(submission))
     }
-    console.log("Download And Test here");
     const id = submission.emailId
     return downloadAtInterval(submission, drive, index, run, download, saveFile)
          .then((e: string) => log(e, `${id}: finished downloading`))
@@ -32,7 +31,6 @@ function downloadAndTest(submission: Submission, drive: Drive, index: number, te
 
 */
 function downloadAtInterval(submission: Submission, drive: Drive,  index: number, run: Run, download: boolean, saveFile: any): Promise<string> {
-    console.log("Download at interval here");
     const attachment = submission.attachment!
     const fileName = attachment.title
     const id = attachment.id
@@ -100,7 +98,6 @@ function logError(submission: Submission, error: any) {
         Slicing submissions after getting them from classrom-api module
 */
 export function sliceSubmissions(submissions: Submission[], slice: number | undefined){
-    console.log("SLice here");
     return slice ? submissions.slice(0,slice) : submissions;
 }
 
@@ -109,7 +106,6 @@ export function sliceSubmissions(submissions: Submission[], slice: number | unde
         Filtering sliced submissions for further operations
 */
 export function filterSubmissions(submissions: Submission[], run: Run, hw: HwConfig){
-    console.log("Filter here");
     return submissions.filter(
         s => !hw.skip?.includes(s.emailId) && (run.forceCheck(s) || run.newSubmission(s))
     );
@@ -140,7 +136,6 @@ export async function finishSubmissions(submissions: Submission[], testPath: str
         return submission.attachment != undefined;
     });
 
-    log("","Finish here");
     
     return submissionsWithAttachments.map((submission, index) => {
         return downloadAndTest(submission,drive, index, testPath, run, download, saveFile)

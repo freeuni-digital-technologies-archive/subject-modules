@@ -1,11 +1,12 @@
-import { setEnv, config, testerPath, HwConfig } from './config'
+import { setEnv, config, testerPath } from './config'
+const  { hw, slice, download, runOpts } = setEnv()
+
 import { createDrive, getSubmissions, saveFile } from 'classroom-api'
 import { Run } from './runs'
 import { partitionResults } from './partitions'
 
 import {sliceSubmissions, filterSubmissions, logDownloadingSubmissions, finishSubmissions } from "./integration";
 
-const  { hw, slice, download, runOpts } = setEnv()
 
 const run = new Run(hw, runOpts)
 
@@ -13,10 +14,7 @@ const testPath = testerPath(hw.id);
 
 
 async function main() {
-    console.log("Before Create Drive");
     const drive = await createDrive();
-    console.log("After Create Drive");
-
 
     const submissions = await getSubmissions(config.subject, hw.name)
         .then(submissions => sliceSubmissions(submissions,slice))
