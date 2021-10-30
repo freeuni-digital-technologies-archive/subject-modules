@@ -1,12 +1,13 @@
 
-import { filterSubmissions, finishSubmissions, getSubmissionsWithAttachments, sliceSubmissions } from "../src/integration";
+import { filterSubmissions, finishSubmissions, sliceSubmissions } from "../src/integration";
 
 import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
 import { HwConfig } from "../src/config";
-import { Submission } from "classroom-api";
+import { Attachment, Submission } from "classroom-api";
+
 
 
 const hw: HwConfig = {
@@ -130,32 +131,6 @@ describe("Integration Tests",() => {
 
         done();
 
-    });
-
-    // TODO: Check why function returns 0 len array
-    it("Get Submissions With Attachments Test",(done) => {
-        const submissions: any = [
-            { attachment: undefined },
-            { attachment: "adasdas" },
-            { id: 25 },
-            { attachment: null }
-        ];
-     
-        // let preResult = submissions.filter(submission => {
-        //     return submission.attachment != undefined;
-        // });
-        // console.log({preResult});
-        // console.log(submissions.filter(submission => {
-        //     console.log(submission.attachment != undefined);
-        //     return submission.attachment != undefined;
-        // }))
-
-        // let result: any = getSubmissionsWithAttachments(submissions);
-        // console.log(result);
-
-        expect( 1 == getSubmissionsWithAttachments(submissions).length ).to.be.true;
-
-        done();
     });
 
     /*

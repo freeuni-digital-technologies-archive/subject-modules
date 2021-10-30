@@ -126,11 +126,12 @@ export function logDownloadingSubmissions(submissions: Submission[]){
     return log(submissions,`downloading ${text}`);
 }
 
-export function getSubmissionsWithAttachments(submissions: Submission[]){
-    return submissions.filter(submission => {
-        submission.attachment != undefined;
+function filterSubmissionsByAttachment(submissions: Submission[]): Submission[]{
+    let filtered: Submission[] =  submissions.filter(submission => {
+        let result = typeof submission.attachment !== 'undefined';
+        return result;
     })
-
+    return filtered;
 }
 
 /*
@@ -139,11 +140,9 @@ export function getSubmissionsWithAttachments(submissions: Submission[]){
 */
 
 export async function finishSubmissions(submissions: Submission[], testPath: string, drive: Drive, run: Run, download: boolean, saveFile: any){
-    let submissionsWithAttachments: Submission[] = submissions.filter(submission => {
-        return submission.attachment != undefined;
-    });
-
     
+    let submissionsWithAttachments: Submission[] = filterSubmissionsByAttachment(submissions);
+
     return submissionsWithAttachments.map((submission, index) => {
         return downloadAndTest(submission,drive, index, testPath, run, download, saveFile)
     });
