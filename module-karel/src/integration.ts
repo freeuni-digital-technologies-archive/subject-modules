@@ -126,6 +126,13 @@ export function logDownloadingSubmissions(submissions: Submission[]){
     return log(submissions,`downloading ${text}`);
 }
 
+export function getSubmissionsWithAttachments(submissions: Submission[]){
+    return submissions.filter(submission => {
+        submission.attachment != undefined;
+    })
+
+}
+
 /*
     Step 4) 
         Validate submissions with attachments, download and test them

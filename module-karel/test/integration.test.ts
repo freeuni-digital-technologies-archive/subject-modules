@@ -1,11 +1,12 @@
 
-import { filterSubmissions, sliceSubmissions } from "../src/integration";
+import { filterSubmissions, finishSubmissions, getSubmissionsWithAttachments, sliceSubmissions } from "../src/integration";
 
-import { expect } from "chai";
+import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
 import { HwConfig } from "../src/config";
+import { Submission } from "classroom-api";
 
 
 const hw: HwConfig = {
@@ -51,8 +52,7 @@ describe("Integration Tests",() => {
         done();
     })
 
-    it("Filter Submissions Functionality Test",(done) => {
-
+    it("Filter Submissions Functionality Test 1",(done) => {
         let run: Run = mock(Run);
 
         let submission: any = { emailId: "emailId1" };
@@ -65,10 +65,18 @@ describe("Integration Tests",() => {
 
         expect( 0 == filterSubmissions([submission],actualInstanceOfRun,hw).length ).to.be.true;
         
+        done();
+    })
+
+    it("Filter Submissions Functionality Test 2",(done) => {
+        let run: Run = mock(Run);
+
+        let submission: any = { emailId: "emailId1" };
+
         when(run.forceCheck(submission)).thenReturn(true);
         when(run.newSubmission(submission)).thenReturn(false);
 
-        actualInstanceOfRun = instance(run);
+        let actualInstanceOfRun = instance(run);
 
 
         expect(1 == filterSubmissions([submission],actualInstanceOfRun,hw).length ).to.be.true;
@@ -76,13 +84,20 @@ describe("Integration Tests",() => {
         hw.skip = [submission];
 
         expect(0 == filterSubmissions([submission],actualInstanceOfRun,hw).length ).to.be.false;
+        
+        done();
+    })
 
+    it("Filter Submissions Functionality Test 3",(done) => {
+        let run: Run = mock(Run);
+
+        let submission: any = { emailId: "emailId1" };
 
         when(run.forceCheck(submission)).thenReturn(false);
         when(run.newSubmission(submission)).thenReturn(true);
 
         hw.skip = []
-        actualInstanceOfRun = instance(run);
+        let actualInstanceOfRun = instance(run);
 
 
         expect(1 == filterSubmissions([submission],actualInstanceOfRun,hw).length ).to.be.true;
@@ -91,11 +106,19 @@ describe("Integration Tests",() => {
 
         expect(0 == filterSubmissions([submission],actualInstanceOfRun,hw).length ).to.be.false;
 
+        done();
+    })
 
+    it("Filter Submissions Functionality Test 4",(done) => {
+        let run: Run = mock(Run);
+
+        let submission: any = { emailId: "emailId1" };
+
+        
         when(run.forceCheck(submission)).thenReturn(true);
         when(run.newSubmission(submission)).thenReturn(true);
 
-        actualInstanceOfRun = instance(run);
+        let actualInstanceOfRun = instance(run);
 
         hw.skip = []
 
@@ -109,10 +132,62 @@ describe("Integration Tests",() => {
 
     });
 
-    it("Finish Submissions Tests",(done) => {
+    // TODO: Check why function returns 0 len array
+    it("Get Submissions With Attachments Test",(done) => {
+        const submissions: any = [
+            { attachment: undefined },
+            { attachment: "adasdas" },
+            { id: 25 },
+            { attachment: null }
+        ];
+     
+        // let preResult = submissions.filter(submission => {
+        //     return submission.attachment != undefined;
+        // });
+        // console.log({preResult});
+        // console.log(submissions.filter(submission => {
+        //     console.log(submission.attachment != undefined);
+        //     return submission.attachment != undefined;
+        // }))
+
+        // let result: any = getSubmissionsWithAttachments(submissions);
+        // console.log(result);
+
+        expect( 1 == getSubmissionsWithAttachments(submissions).length ).to.be.true;
+
+        done();
+    });
+
+    /*
+        Finish Submissions Tests Section.
+
+        TODO: Not finished testing
+    */
+    it("Finish Submissions Test ( False Force Check && Submission Does Not Qualify )",(done) => {
+        const run: Run = mock(Run);
+
+        when(run.forceCheck(anything())).thenReturn(false);
         
+        const submissions: any = [
+            {
+                qualifies: () => { return false },
+                attachment: "attach1"
+            },
+            {
+                qualifies: () => { return false },
+                attachment: "attach2"
+            }
+        ];
+
+        finishSubmissions(submissions,"",null,instance(run),true,null).then(results => {
+            Promise.all(results).then(retrieves => {
+                for(let i=0; i < retrieves.length; i++){
+                    expect(retrieves[i].attachment).to.equal(submissions[i].attachment);
+                }
+        
+                done();
+            })
+        })
     })
-
-
 
 })
