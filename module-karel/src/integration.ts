@@ -107,7 +107,7 @@ export function sliceSubmissions(submissions: Submission[], slice: number | unde
 */
 export function filterSubmissions(submissions: Submission[], run: Run, hw: HwConfig){
     return submissions.filter(
-        s => !hw.skip?.includes(s.emailId) && (run.forceCheck(s) || run.newSubmission(s))
+        s => (!hw.skip?.includes(s.emailId) && (run.forceCheck(s) || run.newSubmission(s)))
     );
 }
 
