@@ -5,8 +5,8 @@ import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
-import { HwConfig } from "../src/config";
-import { Attachment, Submission } from "classroom-api";
+import { HwConfig, testerPath } from "../src/config";
+import { Attachment, Drive, Submission, saveFile } from "classroom-api";
 import path from "path";
 
 
@@ -166,11 +166,37 @@ describe("Integration Tests",() => {
         })
     })
 
-    it("Finish Submissions Test ( Actual Testing ) ", (done) => {
-        /* Require the subbmissionsAndResults.js and save it */
+    it.only("Finish Submissions Test ( Actual Testing ) ", (done) => {
+
+        /* Mocked instance of Run object */
+        const run: Run = mock(Run);
+        when(run.forceCheck(anything())).thenReturn(true);
+
+        let runInstance: Run = instance(run);
+        runInstance.moveDir = path.resolve(__dirname,"./files/integrationTest/submissionFiles")
+        runInstance.opts = { download: true, omit: null }
+
+        const fakeSaveFile = function(first,second,third){
+            return new Promise((resolve,reject) => {
+                resolve("");
+            });
+        }
+
         const submissionsAndResultsJS = require(path.resolve(__dirname,"./files/integrationTest/submissionsAndResults.js"));
 
         const submissions = submissionsAndResultsJS.submissions;
+
+        submissions.forEach(async submission => {
+            const hwId: string = submission.hwId;
+            const testPath = path.resolve(__dirname,`../resources/${hwId}tester.js`);
+
+            const sbmssn: Submission = Submission.fromResponse(submission);
+
+            const resultSubmission =  await finishSubmissions([sbmssn],testPath,null,runInstance,fakeSaveFile);
+            console.log(resultSubmission);
+            
+        });
+
 
         done();
     })

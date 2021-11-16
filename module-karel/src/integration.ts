@@ -1,5 +1,5 @@
 
-import { Submission, Drive, saveFile, getSubmissions } from "classroom-api";
+import { Submission, Drive, getSubmissions } from "classroom-api";
 import { Run, log } from "./runs";
 import { Result, testSubmission } from "codehskarel-tester";
 import { HwConfig, testerPath } from "./config";
@@ -141,6 +141,7 @@ function filterSubmissionsByAttachment(submissions: Submission[]): Submission[]{
 
 export async function finishSubmissions(submissions: Submission[], testPath: string, drive: Drive, run: Run, saveFile: any){
     
+    console.log("Save file in finishSubmissions: ", typeof(saveFile))
     let submissionsWithAttachments: Submission[] = filterSubmissionsByAttachment(submissions);
 
     return submissionsWithAttachments.map((submission, index) => {
@@ -151,7 +152,7 @@ export async function finishSubmissions(submissions: Submission[], testPath: str
 
 
 /* Combine all steps into one function */
-export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive){
+export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any){
     const testPath = testerPath(hw.id);
 
     const submissions = await getSubmissions(configSubject, hw.name)

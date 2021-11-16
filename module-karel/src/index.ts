@@ -15,7 +15,7 @@ const run = new Run(hw, runOpts)
 async function main() {
     const drive = await createDrive();
 
-    const submissions = await getSubmissionsWithResults(config.subject,hw,run, drive);
+    const submissions = await getSubmissionsWithResults(config.subject,hw,run, drive, saveFile);
 
     const results = await Promise.all(submissions)
     const output = partitionResults(results, hw)
