@@ -166,7 +166,7 @@ describe("Integration Tests",() => {
         })
     })
 
-    it.only("Finish Submissions Test ( Actual Testing ) ", (done) => {
+    it.only("Finish Submissions Test ( Actual Testing ) ", async () => {
 
         /* Mocked instance of Run object */
         const run: Run = mock(Run);
@@ -185,22 +185,34 @@ describe("Integration Tests",() => {
         const submissionsAndResultsJS = require(path.resolve(__dirname,"./files/integrationTest/submissionsAndResults.js"));
 
         const submissions = submissionsAndResultsJS.submissions;
-
-        submissions.forEach(async submission => {
+        const results = await Promise.all(submissions.map((submission) => {
             const hwId: string = submission.hwId;
-            const testPath = path.resolve(__dirname,`../resources/${hwId}tester.js`);
-
-            const sbmssn: Submission = Submission.fromResponse(submission);
-
-            const resultSubmission =  await finishSubmissions([sbmssn],testPath,null,runInstance,fakeSaveFile);
-            console.log(resultSubmission);
+            const testPath = path.resolve(__dirname,`../resources/${submission.hwId}tester.js`);
+            const sbmssn: Submission = fromResponse(submission);
             
-        });
-
-
-        done();
+            return finishSubmissions([sbmssn],testPath,null,runInstance,fakeSaveFile)
+                .then(s => s[0])
+        }))
+        // TODO check from results
     })
 
     
 
 })
+
+
+function fromResponse(
+        profile: StudentSubmission
+    ) {
+        const submission = new Submission(
+            profile.id!,
+            profile.emailId!,
+            profile.emailAddress!, 
+            profile.state!,
+            profile.alternateLink!,
+            profile.late
+        )
+        submission.attachment = profile.attachment
+        return submission
+
+    }

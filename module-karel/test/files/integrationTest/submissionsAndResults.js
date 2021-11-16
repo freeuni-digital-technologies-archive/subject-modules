@@ -1,7 +1,9 @@
 module.exports.submissions = [
     {
         "id": "Cg4IqsaL2uALEOewj9nlCw",
+        "hwId": "hw1",
         "emailId": "tkoba21",
+        "userId": "tkoba21",
         "emailAddress": "tkoba21@freeuni.edu.ge",
         "state": "TURNED_IN",
         "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTE1ODU4NzMw",
@@ -14,7 +16,9 @@ module.exports.submissions = [
     },
     {
             "id": "Cg4IuMTD6eALEOewj9nlCw",
+            "hwId": "hw1",
             "emailId": "nchil21",
+            "userId": "nchil21",
             "emailAddress": "nchil21@freeuni.edu.ge",
             "state": "TURNED_IN",
             "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTQ4MjMzMjcy",
@@ -27,7 +31,9 @@ module.exports.submissions = [
     },
     {
         "id": "Cg4Ip7Hh5K0LEOewj9nlCw",
+        "hwId": "hw1",
         "emailId": "mkhor21",
+        "userId": "mkhor21",
         "emailAddress": "mkhor21@freeuni.edu.ge",
         "state": "TURNED_IN",
         "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/MzkwMjQ4MDI4MzI3",
@@ -40,7 +46,9 @@ module.exports.submissions = [
     },
     {
         "id": "Cg4InsvF9OALEOewj9nlCw",
+        "hwId": "hw1",
         "emailId": "sjorj21",
+        "userId": "sjorj21",
         "emailAddress": "sjorj21@freeuni.edu.ge",
         "state": "TURNED_IN",
         "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTcxMzM1NTgy",
@@ -53,7 +61,9 @@ module.exports.submissions = [
     },
     {
         "id": "Cg4IqLmE4dgLEPPJ4djZCw",
+        "hwId": "hw2",
         "emailId": "adane20",
+        "userId": "adane20",
         "emailAddress": "adane20@freeuni.edu.ge",
         "state": "TURNED_IN",
         "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAxNzgyOTM4Nzky",
@@ -66,7 +76,9 @@ module.exports.submissions = [
     },
     {
         "id": "Cg4I65-e2-ALEPPJ4djZCw",
+        "hwId": "hw2",
         "emailId": "mtigi21",
+        "userId": "mtigi21",
         "emailAddress": "mtigi21@freeuni.edu.ge",
         "state": "TURNED_IN",
         "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAzOTE4MjYyMjUx",
