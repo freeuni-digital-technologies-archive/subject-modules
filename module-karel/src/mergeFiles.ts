@@ -1,5 +1,5 @@
 import { setEnv, testerPath, config } from './config'
-const { hw, slice, download, runOpts } = setEnv()
+const { hw, runOpts } = setEnv()
 
 import { Run, log } from './runs'
 import {Submission} from "classroom-api";

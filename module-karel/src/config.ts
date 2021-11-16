@@ -19,8 +19,6 @@ const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 interface EnvOptions {
     hw: HwConfig,
-    slice?: number,
-    download: boolean,
     runOpts: RunOpts
 }
 
@@ -92,14 +90,14 @@ export function getArgs(): EnvOptions {
     }
     return {
         hw: hwConfig,
-        slice: args.slice,
-        download: download,
         runOpts: {
             trial: args.trial == 'true',
             restart: args.restart == 'true',
             rerun: args.rerun == 'true',
             continue: args.continue,
-            omit: omit
+            omit: omit,
+            slice: args.slice,
+            download: download
         }
     }
 }

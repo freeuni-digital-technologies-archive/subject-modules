@@ -12,12 +12,12 @@ import { HwConfig } from "./config";
 
     Returns the result for the current submission, if any error occurs, catches it and logs it too
 */
-function downloadAndTest(submission: Submission, drive: Drive, index: number, testPath: string,run : Run, download: boolean, saveFile: any): Promise<Submission> {
+function downloadAndTest(submission: Submission, drive: Drive, index: number, testPath: string,run : Run, saveFile: any): Promise<Submission> {
     if (!run.forceCheck(submission) && !submission.qualifies()) {
         return new Promise(r => r(submission))
     }
     const id = submission.emailId
-    return downloadAtInterval(submission, drive, index, run, download, saveFile)
+    return downloadAtInterval(submission, drive, index, run, saveFile)
          .then((e: string) => log(e, `${id}: finished downloading`))
          .then((newPath: string) => testSubmission(testPath, newPath))
          .then((r: Result[]) => log(r, `${id}: finished testing`))
@@ -30,14 +30,14 @@ function downloadAndTest(submission: Submission, drive: Drive, index: number, te
     Saving path is included.
 
 */
-function downloadAtInterval(submission: Submission, drive: Drive,  index: number, run: Run, download: boolean, saveFile: any): Promise<string> {
+function downloadAtInterval(submission: Submission, drive: Drive,  index: number, run: Run, saveFile: any): Promise<string> {
     const attachment = submission.attachment!
     const fileName = attachment.title
     const id = attachment.id
     const path = `${run.moveDir}/${fileName}`
     return new Promise((resolve) => {
         setTimeout(() => {
-            if (download) {
+            if (run.opts.download) {
                 console.log(`${submission.emailId}: downloading`)
                 saveFile(drive, id, path)
                     .then(() => resolve(path))
@@ -139,11 +139,11 @@ function filterSubmissionsByAttachment(submissions: Submission[]): Submission[]{
         Validate submissions with attachments, download and test them
 */
 
-export async function finishSubmissions(submissions: Submission[], testPath: string, drive: Drive, run: Run, download: boolean, saveFile: any){
+export async function finishSubmissions(submissions: Submission[], testPath: string, drive: Drive, run: Run, saveFile: any){
     
     let submissionsWithAttachments: Submission[] = filterSubmissionsByAttachment(submissions);
 
     return submissionsWithAttachments.map((submission, index) => {
-        return downloadAndTest(submission,drive, index, testPath, run, download, saveFile)
+        return downloadAndTest(submission,drive, index, testPath, run, saveFile)
     });
 }

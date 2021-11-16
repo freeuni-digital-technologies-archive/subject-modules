@@ -8,6 +8,8 @@ export interface RunOpts {
     restart?: boolean,
     rerun?: boolean,
     continue?: string,
+    slice?: number,
+    download?: boolean,
     omit: string[]
 }
 export function log<T>(e: T, message: string) {
@@ -33,7 +35,7 @@ export class Run {
     public moveDir: string
     private path: string
     private logFile: string
-    constructor(private hw: HwConfig, private opts: RunOpts, lastRun?: number) {
+    constructor(private hw: HwConfig, public opts: RunOpts, lastRun?: number) {
         this.path = `${results_path}/${hw.id}`
         this.moveDir = `${submissions_path}/${hw.id}`
         try {
