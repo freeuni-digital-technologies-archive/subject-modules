@@ -7,6 +7,7 @@ import { Run } from "../src/runs";
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
 import { HwConfig } from "../src/config";
 import { Attachment, Submission } from "classroom-api";
+import path from "path";
 
 
 
@@ -154,7 +155,7 @@ describe("Integration Tests",() => {
             }
         ];
 
-        finishSubmissions(submissions,"",null,instance(run),true,null).then(results => {
+        finishSubmissions(submissions,"",null,instance(run),null).then(results => {
             Promise.all(results).then(retrieves => {
                 for(let i=0; i < retrieves.length; i++){
                     expect(retrieves[i].attachment).to.equal(submissions[i].attachment);
@@ -164,5 +165,16 @@ describe("Integration Tests",() => {
             })
         })
     })
+
+    it("Finish Submissions Test ( Actual Testing ) ", (done) => {
+        /* Require the subbmissionsAndResults.js and save it */
+        const submissionsAndResultsJS = require(path.resolve(__dirname,"./files/integrationTest/submissionsAndResults.js"));
+
+        const submissions = submissionsAndResultsJS.submissions;
+
+        done();
+    })
+
+    
 
 })

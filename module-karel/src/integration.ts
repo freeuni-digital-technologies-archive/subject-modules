@@ -1,8 +1,8 @@
 
-import { Submission, Drive, saveFile } from "classroom-api";
+import { Submission, Drive, saveFile, getSubmissions } from "classroom-api";
 import { Run, log } from "./runs";
 import { Result, testSubmission } from "codehskarel-tester";
-import { HwConfig } from "./config";
+import { HwConfig, testerPath } from "./config";
 
 
 /*
@@ -146,4 +146,19 @@ export async function finishSubmissions(submissions: Submission[], testPath: str
     return submissionsWithAttachments.map((submission, index) => {
         return downloadAndTest(submission,drive, index, testPath, run, saveFile)
     });
+}
+
+
+
+/* Combine all steps into one function */
+export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive){
+    const testPath = testerPath(hw.id);
+
+    const submissions = await getSubmissions(configSubject, hw.name)
+        .then(submissions => sliceSubmissions(submissions,run.opts.slice))
+        .then(submissions => filterSubmissions(submissions, run, hw))
+        .then(logDownloadingSubmissions)
+        .then(submissions => finishSubmissions(submissions,testPath,drive, run, saveFile));
+
+    return submissions
 }
