@@ -1,64 +1,57 @@
 module.exports.submissions = [
-    {
-        "id": "Cg4IqsaL2uALEOewj9nlCw",
-        "hwId": "hw1",
-        "emailId": "tkoba21",
-        "userId": "tkoba21",
-        "emailAddress": "tkoba21@freeuni.edu.ge",
-        "state": "TURNED_IN",
-        "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTE1ODU4NzMw",
-        "attachment": {
-                "id": "1jR3KUYDk-QMYymCJMre7fkeu6YA7jC5i",
-                "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1jR3KUYDk-QMYymCJMre7fkeu6YA7jC5i&export=download",
-                "title": "tkoba21.txt..txt"
+        {
+                "id": "Cg4IqsaL2uALEPPJ4djZCw",
+                "emailId": "tkoba21",
+                "emailAddress": "tkoba21@freeuni.edu.ge",
+                "state": "TURNED_IN",
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAzOTE1ODU4NzMw",
+                "attachment": {
+                        "id": "18lIg4Xm706fRiiooBGHNusKgHxhM4YBX",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=18lIg4Xm706fRiiooBGHNusKgHxhM4YBX&export=download",
+                        "title": "tkoba21.txt. (2).txt"
+                },
+                "timeStamp": "2021-10-07T17:00:57.841Z"
         },
-        "timeStamp": "2021-10-07T16:49:30.135Z"
-    },
-    {
-            "id": "Cg4IuMTD6eALEOewj9nlCw",
-            "hwId": "hw1",
-            "emailId": "nchil21",
-            "userId": "nchil21",
-            "emailAddress": "nchil21@freeuni.edu.ge",
-            "state": "TURNED_IN",
-            "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTQ4MjMzMjcy",
-            "attachment": {
-                    "id": "1GF2F-HZe9MLQ74zTPtNzrAmfqzAjY10N",
-                    "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1GF2F-HZe9MLQ74zTPtNzrAmfqzAjY10N&export=download",
-                    "title": "nchil21.txt.txt"
-            },
-            "timeStamp": "2021-10-06T19:26:42.419Z"
-    },
-    {
-        "id": "Cg4Ip7Hh5K0LEOewj9nlCw",
-        "hwId": "hw1",
-        "emailId": "mkhor21",
-        "userId": "mkhor21",
-        "emailAddress": "mkhor21@freeuni.edu.ge",
-        "state": "TURNED_IN",
-        "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/MzkwMjQ4MDI4MzI3",
-        "attachment": {
-                "id": "1ulO7_vrznAYKR9M_fe0mhfuLkjG76Xcd",
-                "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1ulO7_vrznAYKR9M_fe0mhfuLkjG76Xcd&export=download",
-                "title": "Your_First_Karel_Program.txt"
+        {                                                                                                                                                                                                  
+                "id": "Cg4Ir46I1-ALEPPJ4djZCw",                                                                                                                                                            
+                "emailId": "kgogb21",                                                                                                                                                                      
+                "emailAddress": "kgogb21@freeuni.edu.ge",                                                                                                                                                  
+                "state": "TURNED_IN",                                                                                                                                                                      
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAzOTA5NTEwOTU5",                                   
+                "attachment": {
+                        "id": "1mBektrDalWBCFh_Pod-8wLdf5eXbXaF8",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1mBektrDalWBCFh_Pod-8wLdf5eXbXaF8&export=download",
+                        "title": "kgogb.txt.txt"
+                },
+                "timeStamp": "2021-10-07T19:18:37.388Z"
         },
-        "timeStamp": "2021-10-06T20:28:20.052Z"
-    },
-    {
-        "id": "Cg4InsvF9OALEOewj9nlCw",
-        "hwId": "hw1",
-        "emailId": "sjorj21",
-        "userId": "sjorj21",
-        "emailAddress": "sjorj21@freeuni.edu.ge",
-        "state": "TURNED_IN",
-        "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTcxMzM1NTgy",
-        "attachment": {
-                "id": "1WVOexaQ6VsArfQUdjHmdSYmLbzB_x4bs",
-                "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1WVOexaQ6VsArfQUdjHmdSYmLbzB_x4bs&export=download",
-                "title": "sjorj.txt..txt"
+        {                                                                                                                                                                                                  
+                "id": "Cg4IqeqenMoLEPPJ4djZCw",                                                                                                                                                            
+                "emailId": "gniko21",                                                                                                                                                                      
+                "emailAddress": "gniko21@freeuni.edu.ge",                                                                                                                                                  
+                "state": "TURNED_IN",                                                                                                                                                                      
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/Mzk3ODgwNTcxMTc3",                                   
+                "attachment": {
+                        "id": "1y0MtabfJ6zHyKqfYJWarCGUyHEo8-YFI",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1y0MtabfJ6zHyKqfYJWarCGUyHEo8-YFI&export=download",
+                        "title": "gniko21_hw2.txt"
+                },
+                "timeStamp": "2021-10-06T15:19:42.183Z"
         },
-        "timeStamp": "2021-10-06T19:16:20.331Z"
-    },
+
+        {
+                "id": "Cg4I2ZDeudQLEPPJ4djZCw",
+                "emailId": "tchik21",
+                "emailAddress": "tchik21@freeuni.edu.ge",
+                "state": "TURNED_IN",
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAwNjI2NzgwMjQ5",
+                "attachment": {
+                        "id": "1Q2LTDTJgrX1vDSallnY0tOjy5ly-IuYj",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Q2LTDTJgrX1vDSallnY0tOjy5ly-IuYj&export=download",
+                        "title": "tchik21.txt..txt"
+                },
+                "timeStamp": "2021-10-07T17:05:02.683Z"
+        },
     {
         "id": "Cg4IqLmE4dgLEPPJ4djZCw",
         "hwId": "hw2",
@@ -94,54 +87,71 @@ module.exports.submissions = [
 ]
 
 module.exports.results = {
-    /* FROM HW1 */
+    /* FROM HW2 */
     passed: [
         {
-            "id": "Cg4IqsaL2uALEOewj9nlCw",
-            "emailId": "tkoba21",
-            "emailAddress": "tkoba21@freeuni.edu.ge",
-            "state": "TURNED_IN",
-            "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTE1ODU4NzMw",
-            "results": [
-                    {
-                            "passed": true,
-                            "message": "კარელმა უნდა აიღოს ბურთი რომელიც 5x1-ზე დევს. Karel is on position (5,1), coordinates of beepers: , world: 10x10"
-                    },
-                    {
-                            "passed": true,
-                            "message": "კარელი უნდა იყოს 5x1 პოზიციაზე"
-                    }
-            ],
-            "attachment": {
-                    "id": "1jR3KUYDk-QMYymCJMre7fkeu6YA7jC5i",
-                    "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1jR3KUYDk-QMYymCJMre7fkeu6YA7jC5i&export=download",
-                    "title": "tkoba21.txt..txt"
-            },
-            "timeStamp": "2021-10-07T16:49:30.135Z"
-    },
-    {
-            "id": "Cg4IuMTD6eALEOewj9nlCw",
-            "emailId": "nchil21",
-            "emailAddress": "nchil21@freeuni.edu.ge",
-            "state": "TURNED_IN",
-            "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTQ4MjMzMjcy",
-            "results": [
-                    {
-                            "passed": true,
-                            "message": "კარელმა უნდა აიღოს ბურთი რომელიც 5x1-ზე დევს. Karel is on position (5,1), coordinates of beepers: , world: 10x10"
-                    },
-                    {
-                            "passed": true,
-                            "message": "კარელი უნდა იყოს 5x1 პოზიციაზე"
-                    }
-            ],
-            "attachment": {
-                    "id": "1GF2F-HZe9MLQ74zTPtNzrAmfqzAjY10N",
-                    "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1GF2F-HZe9MLQ74zTPtNzrAmfqzAjY10N&export=download",
-                    "title": "nchil21.txt.txt"
-            },
-            "timeStamp": "2021-10-06T19:26:42.419Z"
-    }
+                "id": "Cg4IqsaL2uALEPPJ4djZCw",
+                "emailId": "tkoba21",
+                "emailAddress": "tkoba21@freeuni.edu.ge",
+                "state": "TURNED_IN",
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAzOTE1ODU4NzMw",
+                "results": [
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 4x1"
+                        },
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 10x1"
+                        },
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 1x1"
+                        },
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 6x1"
+                        }
+                ],
+                "attachment": {
+                        "id": "18lIg4Xm706fRiiooBGHNusKgHxhM4YBX",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=18lIg4Xm706fRiiooBGHNusKgHxhM4YBX&export=download",
+                        "title": "tkoba21.txt. (2).txt"
+                },
+                "timeStamp": "2021-10-07T17:00:57.841Z"
+        },
+        {                                                                                                                                                                                                  
+                "id": "Cg4Ir46I1-ALEPPJ4djZCw",                                                                                                                                                            
+                "emailId": "kgogb21",                                                                                                                                                                      
+                "emailAddress": "kgogb21@freeuni.edu.ge",                                                                                                                                                  
+                "state": "TURNED_IN",                                                                                                                                                                      
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAzOTA5NTEwOTU5",                                   
+                "results": [                                                                                                                                                                               
+                        {                                                                                                                                                                                  
+                                "passed": true,                                                                                                                                                            
+                                "message": "კარელი უნდა იდგეს 8x1"                                                                                                                                         
+                        },                                                                                                                                                                                 
+                        {                                                                                                                                                                                  
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 10x1"
+                        },
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 1x1"
+                        },
+                        {
+                                "passed": true,
+                                "message": "კარელი უნდა იდგეს 6x1"
+                        }
+                ],
+                "attachment": {
+                        "id": "1mBektrDalWBCFh_Pod-8wLdf5eXbXaF8",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1mBektrDalWBCFh_Pod-8wLdf5eXbXaF8&export=download",
+                        "title": "kgogb.txt.txt"
+                },
+                "timeStamp": "2021-10-07T19:18:37.388Z"
+        },
+
     ],
 
     /* FROM HW2 */
@@ -219,35 +229,66 @@ module.exports.results = {
     invalid: {
 
     },
-    /* FROM HW1 */
+    /* FROM HW2 */
     error: [
-{
-                "id": "Cg4Ip7Hh5K0LEOewj9nlCw",
-                "emailId": "mkhor21",
-                "emailAddress": "mkhor21@freeuni.edu.ge",
-                "state": "TURNED_IN",
-                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/MzkwMjQ4MDI4MzI3",
-                "results": [
+        {                                                                                                                                                                                                  
+                "id": "Cg4IqeqenMoLEPPJ4djZCw",                                                                                                                                                            
+                "emailId": "gniko21",                                                                                                                                                                      
+                "emailAddress": "gniko21@freeuni.edu.ge",                                                                                                                                                  
+                "state": "TURNED_IN",                                                                                                                                                                      
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/Mzk3ODgwNTcxMTc3",                                   
+                "results": [                                                                                                                                                                               
+                        {                                                                                                                                                                                  
+                                "error": true,                                                                                                                                                             
+                                "message": "there is a bug in the program",                                                                                                                                
+                                "details": "ReferenceError: moveandignoreBalls is not defined, Karel is on position (1,1), coordinates of beepers: (1,1),(2,1),(3,1),(4,1), world: 10x10"                  
+                        },                                                                                                                                                                                 
+                        {                                                                                                                                                                                  
+                                "error": true,                                                                                                                                                             
+                                "message": "there is a bug in the program",                                                                                                                                
+                                "details": "ReferenceError: moveandignoreBalls is not defined, Karel is on position (1,1), coordinates of beepers: (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(9,1), world: 10x10"                                                                                                                                                                                               
+                        },                                                                                                                                                                                 
+                        {                                                                                                                                                                                  
+                                "error": true,                                                                                                                                                             
+                                "message": "there is a bug in the program",                                                                                                                                
+                                "details": "ReferenceError: moveandignoreBalls is not defined, Karel is on position (1,1), coordinates of beepers: , world: 10x10"                                         
+                        },
                         {
                                 "error": true,
-                                "message": "there is a problem with the file",
-                                "details": "Unknown error occured: move is not defined, move is not defined"
+                                "message": "there is a bug in the program",
+                                "details": "ReferenceError: moveandignoreBalls is not defined, Karel is on position (1,1), coordinates of beepers: (1,1),(2,1),(3,1),(4,1),(5,1),(7,1), world: 10x10"
                         }
                 ],
                 "attachment": {
-                        "id": "1ulO7_vrznAYKR9M_fe0mhfuLkjG76Xcd",
-                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1ulO7_vrznAYKR9M_fe0mhfuLkjG76Xcd&export=download",
-                        "title": "Your_First_Karel_Program.txt"
+                        "id": "1y0MtabfJ6zHyKqfYJWarCGUyHEo8-YFI",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1y0MtabfJ6zHyKqfYJWarCGUyHEo8-YFI&export=download",
+                        "title": "gniko21_hw2.txt"
                 },
-                "timeStamp": "2021-10-06T20:28:20.052Z"
+                "timeStamp": "2021-10-06T15:19:42.183Z"
         },
+
         {
-                "id": "Cg4InsvF9OALEOewj9nlCw",
-                "emailId": "sjorj21",
-                "emailAddress": "sjorj21@freeuni.edu.ge",
+                "id": "Cg4I2ZDeudQLEPPJ4djZCw",
+                "emailId": "tchik21",
+                "emailAddress": "tchik21@freeuni.edu.ge",
                 "state": "TURNED_IN",
-                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDA1MjU2MDAxNjM5/submissions/by-status/and-sort-last-name/student/NDAzOTcxMzM1NTgy",
+                "alternateLink": "https://classroom.google.com/c/Mzk5NzYzODYyMjQz/a/NDAyMDM0MDI1NzE1/submissions/by-status/and-sort-last-name/student/NDAwNjI2NzgwMjQ5",
                 "results": [
+                        {
+                                "error": true,
+                                "message": "there is a problem with the file",
+                                "details": "Unknown error occured: move is not defined, move is not defined"
+                        },
+                        {
+                                "error": true,
+                                "message": "there is a problem with the file",
+                                "details": "Unknown error occured: move is not defined, move is not defined"
+                        },
+                        {
+                                "error": true,
+                                "message": "there is a problem with the file",
+                                "details": "Unknown error occured: move is not defined, move is not defined"
+                        },
                         {
                                 "error": true,
                                 "message": "there is a problem with the file",
@@ -255,12 +296,13 @@ module.exports.results = {
                         }
                 ],
                 "attachment": {
-                        "id": "1WVOexaQ6VsArfQUdjHmdSYmLbzB_x4bs",
-                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1WVOexaQ6VsArfQUdjHmdSYmLbzB_x4bs&export=download",
-                        "title": "sjorj.txt..txt"
+                        "id": "1Q2LTDTJgrX1vDSallnY0tOjy5ly-IuYj",
+                        "downloadUrl": "https://drive.google.com/a/freeuni.edu.ge/uc?authuser=0&id=1Q2LTDTJgrX1vDSallnY0tOjy5ly-IuYj&export=download",
+                        "title": "tchik21.txt..txt"
                 },
-                "timeStamp": "2021-10-06T19:16:20.331Z"
+                "timeStamp": "2021-10-07T17:05:02.683Z"
         }
+
 
     ],
     notSubmitted: {

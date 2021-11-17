@@ -5,7 +5,7 @@ import { createDrive, getSubmissions, saveFile } from 'classroom-api'
 import { Run } from './runs'
 import { partitionResults } from './partitions'
 
-import {sliceSubmissions, filterSubmissions, logDownloadingSubmissions, finishSubmissions, getSubmissionsWithResults } from "./integration";
+import { getSubmissionsWithResults } from "./integration";
 
 
 const run = new Run(hw, runOpts)
@@ -15,7 +15,7 @@ const run = new Run(hw, runOpts)
 async function main() {
     const drive = await createDrive();
 
-    const submissions = await getSubmissionsWithResults(config.subject,hw,run, drive, saveFile);
+    const submissions = await getSubmissionsWithResults(config.subject,hw,run, drive, saveFile, getSubmissions);
 
     const results = await Promise.all(submissions)
     const output = partitionResults(results, hw)

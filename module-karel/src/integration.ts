@@ -1,5 +1,5 @@
 
-import { Submission, Drive, getSubmissions } from "classroom-api";
+import { Submission, Drive } from "classroom-api";
 import { Run, log } from "./runs";
 import { Result, testSubmission } from "codehskarel-tester";
 import { HwConfig, testerPath } from "./config";
@@ -151,7 +151,7 @@ export async function finishSubmissions(submissions: Submission[], testPath: str
 
 
 /* Combine all steps into one function */
-export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any){
+export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any, getSubmissions: (a: string, b: string) => Promise<Submission[]>){
     const testPath = testerPath(hw.id);
 
     const submissions = await getSubmissions(configSubject, hw.name)
