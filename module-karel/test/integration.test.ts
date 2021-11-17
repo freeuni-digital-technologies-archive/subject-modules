@@ -5,10 +5,9 @@ import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
-import { HwConfig, testerPath } from "../src/config";
-import { Attachment, Drive, Submission, saveFile } from "classroom-api";
+import { HwConfig } from "../src/config";
+import { Submission } from "classroom-api";
 import path from "path";
-import { assert } from "console";
 
 
 
@@ -246,7 +245,7 @@ describe("Integration Tests",() => {
         }
     }
 
-    it.only("Test Getting Submissions With Results",async () => {
+    it("Test Getting Submissions With Results",async () => {
         const submissionsAndResultsJS = getSubmissionsAndResults();
 
         const rawSubmissions = submissionsAndResultsJS.submissions

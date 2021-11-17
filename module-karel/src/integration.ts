@@ -141,7 +141,6 @@ function filterSubmissionsByAttachment(submissions: Submission[]): Submission[]{
 
 export async function finishSubmissions(submissions: Submission[], testPath: string, drive: Drive, run: Run, saveFile: any){
     
-    console.log("Save file in finishSubmissions: ", typeof(saveFile))
     let submissionsWithAttachments: Submission[] = filterSubmissionsByAttachment(submissions);
     return submissionsWithAttachments.map((submission, index) => {
         return downloadAndTest(submission,drive, index, testPath, run, saveFile)

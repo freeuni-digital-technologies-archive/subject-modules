@@ -126,10 +126,11 @@ function getConfigsOfCurrentHomeworks(): HwConfig[] {
     
     fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
         
-        if(subfolder == "README.md")
+        if(subfolder == "README.md" || subfolder == ".git")
             return;
 
         let currentConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${DEFAULT_HW_CONFIG_FILENAME}`;
+        console.log({currentConfigPath});
         let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currentConfigPath);
         homeworks.push(currentHomeworkConfig);
     })
