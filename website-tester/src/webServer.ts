@@ -17,6 +17,7 @@ const server = http.createServer(function (req, res) {
             process.send(results)
         }
         res.end(message);
+        console.log("finished sending results")
     })
 });
 
@@ -25,8 +26,3 @@ const server = http.createServer(function (req, res) {
 server.listen(3939, () => {
     console.log('>>>>>>>> Server is running on port 3939') 
 });
-server.on('error', () => {
-    if (process.send) {
-        process.send("address in use")
-    }
-})

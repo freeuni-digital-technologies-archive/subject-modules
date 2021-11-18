@@ -37,14 +37,22 @@ export class WebTester {
     server: ChildProcess;
     driver: WebDriver;
     constructor(private testConfig: TestConfig) {
+        // try {
+            
+                        
+        // } catch (e) {
+        //     throw "webdriver in use"
+        // }
         this.server = fork(path.resolve(__dirname, '../lib/webServer'));
+        this.driver = new webdriver.Builder()
+                        .forBrowser('safari')
+                        .setFirefoxOptions(options)
+                        .build()
         
         // TODO think about a way to not start each time. Without failing on looped submissions
         // maybe selenium problem on macOS? test on linux
-        this.driver = new webdriver.Builder()
-                        .forBrowser('firefox')
-                        .setFirefoxOptions(options)
-                        .build(); 
+
+        
     }
 
     async testSubmission(dir: string, replaceFile: boolean = true): Promise<Result[]> {
@@ -62,6 +70,7 @@ export class WebTester {
         }
         let allResults: Result[] = []
         for (let file of this.testConfig.targetFiles) {
+            console.log('visiting')
             const results = await this.visitPage(`file://${dir}/${file}.html`)
             allResults = allResults.concat(results)
         }
@@ -74,12 +83,8 @@ export class WebTester {
         return (new Promise((resolve, reject) => {
             var timeout = setTimeout(() => {
                 resolve(timeoutError)
-                // TODO change
-            }, 500)
+            }, 15000)
             this.server.on('message', (m: Result[]) => {
-                if (typeof(m) == 'string') {
-                    reject(addressInUseError)
-                }
                 clearTimeout(timeout) // so we don't wait extra 30 sec at the end
                 resolve(m)
             })
