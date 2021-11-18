@@ -1,6 +1,6 @@
 import { Partitions } from "./partitions";
 import { Submission, getStudentByEmail } from "classroom-api";
-import { getArgs } from './config'
+import { getArgs } from './cli'
 const {hw} = getArgs()
 
 type S = Submission

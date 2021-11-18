@@ -2,7 +2,8 @@
 import { Submission, Drive } from "classroom-api";
 import { Run, log } from "./runs";
 import { Result, testSubmission } from "codehskarel-tester";
-import { HwConfig, testerPath } from "./config";
+import { testerPath } from "./config";
+import { HwConfig } from './homework'
 
 
 /*
@@ -151,6 +152,7 @@ export async function finishSubmissions(submissions: Submission[], testPath: str
 
 /* Combine all steps into one function */
 export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any, getSubmissions: (a: string, b: string) => Promise<Submission[]>){
+    // TODO ეს ფუნქცია კონფიგიდან არ კითხულობს ტესტpath-ს
     const testPath = testerPath(hw.id);
 
     const submissions = await getSubmissions(configSubject, hw.name)

@@ -5,7 +5,7 @@ import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
-import { HwConfig } from "../src/config";
+import { HwConfig } from "../src/homework";
 import { Submission } from "classroom-api";
 import path from "path";
 
