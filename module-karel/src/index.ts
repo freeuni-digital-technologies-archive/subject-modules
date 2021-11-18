@@ -15,6 +15,7 @@ const run = new Run(hw, runOpts)
 async function main() {
     const drive = await createDrive();
 
+    // TODO აქ ეს ორი await რაღაც სტრანნადაა და გადასახედია
     const submissions = await getSubmissionsWithResults(config.subject,hw,run, drive, saveFile, getSubmissions);
 
     const results = await Promise.all(submissions)

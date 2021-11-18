@@ -45,7 +45,7 @@ export class WebTester {
         // }
         this.server = fork(path.resolve(__dirname, '../lib/webServer'));
         this.driver = new webdriver.Builder()
-                        .forBrowser('safari')
+                        .forBrowser('firefox')
                         .setFirefoxOptions(options)
                         .build()
         
