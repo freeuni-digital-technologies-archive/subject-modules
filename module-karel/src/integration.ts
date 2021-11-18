@@ -1,7 +1,10 @@
 
 import { Submission, Drive } from "classroom-api";
 import { Run, log } from "./runs";
-import { Result, testSubmission } from "codehskarel-tester";
+// TODO მოკლედ ყველა ცვლილება ისე იქნება რომ ბოლოს 
+// if დაემატოს და ამ ორიდან ამოარჩიოს, და unzip-იც რამე პარამეტრი იქნება
+// import { Result, testSubmission } from "codehskarel-tester";
+import { Result, WebTester } from "website-tester"
 import { testerPath } from "./config";
 import { HwConfig } from './homework'
 import fs from 'fs'
@@ -15,6 +18,26 @@ import unzipper from 'unzipper'
 
     Returns the result for the current submission, if any error occurs, catches it and logs it too
 */
+
+async function testSubmission(testPath: string, dir: string): Promise<Result[]> {
+    return new Promise((resolve) => {
+        const t = setInterval(() => {        
+            const tester = new WebTester({targetFiles: ['index.html'], testsLocation: ''})
+            tester.testSubmission(dir, false)
+                .then(result => {
+                    tester.finish()
+                    clearTimeout(t)
+                    resolve(result)
+                })
+                .catch(e => {})
+            // const result = await tester.testSubmission(dir, false)
+            // await tester.finish()
+            // resolve(result)
+    }, Math.round(Math.random()*2000) + 2000) 
+    })
+
+}
+
 function downloadAndTest(submission: Submission, drive: Drive, index: number, testPath: string,run : Run, saveFile: any): Promise<Submission> {
     if (!run.forceCheck(submission) && !submission.qualifies()) {
         return new Promise(r => r(submission))
@@ -22,7 +45,8 @@ function downloadAndTest(submission: Submission, drive: Drive, index: number, te
     const id = submission.emailId
     return downloadAtInterval(submission, drive, index, run, saveFile)
          .then((e: string) => log(e, `${id}: finished downloading`))
-         .then((newPath: string) => testSubmission(testPath, newPath))
+         // .then((newPath: string) => testSubmission(testPath, newPath))
+         .then((newPath: string) => testSubmission('', newPath))
          .then((r: Result[]) => log(r, `${id}: finished testing`))
          .then((results: Result[]) => submission.addResults(results))
         .catch((error: any) => logError(submission, error))
@@ -37,13 +61,19 @@ function downloadAtInterval(submission: Submission, drive: Drive,  index: number
     const attachment = submission.attachment!
     const fileName = attachment.title
     const id = attachment.id
+    // TODO კარელზეც მგონი სჯობს რომ დირექტორიები იყოს emailId-ებით
+    // და რამე სტანდარტული სახელი დაერქვას. რატომ ვინახავთ
+    // სტუდენტის დარქმეული სახელით??
     const path = `${run.moveDir}/${fileName}`
-    return new Promise((resolve) => {
+
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (run.opts.download) {
                 console.log(`${submission.emailId}: downloading`)
                 saveFile(drive, id, path)
+                    .then(() => unzipSubmission(submission, path, run.moveDir))
                     .then(() => resolve(path))
+                    .catch((e: string) => reject(e))
             } else {
                 resolve(path)
             }
