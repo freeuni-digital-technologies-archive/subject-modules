@@ -55,7 +55,11 @@ function listCourses(classroom: classroom_v1.Classroom)
         classroom.courses.list({
             pageSize: 10,
         }, (err, res) => {
-            if (err) reject('The API returned an error: ' + err);
+		// ამ reject-ს სადღაც ვაიგნორებ (:
+        if (err) {
+            console.log(err)
+            reject('The API returned an error: ' + err)
+        }
             const courses = res!.data.courses;
             if (courses && courses.length) {
                 resolve(courses)
