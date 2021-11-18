@@ -4,6 +4,8 @@ import { Run, log } from "./runs";
 import { Result, testSubmission } from "codehskarel-tester";
 import { testerPath } from "./config";
 import { HwConfig } from './homework'
+import fs from 'fs'
+import unzipper from 'unzipper'
 
 
 /*
@@ -162,4 +164,46 @@ export async function getSubmissionsWithResults(configSubject: string, hw: HwCon
         .then(submissions => finishSubmissions(submissions,testPath,drive, run, saveFile));
 
     return submissions
+}
+
+
+function unzipSubmission(submission: Submission, path: string, moveDir: string): Promise<string> {
+    const dir = `${moveDir}/${submission.emailId}`
+    try {
+        fs.mkdirSync(dir)
+    } catch (w) {
+        fs.rmdirSync(dir, {recursive: true})
+        fs.mkdirSync(dir)
+    }
+    return fs.createReadStream(path)
+        .pipe(unzipper.Extract({path: dir}))
+        .promise()
+        .catch((e) => {throw 'დავალება არ არის zip ფაილში'})
+        .then(() => findRootFile(dir))
+}
+
+function findRootFile(dir: string): string {
+    let p = dir
+    let files = fs.readdirSync(p)
+    let tries = 0
+    // let filesToBe = hw.filesToCheck || ['index']
+    let filesToBe = ['index']
+    console.log(filesToBe)
+    // TODO ასე მგონია find ფუნქცია იარსებებს ჯავასკრიპტში:)
+    while (filesToBe.some(file => !files.includes(`${file}.html`))) {
+        if (tries > 3) {
+            throw "დავალების ფაილები ვერ მოიძებნა"
+        }
+          // saves us minutes of our lives
+          files = files.filter(f => f !== '__MACOSX');
+        try {
+            p = `${p}/${files[0]}`
+            files = fs.readdirSync(p)
+        } catch (e) {
+            throw "დავალების ფაილები ვერ მოიძებნა"
+            //throw "file with unsupported format: " + files[0]
+        }
+        tries++
+    }
+    return p
 }
