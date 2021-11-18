@@ -7,3 +7,4 @@ yarn-error.log
 .env
 .idea/
 tmp/
+test/files/integrationTest/submissionFiles/*.fixed

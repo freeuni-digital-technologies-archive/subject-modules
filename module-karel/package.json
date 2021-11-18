@@ -16,7 +16,9 @@
     "classroom-api": "^1.0.2",
     "codehskarel-tester": "^1.0.0",
     "cron": "^1.8.2",
-    "shelljs": "^0.8.4"
+    "mock": "^0.1.1",
+    "shelljs": "^0.8.4",
+    "ts-mockito": "^2.6.1"
   },
   "devDependencies": {
     "@types/argparse": "^1.0.38",
