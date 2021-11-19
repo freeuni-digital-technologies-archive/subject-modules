@@ -19,6 +19,7 @@ export interface HwConfig {
     name: string,
     deadline: string, //YYYY-mm-dd preferably
     testFileName: string,
+    configPath: string, // absolute path
     deadlineMinutes?: string, //T23:59:00+04:00 if not set 
     exceptions?: Partitions<string[]>,
     manualChecks?: string[],
@@ -89,18 +90,20 @@ function checkGivenHwConfigroperties(preHwConfig: any){
 
 /* Convert given configuration file to local interface (Locally interface will be deleted soon) */
 
-function convertGivenHwConfigToInterface(preHwConfig: any){
+function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
     const rvConfig: HwConfig = { 
         id: preHwConfig.id, 
         name: preHwConfig.classroomName, 
         deadline: preHwConfig.deadline, 
+        configPath: path,
         testFileName: preHwConfig.testFileName 
     };
     return rvConfig;
 }
 
 export function readHomeworkConfiguration(configPath: string): HwConfig {
-    const configFile = require(path.resolve(__dirname,configPath));
+    const absolutePath = path.resolve(__dirname, configPath)
+    const configFile = require(absolutePath);
     if(!configFile){
         console.log("Could not find homework configuration file");
         process.exit(-1);
@@ -109,7 +112,7 @@ export function readHomeworkConfiguration(configPath: string): HwConfig {
     const preHwConfig = configFile;
     checkGivenHwConfigroperties(preHwConfig);
 
-    return convertGivenHwConfigToInterface(preHwConfig);
+    return convertGivenHwConfigToInterface(preHwConfig, absolutePath);
 }
 
 

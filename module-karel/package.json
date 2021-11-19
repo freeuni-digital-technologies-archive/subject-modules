@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node lib/index.js",
+    "start": "node --trace-uncaught lib/index.js",
     "notify": "node lib/notifications.js",
     "test": "ts-mocha test/*.test.ts",
     "daemon": "node lib/daemon.js"
@@ -18,7 +18,9 @@
     "cron": "^1.8.2",
     "mock": "^0.1.1",
     "shelljs": "^0.8.4",
-    "ts-mockito": "^2.6.1"
+    "ts-mockito": "^2.6.1",
+    "unzipper": "^0.10.11",
+    "website-tester": "^1.0.0"
   },
   "devDependencies": {
     "@types/argparse": "^1.0.38",
