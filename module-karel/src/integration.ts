@@ -114,6 +114,7 @@ function downloadAtInterval(submission: Submission, drive: Drive,  index: number
 function logError(submission: Submission, error: any) {
     const knownErrors = [zipFormatError, fileNotFoundError]
     if (knownErrors.includes(error)) {
+        submission.incorrectFormat = true
         submission.results.push({
             error: true,
             details: error
