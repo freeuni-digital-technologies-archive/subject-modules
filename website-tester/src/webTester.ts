@@ -2,6 +2,7 @@ import webdriver, { WebDriver } from 'selenium-webdriver'
 import path from "path"
 import fs from 'fs'
 import fse from 'fs-extra'
+import firefox from 'selenium-webdriver/firefox'
 
 // const {By, until} = webdriver
 
@@ -9,7 +10,7 @@ import {ChildProcess, fork} from 'child_process'
 
 // TODO check for driver
 // khokho - keeping this comment in :D
-const firefox = require('selenium-webdriver/firefox')
+// const firefox = require('selenium-webdriver/firefox')
 const options = new firefox
     .Options()
     .headless()
