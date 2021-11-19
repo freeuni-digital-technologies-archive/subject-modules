@@ -466,10 +466,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/selenium-webdriver@npm:^4.0.9":
-  version: 4.0.15
-  resolution: "@types/selenium-webdriver@npm:4.0.15"
-  checksum: 974d15406ebe2c0c4f7125254ec8e41342a82e8d78aec21300680d7e2b74d526cfacd63ec9407ff142fcf7c2de95b786d6422eb745ce77b039d1b3f6a4079e52
+"@types/selenium-webdriver@npm:^4.0.16":
+  version: 4.0.16
+  resolution: "@types/selenium-webdriver@npm:4.0.16"
+  checksum: 7d3e29926272222a42541508414a7f4ea6067299bb9a202a9093e3f554a1d8c4d18745502450a561ceebb260b97288d875d2f6558cb11aa02a0e39909899d096
   languageName: node
   linkType: hard
 
@@ -4216,7 +4216,7 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"selenium-webdriver@npm:^4.0.0-alpha.7":
+"selenium-webdriver@npm:^4.0.0":
   version: 4.0.0
   resolution: "selenium-webdriver@npm:4.0.0"
   dependencies:
@@ -4977,7 +4977,7 @@ typescript@^3.8.3:
     "@types/mocha": ^7.0.2
     "@types/node": ^13.9.8
     "@types/rewire": ^2.5.28
-    "@types/selenium-webdriver": ^4.0.9
+    "@types/selenium-webdriver": ^4.0.16
     chai: ^4.2.0
     commander: ^5.0.0
     fs-extra: ^9.1.0
@@ -4985,7 +4985,7 @@ typescript@^3.8.3:
     mocha: ^7.1.1
     nyc: ^15.0.0
     rewire: ^5.0.0
-    selenium-webdriver: ^4.0.0-alpha.7
+    selenium-webdriver: ^4.0.0
     ts-mocha: ^7.0.0
     typescript: ^3.8.3
   languageName: unknown
