@@ -79,11 +79,11 @@ export class WebTester {
     }
 
     visitPage(path: string): Promise<Result[]> {
-        const timeoutError: Result[] = [{error: true, crashed: true, message: 'tester timeout exceeded 30 seconds'}]
+        const timeoutError: Result[] = [{error: true, message: 'tester timeout exceeded 30 seconds'}]
         const addressInUseError: Result[] = [{message: "address in use"}]
         return (new Promise((resolve, reject) => {
             var timeout = setTimeout(() => {
-                resolve(timeoutError)
+                reject(timeoutError)
             }, 30000)
             this.server.on('message', (m: Result[]) => {
                 clearTimeout(timeout) // so we don't wait extra 30 sec at the end
