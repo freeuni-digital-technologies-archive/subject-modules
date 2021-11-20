@@ -7,10 +7,29 @@ import { Run } from './runs'
 import { templates } from './templates'
 
 
-function sendEmails(
-        run: Run, 
+function notifyLastRun() {
+    const run = new Run(hw, runOpts)
+    const results = run.previousRunInfo
+    const categoriesToNotify: Partitions<boolean> | any = {
+        crashed: false,
+        notSubmitted: false,
+        late: true,
+        invalid: true,
+        error: true,
+        failed: true,
+        passed: true,
+        none: false
+    }
+    const subject = (hwName: string)  => {
+    return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
+    }
+    notify(results, categoriesToNotify, subject)
+}
+
+
+export function notify(
         results: Partitions<Submission[]>,
-        notify: Partitions<boolean> | any,
+        categoriesToNotify: Partitions<boolean> | any,
         subject: (hwName: string) => string,
     ) {
 
@@ -22,7 +41,7 @@ function sendEmails(
                 return submissions.filter(s => hw.force?.includes(s.emailId))
                     .map(addToString)
                     .map(s => getEmail(s, template(s), subject))
-            } else if (notify[type]) {
+            } else if (categoriesToNotify[type]) {
                 return submissions
                     .map(addToString)
                     .map(s => getEmail(s, template(s), subject))
@@ -78,22 +97,7 @@ function addToString(submission: Submission) {
 
 
 if (require.main == module) {
-    const run = new Run(hw, runOpts)
-    const results = run.previousRunInfo
-    const notify: Partitions<boolean> | any = {
-        crashed: false,
-        notSubmitted: false,
-        late: true,
-        invalid: true,
-        error: true,
-        failed: true,
-        passed: true,
-        none: false
-    }
-    const subject = (hwName: string)  => {
-    return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
-    }
-    sendEmails(run, results, notify, subject)
+    notifyLastRun()
 }
 
 
