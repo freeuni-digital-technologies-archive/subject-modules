@@ -5,22 +5,27 @@ import { Partitions } from './partitions'
 import { Submission, sendEmails } from 'classroom-api'
 import { Run } from './runs'
 import { templates } from './templates'
-// const email = require('../../../results-manager/backend/services/email')
 
-const run = new Run(hw, runOpts)
-const results = run.previousRunInfo
-function main() {
+
+function sendEmails(
+        run: Run, 
+        results: Partitions<Submission[]>,
+        notify: Partitions<boolean> | any,
+        subject: (hwName: string) => string,
+    ) {
+
     const emails = Object.entries(results)
         .map(([type, submissions]: [string, Submission[]]) => {
             const template = templates[type]
+            // const template = tempTemplate
             if (runOpts.omit.includes(type)) {
                 return submissions.filter(s => hw.force?.includes(s.emailId))
                     .map(addToString)
-                    .map(s => getEmail(s, template(s)))
+                    .map(s => getEmail(s, template(s), subject))
             } else if (notify[type]) {
                 return submissions
                     .map(addToString)
-                    .map(s => getEmail(s, template(s)))
+                    .map(s => getEmail(s, template(s), subject))
             } else {
                 return []
             }
@@ -40,25 +45,27 @@ function main() {
 const badEmailAddressMessage =  `
 გამარჯობა!
 ციფრული ტექნოლოგიების Google Classroom-ზე აუცილებელია რომ დარეგისტრირდე @freeuni.edu.ge მეილით. 
-ეს მეილი მოგდის რადგან დავალება არასწორი მეილით ატვირთე. შემსწორებელი პროგრამისთვის აუცილებელია რომ კლასრუმზე თავისუფალი უნივერსიტეტის მეილით დარეგისტრირდე და იქიდან ატვირთო დავალება. მარტო პროგრამას არა, მეც მჭირდება რომ სწორი id-ით იყო დარეგისტრირებული, მაგრამ მოდი ყველაფერი კომპიუტერებს დავაბრალოთ.
+ეს მეილი მოგდის რადგან დავალება არასწორი მეილით ატვირთე და აუცილებელია რომ კლასრუმზე თავისუფალი უნივერსიტეტის მეილით დარეგისტრირდე და იქიდან ატვირთო დავალება. 
 
-ია
+პატივისცემით, ია
 `
 
-function getEmail(s: Submission, body: string) {
-	 if(s.emailAddress == s.emailId + '@freeuni.edu.ge'){
-		 return {
-			  to: s.emailAddress,
-			  subject: subject(hw.name),
-			  text: body
-		 }
-	 } else {
-		 return {
-			  to: s.emailAddress,
-			  subject: 'ციფრული ტექნოლოგიები - მნიშვნელოვანი მესიჯი - არასწორი მეილი',
-			  text: badEmailAddressMessage
-		 }
-	 }
+function getEmail(s: Submission, 
+    body: string, 
+    subject:(hwName: string) => string ) {
+     if(s.emailAddress == s.emailId + '@freeuni.edu.ge'){
+         return {
+              to: s.emailAddress,
+              subject: subject(hw.name),
+              text: body
+         }
+     } else {
+         return {
+              to: s.emailAddress,
+              subject: 'ციფრული ტექნოლოგიები - მნიშვნელოვანი მესიჯი - არასწორი მეილი',
+              text: badEmailAddressMessage
+         }
+     }
 }
 function addToString(submission: Submission) {
     submission.results.toString = () => JSON.stringify(
@@ -68,19 +75,25 @@ function addToString(submission: Submission) {
     return submission
 }
 
-const notify: Partitions<boolean> | any = {
-    crashed: false,
-    notSubmitted: false,
-    late: true,
-    invalid: true,
-    error: true,
-    failed: true,
-    passed: true,
-    none: false
-}
 
-function subject(hwName: string) {
+
+if (require.main == module) {
+    const run = new Run(hw, runOpts)
+    const results = run.previousRunInfo
+    const notify: Partitions<boolean> | any = {
+        crashed: false,
+        notSubmitted: false,
+        late: true,
+        invalid: true,
+        error: true,
+        failed: true,
+        passed: true,
+        none: false
+    }
+    const subject = (hwName: string)  => {
     return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
+    }
+    sendEmails(run, results, notify, subject)
 }
 
-main()
+
