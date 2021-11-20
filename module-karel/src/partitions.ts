@@ -1,5 +1,5 @@
 import { Submission } from "classroom-api"
-import { HwConfig } from "./config"
+import { HwConfig } from "./homework"
 import { Run, log, RunOpts } from './runs'
 
 type S = Submission

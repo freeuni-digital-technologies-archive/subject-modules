@@ -17,7 +17,12 @@ const server = http.createServer(function (req, res) {
             process.send(results)
         }
         res.end(message);
+        console.log("finished sending results")
     })
 });
-server.listen(3939);
-console.log('>>>>>>>> Server is running on port 3939')
+
+// TODO ეს console.log მარტო მაშინ როცა წარმატებით ჩაირთო
+// https://www.w3schools.com/nodejs/met_server_listen.asp
+server.listen(3939, () => {
+    console.log('>>>>>>>> Server is running on port 3939') 
+});

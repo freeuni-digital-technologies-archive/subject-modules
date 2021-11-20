@@ -1,20 +1,23 @@
 import fs from 'fs'
 import {Submission} from 'classroom-api'
 import {Partitions} from './partitions'
-import {HwConfig} from './config'
+import {HwConfig} from './homework'
+import path from 'path'
 
 export interface RunOpts {
     trial?: boolean,
     restart?: boolean,
     rerun?: boolean,
     continue?: string,
+    slice?: number,
+    download?: boolean,
     omit: string[]
 }
 export function log<T>(e: T, message: string) {
     console.log(message)
     return e
 }
-const data_path = `/home/user1/spring/data`
+const data_path = path.resolve(__dirname, `../../../data`)
 const results_path = `${data_path}/output`
 const submissions_path = `${data_path}/submissions`
 
@@ -33,7 +36,7 @@ export class Run {
     public moveDir: string
     private path: string
     private logFile: string
-    constructor(private hw: HwConfig, private opts: RunOpts, lastRun?: number) {
+    constructor(private hw: HwConfig, public opts: RunOpts, lastRun?: number) {
         this.path = `${results_path}/${hw.id}`
         this.moveDir = `${submissions_path}/${hw.id}`
         try {
