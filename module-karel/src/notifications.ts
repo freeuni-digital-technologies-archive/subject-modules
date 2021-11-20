@@ -26,7 +26,7 @@ function notifyLastRun() {
     notify(results, categoriesToNotify, subject, templates)
 }
 
-
+// TODO refactor this
 export function notify(
         results: Partitions<Submission[]>,
         categoriesToNotify: Partitions<boolean> | any,
@@ -36,14 +36,15 @@ export function notify(
 
     const emails = Object.entries(results)
         .map(([type, submissions]: [string, Submission[]]) => {
+            const submissionsWithValidEmail = submissions.filter(validEmail)
             const template = emailTemplates[type]
             // const template = tempTemplate
             if (runOpts.omit.includes(type)) {
-                return submissions.filter(s => hw.force?.includes(s.emailId))
+                return submissionsWithValidEmail.filter(s => hw.force?.includes(s.emailId))
                     .map(addToString)
                     .map(s => getEmail(s, template(s), subject))
             } else if (categoriesToNotify[type]) {
-                return submissions
+                return submissionsWithValidEmail
                     .map(addToString)
                     .map(s => getEmail(s, template(s), subject))
             } else {
@@ -70,10 +71,14 @@ const badEmailAddressMessage =  `
 პატივისცემით, ია
 `
 
+function validEmail(s: Submission) {
+    return s.emailAddress == s.emailId + '@freeuni.edu.ge'
+}
+
 function getEmail(s: Submission, 
     body: string, 
     subject:(hwName: string) => string ) {
-     if(s.emailAddress == s.emailId + '@freeuni.edu.ge'){
+     if(validEmail(s)){
          return {
               to: s.emailAddress,
               subject: subject(hw.name),
