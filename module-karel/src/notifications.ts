@@ -4,7 +4,7 @@ const { hw, runOpts } = setEnv()
 import { Partitions } from './partitions'
 import { Submission, sendEmails } from 'classroom-api'
 import { Run } from './runs'
-import { templates } from './templates'
+import { templates, S } from './templates'
 
 
 function notifyLastRun() {
@@ -23,7 +23,7 @@ function notifyLastRun() {
     const subject = (hwName: string)  => {
     return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
     }
-    notify(results, categoriesToNotify, subject)
+    notify(results, categoriesToNotify, subject, templates)
 }
 
 
@@ -31,11 +31,12 @@ export function notify(
         results: Partitions<Submission[]>,
         categoriesToNotify: Partitions<boolean> | any,
         subject: (hwName: string) => string,
+        emailTemplates: Partitions<(s: S) => string> | any
     ) {
 
     const emails = Object.entries(results)
         .map(([type, submissions]: [string, Submission[]]) => {
-            const template = templates[type]
+            const template = emailTemplates[type]
             // const template = tempTemplate
             if (runOpts.omit.includes(type)) {
                 return submissions.filter(s => hw.force?.includes(s.emailId))
