@@ -57,6 +57,12 @@ export function mergeResults(hw: HwConfig, runOpts: RunOpts) {
     for (let i = latestRun.lastRun; i > 0; i--) {
         const run = new Run(hw, runOpts, i)
         const results = run.previousRunInfo
+        // save status in results
+        Object.keys(results).forEach(e => {
+            // შეჭამა ტვინი
+            // @ts-ignore 
+            results[e].map(r => r.status = e)
+        })
         const merged = Object.values(results).flat()
         const newResult = (e: Submission) => !finalResults.find(r => r.emailId == e.emailId)
         const res = merged.filter(newResult)

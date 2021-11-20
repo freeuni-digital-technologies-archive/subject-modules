@@ -43,6 +43,9 @@ export class Submission {
 	public results: any[]
 	public incorrectFormat?: boolean
 	public crashed?: boolean
+	// which partition it belongs to
+	// used only during mergeResults 
+	public status?: string
 	public check?: boolean
 	public score?: number
 	constructor(
