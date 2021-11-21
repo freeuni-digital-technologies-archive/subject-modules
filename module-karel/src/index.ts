@@ -1,4 +1,4 @@
-import { setEnv, config, testerPath } from './config'
+import { setEnv, config } from './config'
 const  { hw, runOpts } = setEnv()
 
 import { createDrive, getSubmissions, saveFile } from 'classroom-api'

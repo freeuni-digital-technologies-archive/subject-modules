@@ -6,7 +6,7 @@ import path from 'path'
 
 // TODO ესენი გადასატანია config-ში სავარაუდოდ (ოღონდ სხვა ფორმით)
 /* Default Directory For Homework Configuration Files */
-const DEFAULT_HW_CONFIG_PATH: string =  `../../../dt-homeworks`;
+const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
 const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 export function defaultHomeworkPath(hwId: string) {

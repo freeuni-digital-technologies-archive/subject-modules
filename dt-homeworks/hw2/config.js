@@ -3,6 +3,7 @@ module.exports = {
     classroomName: 'დავალება 2',
     deadline: '2021-10-14',
     testFileName: 'hw2tester.js',
+    module: 'karel',
     emailTemplate(){
             return "HW2";
     }
