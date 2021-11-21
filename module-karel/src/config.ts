@@ -28,12 +28,3 @@ export function setEnv(): EnvOptions {
     return getArgs()
 }
 
-
-// TODO ეს ფუნქცია რატომ არის
-export function testerPath(hwId: string) {
-    // const currHomeworkConfig: HwConfig = readHomeworkConfiguration(`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`);
-    // const testFileName: string = currHomeworkConfig.testFileName;
-    // return path.resolve(__dirname,`${DEFAULT_HW_CONFIG_PATH}/${hwId}/${testFileName}`);
-    
-    return path.resolve(__dirname, `../resources/${hwId}tester.js`)
-}

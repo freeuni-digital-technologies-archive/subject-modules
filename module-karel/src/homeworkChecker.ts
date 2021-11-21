@@ -6,7 +6,6 @@ import path from 'path'
 import { HwConfig } from './homework'
 
 import { Result } from "website-tester" // TODO dt-types
-// import { testerPath } from "./config";
 import { SubjectModule } from './module'
 import { moduleWeb, zipFormatError, fileNotFoundError } from './modules/web'
 import { moduleKarel } from './modules/karel'
@@ -20,7 +19,6 @@ let subjectModule: SubjectModule = moduleWeb // :|
 /* Combine all steps into one function */
 export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any, getSubmissions: (a: string, b: string) => Promise<Submission[]>){
     // TODO ეს ფუნქცია კონფიგიდან არ კითხულობს ტესტpath-ს
-    // const testPath = testerPath(hw.id);
     // TODO დასატესტია ასე თუ მუშაობს კარელზე
     if (hw.module === 'web') {
         subjectModule = moduleWeb
@@ -65,27 +63,6 @@ async function downloadAndTest(submission: Submission, drive: Drive, index: numb
         .catch((error: any) => logError(submission, error))
 }
 
-
-
-// function downloadAtInterval(submission: Submission, index: number): Promise<string> {
-//     const fileName = submission.attachment!.title
-//     return new Promise((resolve) => {
-//         if (download) {
-//             setTimeout(() => {
-//                 console.log(`${submission.emailId}: downloading`)
-//                 resolve(downloadAssignment({
-//                     downloadDir: '/home/ia/Downloads',
-//                     downloadUrl: submission.attachment!.downloadUrl,
-//                     fileName: fileName,
-//                     moveDir: moveDir,
-//                     timeout: 500
-//                 }))
-//             }, (index) * 1000)
-//         } else {
-//             resolve(`${moveDir}/${fileName}`)
-//         }
-//     })
-// }
 
 /*
     Simply: logs the given error
