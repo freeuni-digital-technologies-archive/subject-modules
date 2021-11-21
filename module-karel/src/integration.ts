@@ -53,7 +53,10 @@ function prepareSubmission(dir: string, testPath: string): string {
     const contents = fs.readFileSync(p, 'utf-8')
     const relativePath = path.relative(dir, testPath)
     const scriptTag = `<script src="${relativePath}"></script>`
-    const replaced = contents.replace(/<div id="scripts">.*<\/div>/g, scriptTag)
+    let replaced = contents.replace(/<div id="scripts">.*<\/div>/g, scriptTag)
+    if (replaced == contents) {
+        replaced = contents.replace(/<div id="scripts">(.|\s)*<\/div>/g, scriptTag)
+    }
     fs.writeFileSync(p, replaced)
     return dir
 }
