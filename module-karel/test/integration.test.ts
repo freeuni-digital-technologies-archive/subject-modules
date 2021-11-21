@@ -1,5 +1,5 @@
 
-import { filterSubmissions, finishSubmissions, getSubmissionsWithResults, sliceSubmissions } from "../src/homeworkChecker";
+import { filterSubmissions, processSubmissions, getSubmissionsWithResults, sliceSubmissions, setSubmissionModule } from "../src/homeworkChecker";
 
 import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
@@ -14,6 +14,8 @@ import path from "path";
 const hw: HwConfig = {
     id: "hwx",
     name: "hwxname",
+    module: '',
+    configPath: '',
     deadline: "2001-01-01",
     testFileName: "testFileName",
 }
@@ -155,7 +157,7 @@ describe("Integration Tests",() => {
             }
         ];
 
-        finishSubmissions(submissions,"",null,instance(run),null).then(results => {
+        processSubmissions(submissions,"",null,instance(run),null).then(results => {
             Promise.all(results).then(retrieves => {
                 for(let i=0; i < retrieves.length; i++){
                     expect(retrieves[i].attachment).to.equal(submissions[i].attachment);
@@ -204,19 +206,20 @@ describe("Integration Tests",() => {
             const testPath = path.resolve(__dirname,`../resources/hw2tester.js`);
             const sbmssn: Submission = fromResponse(submission);
             
-            return finishSubmissions([sbmssn],testPath,null,runInstance,fakeSaveFile)
+            return processSubmissions([sbmssn],testPath,null,runInstance,fakeSaveFile)
                 .then(s => s[0])
         }))
         return results;
     }
 
 
-    it("Finish Submissions Test ( Actual Testing ) ", async () => {
+    it.only("Finish Submissions Test ( Actual Testing ) ", async () => {
         const submissionsAndResultsJS = getSubmissionsAndResults();
 
         const submissions = submissionsAndResultsJS.submissions;
 
         const results: Submission[] = await getTestResultsForSubmissions(submissions);
+        results.map(e => console.log(e.emailId, e.results))
         
         results.forEach(result => {
             let testResults: any[] = result.results;
@@ -259,9 +262,12 @@ describe("Integration Tests",() => {
             id: "hw2",
             name: "second homework",
             deadline: "undefined",
+            module: "karel", // ეს არ მუშაობს იმიტომ რომ მთავარ ფუნქციას არ ვიძახებთ
+            configPath: '../dt-homeworks/hw2/config.js',
             testFileName: "hw2tester.js"
         }
-
+        // TODO ეს არ მუშაობს
+        setSubmissionModule(fakeHwConfig)
         const resultsPromise = await getSubmissionsWithResults("any",fakeHwConfig,runInstance, null, fakeSaveFile, fakeGetSubmissions);
 
         const results = await Promise.all(resultsPromise);

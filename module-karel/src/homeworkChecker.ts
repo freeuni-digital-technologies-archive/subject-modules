@@ -13,21 +13,11 @@ import { moduleKarel } from './modules/karel'
 // TODO this should be a private member when refactored to class
 let subjectModule: SubjectModule = moduleWeb // :|
 
-
-
-
 /* Combine all steps into one function */
 export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any, getSubmissions: (a: string, b: string) => Promise<Submission[]>){
     // TODO ეს ფუნქცია კონფიგიდან არ კითხულობს ტესტpath-ს
     // TODO დასატესტია ასე თუ მუშაობს კარელზე
-    if (hw.module === 'web') {
-        subjectModule = moduleWeb
-    } else if (hw.module === 'karel') {
-        subjectModule = moduleKarel 
-    } else {
-        console.log(`module ${hw.module} not found`)
-        process.exit(1)
-    }
+    setSubmissionModule(hw)
     const testPath = path.resolve(path.dirname(hw.configPath), hw.testFileName)
 
     const submissions = await getSubmissions(configSubject, hw.name)
@@ -39,6 +29,19 @@ export async function getSubmissionsWithResults(configSubject: string, hw: HwCon
         .then(submissions => processSubmissions(submissions,testPath,drive, run, saveFile));
 
     return submissions
+}
+
+
+
+export function setSubmissionModule(hw: HwConfig) {
+    if (hw.module === 'web') {
+        subjectModule = moduleWeb
+    } else if (hw.module === 'karel') {
+        subjectModule = moduleKarel 
+    } else {
+        console.log(`module ${hw.module} not found`)
+        process.exit(1)
+    }
 }
 
 
