@@ -17,6 +17,7 @@ export function defaultHomeworkPath(hwId: string) {
 export interface HwConfig {
     id: string,
     name: string,
+    module: string,
     deadline: string, //YYYY-mm-dd preferably
     testFileName: string,
     configPath: string, // absolute path
@@ -54,6 +55,10 @@ const properHwConfigProperties: HwConfigProperty[] = [
         name: "emailTemplate",
         type: "function"
     },
+    {
+        name: "module",
+        type: "string"
+    }
 ];
 
 
@@ -94,6 +99,7 @@ function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
     const rvConfig: HwConfig = { 
         id: preHwConfig.id, 
         name: preHwConfig.classroomName, 
+        module: preHwConfig.module,
         deadline: preHwConfig.deadline, 
         configPath: path,
         testFileName: preHwConfig.testFileName 

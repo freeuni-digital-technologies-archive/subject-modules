@@ -1,5 +1,5 @@
 
-import { filterSubmissions, finishSubmissions, getSubmissionsWithResults, sliceSubmissions } from "../src/integration";
+import { filterSubmissions, finishSubmissions, getSubmissionsWithResults, sliceSubmissions } from "../src/homeworkChecker";
 
 import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";

@@ -5,7 +5,7 @@ import { createDrive, getSubmissions, saveFile } from 'classroom-api'
 import { Run } from './runs'
 import { partitionResults } from './partitions'
 
-import { getSubmissionsWithResults } from "./integration";
+import { getSubmissionsWithResults } from "./homeworkChecker";
 
 
 const run = new Run(hw, runOpts)
