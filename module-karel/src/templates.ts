@@ -69,7 +69,7 @@ export const templates: Partitions<(s: S) => string> | any = {
         ინფორმაციას. 
         აი რომელი ტესტები ვერ გაიარა შენმა კოდმა:
 
-        ${s.results.filter}
+        ${s.results.filter(r => !r.passed)}
 
         დედლაინამდე თუ დრო გექნება, შეგიძლია ბოლომდე მიიყვანო. 
 
