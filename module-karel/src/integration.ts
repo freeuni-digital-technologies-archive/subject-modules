@@ -61,6 +61,9 @@ function prepareSubmission(dir: string, testPath: string): string {
     if (replaced == contents) {
         replaced = contents.replace(/<div id="scripts">(.|\s)*<\/div>/g, scriptTag)
     }
+    if (replaced == contents) {
+        replaced = contents.replace(/<div id='scripts'>(.|\s)*<\/div>/g, scriptTag)
+    }
     fs.writeFileSync(p, replaced)
     return dir
 }
