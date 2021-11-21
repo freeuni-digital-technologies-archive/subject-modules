@@ -45,6 +45,10 @@ async function testSubmission(testPath: string, dir: string): Promise<Result[]> 
             await tester.finish()
             return result
         })
+	.catch(async (e) => {
+	    await tester.finish()
+	    throw e
+	    })
 }
 
 
