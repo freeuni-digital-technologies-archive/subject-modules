@@ -2,32 +2,37 @@ import fs from 'fs'
 import { ClassroomApi } from './classroom-api'
 import { UserProfile } from './types'
 import { getSingleStudent } from './profile'
-const path = process.env.STUDENTS_DATA_PATH || 'students.json'
-// TODO: create file if doesn't exist
-let students: UserProfile[] = [];
-try {
-	// TODO აქ კონფიგ ფაილიდან წაკითხვაც უნდა დაემატოს
-	students = JSON.parse(fs.readFileSync(path, 'utf-8'));
-} catch (e) {
-	console.log(e)
-}
 
-export function getStudentByEmail(emailId: string) {
-    return students.find(e => e.emailId == emailId)
-}
- 
-export function getStudentById(id: string): UserProfile | undefined {
-    return students.find(e => e.id == id)
-}
+export class StudentList {
+	private students: UserProfile[]
+	private path: string
+	constructor(filePath?: string) {
+		if (!filePath) {
+			console.log('path for students, searching in existing directory')
+			filePath = process.cwd() + '/students.json'
+		}	
+		try {
+			this.students = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+			this.path = filePath
+		} catch (e) {
+			console.log(e)
+			process.exit(1)
+		}
+	}
 
-export async function fetchStudentById(classroom: ClassroomApi, id: string): Promise<UserProfile | undefined> {
-	let student = await getSingleStudent(classroom, id)
-	students.push(student)
-	// save new profile
-	fs.writeFileSync(path, JSON.stringify(students, null, '\t'))
-	return student 
-}
+	getStudentByEmail(emailId: string) {
+	    return this.students.find(e => e.emailId == emailId)
+	}
+	 
+	getStudentById(id: string): UserProfile | undefined {
+	    return this.students.find(e => e.id == id)
+	}
 
-export function getStudents() {
-    return students
+	async fetchStudentById(classroom: ClassroomApi, id: string): Promise<UserProfile | undefined> {
+		let student = await getSingleStudent(classroom, id)
+		this.students.push(student)
+		fs.writeFileSync(this.path, JSON.stringify(this.students, null, '\t'))
+		return student 
+	}
+
 }

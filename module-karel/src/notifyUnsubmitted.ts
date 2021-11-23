@@ -2,14 +2,14 @@ import { mergeResults, Partitions } from './partitions'
 
 // ეს notifications.ts-შიც წერია
 // და კარგი ამბავი ისაა რომ ორჯერ გამოძახება არაა პრობლემა...
-import { setEnv } from './config'
-const { hw, runOpts } = setEnv()
+import { getArgs } from './cli'
 import fs from 'fs'
 // import { getStudents, UserProfile } from 'classroom-api'
 import { notify } from './notifications'
 import { summaries, S } from './templates'
 
 function main() {
+	const { hw, runOpts } = getArgs()
 	const results: S[] = mergeResults(hw, runOpts)
 	const partitioned:any = {}
     // 😢😢😢😢 ეს მთლიანი პროცესი

@@ -1,6 +1,7 @@
 import { Partitions } from "./partitions";
-import { Submission, getStudentByEmail } from "classroom-api";
+import { StudentList, Submission } from "classroom-api";
 import { getArgs } from './cli'
+import { config } from './config'
 const {hw} = getArgs()
 
 export type S = Submission
@@ -8,6 +9,8 @@ const urls = {
 	homework: 'https://freeuni-digital-technologies.github.io/homework/',
     web_homework: 'https://freeuni-digital-technologies.github.io/homework/web_hws.html'
 }
+// TODO ეს სჯობს რომ სხვაგან იყოს
+const students = new StudentList(config.STUDENTS_DATA_PATH)
 
 function fileInfo(s: S) {
     return `
@@ -90,7 +93,7 @@ export const templates: Partitions<(s: S) => string> | any = {
 
 export const summaries = {
     greeting: (s: S) => {
-    return `გამარჯობა ${getStudentByEmail(s.emailId)?.georgianName}`
+    return `გამარჯობა ${students.getStudentByEmail(s.emailId)?.georgianName}`
     },
 
     error: (s: S) => {

@@ -1,11 +1,11 @@
-import { setEnv } from './config'
-const { hw, runOpts } = setEnv()
-
+import { getArgs } from './cli'
 import { Partitions } from './partitions'
 import { Submission, sendEmails } from 'classroom-api'
 import { Run } from './runs'
 import { templates, S } from './templates'
 
+
+const { hw, runOpts } = getArgs()
 
 function notifyLastRun() {
     const run = new Run(hw, runOpts)

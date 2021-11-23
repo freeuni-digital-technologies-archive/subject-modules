@@ -1,5 +1,5 @@
 import { Attachment, StudentSubmission } from "./types";
-import { getStudentById } from "./students";
+import { StudentList } from "./students";
 import { sortByDate } from "./utils";
 
 export class Submission {
@@ -7,9 +7,10 @@ export class Submission {
 		return s.state == 'TURNED_IN'
 	}
 	static fromResponse(
-		response: StudentSubmission
+		response: StudentSubmission,
+		studentList: StudentList
 	) {
-		let profile = getStudentById(response.userId!)! // fetched from students.json
+		let profile = studentList.getStudentById(response.userId!)! // fetched from students.json
         const submission = new Submission(
 			response.id!,
 			profile.emailId!,

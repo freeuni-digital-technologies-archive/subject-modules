@@ -3,12 +3,17 @@ import { log } from './utils'
 import { Submission } from './submission'
 import { Drive } from './types'
 import { saveFile,createDrive } from './classroom-api'
-import { getStudentByEmail } from "./students";
+import { StudentList } from "./students";
 import fs from 'fs'
 
 import unzipper from 'unzipper'
 import pathModule from 'path'
 import yargs from 'yargs' //for cli
+import { Authenticator } from './authenticate'
+
+
+// TODO pass studentlist path
+
 
 function unzipSubmission(submission: Submission, path: string): Promise<string> {
     const dir = pathModule.dirname(path)
@@ -98,8 +103,10 @@ async function downloadWithFilter(pathToStore:string,
                                     allowLates:boolean, 
                                     autoExtract:boolean, 
                                     skipExisting:boolean, 
-                                    submissionFilter:(s: Submission) => boolean): Promise<string[]>{
-    const drive = await createDrive()
+                                    submissionFilter:(s: Submission) => boolean,
+                                    studentList: StudentList,
+                                    auth: Authenticator): Promise<string[]>{
+    const drive = await createDrive(auth)
     console.log(pathToStore, className, hw)
     if (!fs.existsSync(pathToStore)) {
         try {
@@ -111,7 +118,7 @@ async function downloadWithFilter(pathToStore:string,
     }
 
 
-    return getSubmissions(className, hw)
+    return getSubmissions(className, hw, studentList, auth)
         .then(submissions => submissions.filter(s=>s.attachment!=undefined)) 
         .then(submissions => submissions.filter(submissionFilter))
         .then(submissions => submissions.filter(s=>allowLates || s.onTime()))
@@ -135,8 +142,10 @@ export async function downloadAll(pathToStore:string,
                                     createDirs:boolean, 
                                     allowLates:boolean, 
                                     autoExtract:boolean, 
-                                    skipExisting:boolean): Promise<string[]>{
-    return downloadWithFilter(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting, (s:Submission)=>true)
+                                    skipExisting:boolean,
+                                    studentList: StudentList,
+                                    auth: Authenticator): Promise<string[]>{
+    return downloadWithFilter(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting, (s:Submission)=>true, studentList, auth)
 }
 
 export async function downloadSome(pathToStore:string, 
@@ -146,9 +155,11 @@ export async function downloadSome(pathToStore:string,
                                     createDirs:boolean, 
                                     allowLates:boolean, 
                                     autoExtract:boolean, 
-                                    skipExisting:boolean): Promise<string[]>{
+                                    skipExisting:boolean,
+                                    studentList: StudentList,
+                                    auth: Authenticator): Promise<string[]>{
 
-    return downloadWithFilter(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting, (s:Submission)=>(allowedPrefixes.includes(s.emailId)))
+    return downloadWithFilter(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting, (s:Submission)=>(allowedPrefixes.includes(s.emailId)), studentList, auth)
 }
 
 
@@ -207,20 +218,21 @@ if (require.main === module) {
         let allowLates = argv.lates || false
         let autoExtract = argv.autoextract || false
         let skipExisting = argv.skipExisting || false
-        
+        const studentList = new StudentList()
+        const auth = new Authenticator()
         if(argv.students){
             let listOfPrefixes = argv.students.split(',')
             console.log('download only for:')
             for(const id of listOfPrefixes) {
                 console.log(id)
-                if(!getStudentByEmail(id)){
+                if(!studentList.getStudentByEmail(id)){
                     console.log(`student ${id} is not in students.json. please create students.json or remove this student from list`);
                     process.exit(1)
                 }
             }
-            await downloadSome(pathToStore, className, hw, listOfPrefixes, createDirs, allowLates, autoExtract, skipExisting)    
+            await downloadSome(pathToStore, className, hw, listOfPrefixes, createDirs, allowLates, autoExtract, skipExisting, studentList, auth)    
         } else {
-            await downloadAll(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting)    
+            await downloadAll(pathToStore, className, hw, createDirs, allowLates, autoExtract, skipExisting, studentList, auth)    
         }
         
     }

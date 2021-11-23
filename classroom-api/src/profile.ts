@@ -1,5 +1,6 @@
 import { ClassroomApi } from './classroom-api'
 import { UserProfile } from './types'
+import { Authenticator } from './authenticate'
 const translit = require('translitit-latin-to-mkhedruli-georgian')
 
 function prepareProfile(p: UserProfile) {
@@ -15,9 +16,9 @@ export async function getSingleStudent(classroom: ClassroomApi, id: string): Pro
 	return prepareProfile(p)
 }
 
-export async function getStudentList(className: string): Promise<UserProfile[]> {
+export async function getStudentList(className: string, auth: Authenticator): Promise<UserProfile[]> {
 	return ClassroomApi
-		.findClass(className)
+		.findClass(className, auth)
 		.then(classroom => classroom.getUserProfiles())
 		.then(profiles => profiles
 			.map(prepareProfile)
@@ -65,6 +66,6 @@ const replace = [
 	['მატე', 'მათე'],
 ]
 
-export async function downloadStudentList(className: string): Promise<UserProfile[]> {
-	return getStudentList(className)
+export async function downloadStudentList(className: string, auth: Authenticator): Promise<UserProfile[]> {
+	return getStudentList(className, auth)
 }

@@ -1,30 +1,12 @@
 import path from 'path'
-import { getArgs, EnvOptions } from './cli'
 
 
 // ამ ფაილში უნდა იყოს მხოლოდ და მხოლოდ default პარამეტრები 
 // იმ ყველაფრის, რაც user-ს შეუძლია რომ გადმოაწოდოს
 
 export const config = {
-    subject: '21f შესავალი ციფრულ ტექნოლოგიებში'
+    subject: '21f შესავალი ციფრულ ტექნოლოგიებში',
+    STUDENTS_DATA_PATH: path.resolve(__dirname, `../../classroom-api/students.json`),
+    CLASSROOM_CREDENTIALS_PATH: path.resolve(__dirname, `../../classroom-api/credentials.json`),
+    CLASSROOM_TOKEN_PATH: path.resolve(__dirname, `../../classroom-api/token.json`)
 }
-
-export const env = {
-    STUDENTS_DATA_PATH: `../../classroom-api/students.json`,
-    CLASSROOM_CREDENTIALS_PATH: `../../classroom-api/credentials.json`,
-    CLASSROOM_TOKEN_PATH: `../../classroom-api/token.json`
-}
-
-// TODO ეს არის საშინელი ფუნქცია და ვერ ვიტან
-/* ანუ კლასრუმის მოდულს სანამ დააიმპორტებ მანამდე თუ 
-setEnv() ფუნქცია არ გამოიძახე STUDENTS_DATA_PATH არ არის 
-ხელმისაწვომი და ვერ პოულობს... თუ troubleshootს ცდილობ,
-console.logს ხომ გააკეთებ და მაგ დროს გამოძახებული გაქვს
-setEnv და გიჩვენებს რომ data path არის 🤡 
-destroy this
-*/
-export function setEnv(): EnvOptions {
-    Object.entries(env).map(([k, v]) => process.env[k] = path.resolve(__dirname, v))
-    return getArgs()
-}
-

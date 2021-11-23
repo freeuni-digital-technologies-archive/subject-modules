@@ -1,5 +1,5 @@
 import {google, classroom_v1, drive_v3} from 'googleapis'
-import authenticate from './authenticate'
+import { Authenticator } from './authenticate'
 import fs from "fs";
 
 export function downloadFile(drive: drive_v3.Drive, id: string): Promise<any> {
@@ -43,9 +43,10 @@ export function saveFile(drive: drive_v3.Drive, id: string, path: string): Promi
         })
 }
 
-export function createDrive(credentials?: string,
-                            token?: string): Promise<drive_v3.Drive> {
-    return authenticate(credentials, token)
+export function createDrive(
+                            authenticator: Authenticator,
+                            ): Promise<drive_v3.Drive> {
+    return authenticator.authenticate()
         .then(auth => google.drive({version: 'v3', auth}))
 }
 
@@ -71,8 +72,8 @@ function listCourses(classroom: classroom_v1.Classroom)
 }
 
 export class ClassroomApi {
-    static async findClass(name: string) {
-        const auth = await authenticate()
+    static async findClass(name: string, authenticator: Authenticator) {
+        const auth = await authenticator.authenticate()
         const classroom = google.classroom({version: 'v1', auth})
         const drive = google.drive({version: 'v3', auth})
         return listCourses(classroom)
@@ -89,7 +90,7 @@ export class ClassroomApi {
     constructor(
         private id: string,
         private classroom: classroom_v1.Classroom,
-        private drive: drive_v3.Drive
+        private drive: drive_v3.Drive,
     ) {
     }
 
