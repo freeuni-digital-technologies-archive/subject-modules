@@ -1,6 +1,7 @@
 import { Partitions } from './partitions'
 import fs from "fs";
 import path from 'path'
+import { EmailTemplate } from './templates';
 
 
 
@@ -26,6 +27,7 @@ export interface HwConfig {
     manualChecks?: string[],
     force?: string[],
     skip?: string[],
+    emailTemplates?: Partitions<EmailTemplate>
 }
 
 /* Homework Configuration Property Interface */

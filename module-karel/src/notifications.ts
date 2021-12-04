@@ -5,6 +5,9 @@ import { sendEmails } from 'classroom-api'
 import { Run, RunOpts } from './runs'
 import { templates, S } from './templates'
 import { HwConfig } from './homework'
+import { moduleKarel } from './modules/karel'
+import { moduleWeb } from './modules/web'
+import { SubjectModule } from './module'
 
 
 function notifyLastRun() {
@@ -24,7 +27,8 @@ function notifyLastRun() {
     const subjectFunction = (hwName: string)  => {
         return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
     }
-    notify(results, categoriesToNotify, subjectFunction, hw, runOpts)
+    const module: SubjectModule = hw.module == 'karel' ? moduleKarel : moduleWeb
+    notify(results, categoriesToNotify, subjectFunction, hw, runOpts, module.emailTemplates)
 }
 
 // TODO refactor this
@@ -34,7 +38,7 @@ export function notify(
         subjectFunction: (hwName: string) => string,
         hw: HwConfig,
         runOpts: RunOpts,
-        emailTemplates: Partitions<(s: S) => string> | any = templates
+        emailTemplates: Partitions<(s: S) => string> | any
     ) {
     const subject = subjectFunction(hw.name)
     const emails = Object.entries(results)
