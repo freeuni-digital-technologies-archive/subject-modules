@@ -369,15 +369,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/detect-character-encoding@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@types/detect-character-encoding@npm:0.7.0"
-  dependencies:
-    "@types/node": "*"
-  checksum: dcfe5bdd7a14654929123a569c3932b63a209b287b09eb1a75bf261783a37c7230bc8e4973e03e8895ff9933cdc3a494086e5bf12f50f63523475815aa188dd2
-  languageName: node
-  linkType: hard
-
 "@types/fs-extra@npm:^9.0.6":
   version: 9.0.13
   resolution: "@types/fs-extra@npm:9.0.13"
@@ -1419,6 +1410,21 @@ __metadata:
   checksum: 38e902c80b0666ab59e9310a3d24ed237029a7ce34d976796349765ac96b8d769f6df19090f1f471b77a25ca391971efde8a1ea63bb83111bd8bec8e5cc9b2cd
   languageName: node
   linkType: hard
+
+"dt-types@workspace:dt-types":
+  version: 0.0.0-use.local
+  resolution: "dt-types@workspace:dt-types"
+  dependencies:
+    "@types/chai": ^4.2.11
+    "@types/mocha": ^7.0.2
+    "@types/node": ^13.9.8
+    chai: ^4.2.0
+    keep-trying: ^2.0.2
+    mocha: ^7.0.0
+    ts-mocha: ^7.0.0
+    typescript: ^3.8.3
+  languageName: unknown
+  linkType: soft
 
 "dt-utils@workspace:dt-utils":
   version: 0.0.0-use.local
@@ -3362,24 +3368,6 @@ fsevents@~2.1.1:
   checksum: 539662134484905039902a84faf1316e05ff1531868f3ce5038fe884323a7d92dc95784a021094ff3a51c411d6c63fd4af82c567c2590a64652d75efe3a53cf8
   languageName: node
   linkType: hard
-
-"module-js@workspace:module-js":
-  version: 0.0.0-use.local
-  resolution: "module-js@workspace:module-js"
-  dependencies:
-    "@types/argparse": ^1.0.38
-    "@types/detect-character-encoding": ^0.7.0
-    "@types/node": ^13.9.8
-    "@types/unzipper": ^0.10.3
-    argparse: ^1.0.10
-    chai: ^4.2.0
-    classroom-api: ^1.0.2
-    detect-character-encoding: ^0.8.0
-    typescript: ^3.8.3
-    unzipper: ^0.10.11
-    website-tester: ^1.0.0
-  languageName: unknown
-  linkType: soft
 
 "module-karel@workspace:module-karel":
   version: 0.0.0-use.local

@@ -11,7 +11,7 @@ export interface RunOpts {
     continue?: string,
     slice?: number,
     download?: boolean,
-    omit: string[]
+    omit?: string[]
 }
 export function log<T>(e: T, message: string) {
     console.log(message)

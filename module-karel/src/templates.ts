@@ -1,6 +1,6 @@
 import { Partitions } from "./partitions";
 import { StudentList } from "classroom-api";
-import { Submission } from "dt-types";
+import { Submission } from 'dt-types';
 import { getArgs } from './cli'
 import { config } from './config'
 const {hw} = getArgs()
@@ -10,7 +10,7 @@ const urls = {
 	homework: 'https://freeuni-digital-technologies.github.io/homework/',
     web_homework: 'https://freeuni-digital-technologies.github.io/homework/web_hws.html'
 }
-// TODO ეს სჯობს რომ სხვაგან იყოს
+// TODO ეს სჯობს რომ სხვაგან იყოს. უბრალოდ submission-ს მოყვეს
 const students = new StudentList(config.STUDENTS_DATA_PATH)
 
 function fileInfo(s: S) {
@@ -29,8 +29,9 @@ const blocked = 'ამ პრობლემის გამო დავალ
             \
             წარმატებები!'
 
+export type EmailTemplate = (s: S) => string
 
-export const templates: Partitions<(s: S) => string> | any = {
+export const templates: Partitions<EmailTemplate> = {
     late: (s: S) => `
         ${summaries.greeting(s)},
 

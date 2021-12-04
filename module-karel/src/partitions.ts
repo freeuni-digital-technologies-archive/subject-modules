@@ -1,4 +1,4 @@
-import { Submission } from "dt-types"
+import { Submission } from 'dt-types'
 import { HwConfig } from "./homework"
 import { Run, log, RunOpts } from './runs'
 
@@ -16,11 +16,11 @@ export interface Partitions<T> {
 } 
  
 // noinspection JSUnusedLocalSymbols
-const partitions: Partitions<(s: S) => boolean | undefined> = {
-    crashed: (s: S) => s.crashed,
+const partitions: Partitions<(s: S) => boolean> = {
+    crashed: (s: S) => s.crashed || false,
     notSubmitted: (s: S) => !s.turnedIn(),
     late: (s: S) => !s.onTime(),
-    invalid: (s: S) => s.incorrectFormat,
+    invalid: (s: S) => s.incorrectFormat || false,
     error: (s: S) => s.hasErrors(),
     failed: (s: S) => !s.passed(),
     passed: (s: S) => s.passed(),

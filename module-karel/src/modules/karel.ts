@@ -1,11 +1,10 @@
-import { Submission, Drive } from "dt-types";
+import { Submission, Drive, Result } from 'dt-types';
 import { Run, log } from "../runs";
 
 import path from 'path'
 import { HwConfig } from '../homework'
 
 import { SubjectModule, defaultPrepareSubmission } from '../module'
-import { Result } from "dt-types"
 import { testSubmission } from "codehskarel-tester";
 
 function downloadAtInterval(submission: Submission, drive: Drive,  index: number, run: Run, saveFile: any): Promise<string> {

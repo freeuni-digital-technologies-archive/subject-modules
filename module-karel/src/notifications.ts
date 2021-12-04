@@ -40,7 +40,7 @@ export function notify(
             const submissionsWithValidEmail = submissions.filter(validEmail)
             const template = emailTemplates[type]
             // const template = tempTemplate
-            if (runOpts.omit.includes(type)) {
+            if (runOpts.omit && runOpts.omit.includes(type)) {
                 return submissionsWithValidEmail.filter(s => hw.force?.includes(s.emailId))
                     .map(addToString)
                     .map(s => getEmail(s, template(s), subject))
@@ -55,12 +55,11 @@ export function notify(
         .flat()
     const failedEmail = runOpts.continue + '@freeuni.edu.ge'
     const continuefrom = runOpts.continue ? emails.map(e => e.to).indexOf(failedEmail) : 0
-    if (runOpts.trial) {
-        console.log(emails.slice(continuefrom, emails.length))
-    } else {
-        sendEmails(emails.slice(continuefrom, emails.length), 2000)
+    const emailsToSend = emails.slice(continuefrom, emails.length)
+    if (! runOpts.trial) {
+        sendEmails(emailsToSend, 2000)
     }
-
+    return emailsToSend
 }
 
 
