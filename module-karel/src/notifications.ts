@@ -44,8 +44,8 @@ export function notify(
     const emails = Object.entries(results)
         .map(([type, submissions]: [string, Submission[]]) => {
             const submissionsWithValidEmail = submissions.filter(validEmail)
-            const template = emailTemplates[type]
-            // const template = tempTemplate
+            // @ts-ignore
+            const template = hw.emailTemplates[type] || emailTemplates[type] || templates[type]
             if (runOpts.omit && runOpts.omit.includes(type)) {
                 return submissionsWithValidEmail.filter(s => hw.force?.includes(s.emailId))
                     .map(addToString)
