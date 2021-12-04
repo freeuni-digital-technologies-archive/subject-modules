@@ -213,7 +213,7 @@ describe("Integration Tests",() => {
     }
 
 
-    it.only("Finish Submissions Test ( Actual Testing ) ", async () => {
+    it("Finish Submissions Test ( Actual Testing ) ", async () => {
         const submissionsAndResultsJS = getSubmissionsAndResults();
 
         const submissions = submissionsAndResultsJS.submissions;
