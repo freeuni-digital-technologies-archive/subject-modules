@@ -2,7 +2,8 @@ import { setEnv } from './config'
 const { hw, runOpts } = setEnv()
 
 import { Partitions } from './partitions'
-import { Submission, sendEmails } from 'classroom-api'
+import { sendEmails } from 'classroom-api'
+import { Submission } from 'dt-types'
 import { Run } from './runs'
 import { templates } from './templates'
 // const email = require('../../../results-manager/backend/services/email')

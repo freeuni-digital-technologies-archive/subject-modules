@@ -2,10 +2,8 @@
 
 import { Attachment } from "./attachment"
 import { StudentSubmission } from "./classroom"
+import { sortByDate } from "dt-utils"
 
-function sortByDate(a: Date, b: Date): number {
-    return Number(a.getTime() < b.getTime()) - Number(a.getTime() > b.getTime())
-}
 
 export class Submission {
 	static turnedIn(s: any): boolean {

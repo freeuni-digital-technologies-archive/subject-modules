@@ -2,7 +2,7 @@ import { setEnv, config } from './config'
 const { hw, slice, download, runOpts } = setEnv()
 
 import { Run, log } from './runs'
-import {Submission} from "classroom-api";
+import { Submission } from 'dt-types'
 import fs from 'fs'
 // last Checked result
 function main() {

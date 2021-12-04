@@ -1,7 +1,8 @@
 import {setEnv, config} from './config'
 
 const {hw, slice, download, runOpts} = setEnv()
-import {getSubmissions, Submission, Drive, downloadZip, createDrive, downloadAtInterval} from '../../classroom-api'
+import { Submission, Drive } from "dt-types"
+import {getSubmissions, downloadZip, createDrive, downloadAtInterval} from '../../classroom-api'
 import {Result, WebTester} from 'website-tester'
 import {Run, log} from './runs'
 import {partitionResults} from './partitions'

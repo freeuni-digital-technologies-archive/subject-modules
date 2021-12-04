@@ -1,5 +1,5 @@
 import fs from 'fs'
-import {Submission} from 'classroom-api'
+import {Submission} from 'dt-types'
 import {Partitions} from './partitions'
 import {HwConfig} from './config'
 

@@ -1,4 +1,4 @@
-import { Submission } from "classroom-api"
+import { Submission } from "dt-types"
 import { HwConfig } from "./config"
 
 type S = Submission

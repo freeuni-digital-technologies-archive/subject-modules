@@ -1,5 +1,6 @@
 import { Partitions } from "./partitions";
-import { Submission, getStudentByEmail } from "classroom-api";
+import { Submission } from "dt-types";
+import { getStudentByEmail } from "classroom-api";
 import { getArgs } from './config'
 const {hw} = getArgs()
 

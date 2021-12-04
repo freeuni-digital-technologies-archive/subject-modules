@@ -1,5 +1,5 @@
 import { getSubmissions } from './index'
-import { log } from './utils'
+import { log } from 'dt-utils'
 import { Submission } from "dt-types"
 import { Drive } from 'dt-types'
 import { saveFile,createDrive } from './classroom-api'
