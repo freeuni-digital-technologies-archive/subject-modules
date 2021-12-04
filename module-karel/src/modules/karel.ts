@@ -5,8 +5,8 @@ import path from 'path'
 import { HwConfig } from '../homework'
 
 import { SubjectModule, defaultPrepareSubmission } from '../module'
-
-import { Result, testSubmission } from "codehskarel-tester";
+import { Result } from "dt-types"
+import { testSubmission } from "codehskarel-tester";
 
 function downloadAtInterval(submission: Submission, drive: Drive,  index: number, run: Run, saveFile: any): Promise<string> {
     const attachment = submission.attachment!

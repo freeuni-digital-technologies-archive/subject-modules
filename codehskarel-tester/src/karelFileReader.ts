@@ -2,7 +2,7 @@
 import rewire from 'rewire'
 import { Karel } from 'jskarel'
 import fs from 'fs'
-import { Config } from './karelTester'
+import { Config } from 'dt-types'
 
 const customStuctures:any[] = [
     // {

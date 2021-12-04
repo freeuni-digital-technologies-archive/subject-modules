@@ -2,7 +2,7 @@ import path from "path";
 
 export * from './karelTester'
 import { fork } from 'child_process'
-import { Result} from "./karelTester";
+import { Result} from "dt-types";
 // tests a single submission
 export function testSubmission(testFile: string, submissionFile: string, timeout: number = 2000): Promise<Result[]> {
     return new Promise((resolve) => {

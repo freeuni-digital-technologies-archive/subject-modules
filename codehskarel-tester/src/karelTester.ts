@@ -1,16 +1,6 @@
 import * as fileReader from './karelFileReader'
+import { Result, Config } from 'dt-types'
 
-export interface Result {
-    passed?: boolean
-    error?: boolean
-    details?: string
-    message: string
-}
-
-export interface Config {
-    karel?: any
-    world?: any
-}
 
 function getFileReaderError(err: any): Result {
     const result: Result = {
