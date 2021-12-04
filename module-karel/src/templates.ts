@@ -1,9 +1,7 @@
 import { Partitions } from "./partitions";
 import { StudentList } from "classroom-api";
 import { Submission } from 'dt-types';
-import { getArgs } from './cli'
 import { config } from './config'
-const {hw} = getArgs()
 
 export type S = Submission
 const urls = {
