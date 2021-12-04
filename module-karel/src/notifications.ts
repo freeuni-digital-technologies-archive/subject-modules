@@ -1,14 +1,14 @@
 import { getArgs } from './cli'
 import { Partitions } from './partitions'
-import { Submission } from "dt-types"
+import { Submission } from 'dt-types'
 import { sendEmails } from 'classroom-api'
-import { Run } from './runs'
+import { Run, RunOpts } from './runs'
 import { templates, S } from './templates'
+import { HwConfig } from './homework'
 
-
-const { hw, runOpts } = getArgs()
 
 function notifyLastRun() {
+    const { hw, runOpts } = getArgs()
     const run = new Run(hw, runOpts)
     const results = run.previousRunInfo
     const categoriesToNotify: Partitions<boolean> | any = {
@@ -21,20 +21,22 @@ function notifyLastRun() {
         passed: true,
         none: false
     }
-    const subject = (hwName: string)  => {
-    return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
+    const subjectFunction = (hwName: string)  => {
+        return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
     }
-    notify(results, categoriesToNotify, subject, templates)
+    notify(results, categoriesToNotify, subjectFunction, hw, runOpts)
 }
 
 // TODO refactor this
 export function notify(
         results: Partitions<Submission[]>,
         categoriesToNotify: Partitions<boolean> | any,
-        subject: (hwName: string) => string,
-        emailTemplates: Partitions<(s: S) => string> | any
+        subjectFunction: (hwName: string) => string,
+        hw: HwConfig,
+        runOpts: RunOpts,
+        emailTemplates: Partitions<(s: S) => string> | any = templates
     ) {
-
+    const subject = subjectFunction(hw.name)
     const emails = Object.entries(results)
         .map(([type, submissions]: [string, Submission[]]) => {
             const submissionsWithValidEmail = submissions.filter(validEmail)
@@ -77,11 +79,11 @@ function validEmail(s: Submission) {
 
 function getEmail(s: Submission, 
     body: string, 
-    subject:(hwName: string) => string ) {
+    subject: string ) {
      if(validEmail(s)){
          return {
               to: s.emailAddress,
-              subject: subject(hw.name),
+              subject: subject,
               text: body
          }
      } else {
