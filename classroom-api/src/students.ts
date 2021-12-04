@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { ClassroomApi } from './classroom-api'
-import { UserProfile } from './types'
+import { UserProfile } from 'dt-types'
 import { getSingleStudent } from './profile'
 
 export class StudentList {

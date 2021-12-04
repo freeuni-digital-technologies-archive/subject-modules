@@ -1,6 +1,7 @@
 import { getArgs } from './cli'
 import { Partitions } from './partitions'
-import { Submission, sendEmails } from 'classroom-api'
+import { Submission } from "dt-types"
+import { sendEmails } from 'classroom-api'
 import { Run } from './runs'
 import { templates, S } from './templates'
 

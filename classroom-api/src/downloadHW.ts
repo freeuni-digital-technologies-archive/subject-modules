@@ -1,7 +1,7 @@
 import { getSubmissions } from './index'
 import { log } from './utils'
-import { Submission } from './submission'
-import { Drive } from './types'
+import { Submission } from "dt-types"
+import { Drive } from 'dt-types'
 import { saveFile,createDrive } from './classroom-api'
 import { StudentList } from "./students";
 import fs from 'fs'

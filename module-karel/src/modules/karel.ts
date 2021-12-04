@@ -1,4 +1,4 @@
-import { Submission, Drive } from "classroom-api";
+import { Submission, Drive } from "dt-types";
 import { Run, log } from "../runs";
 
 import path from 'path'

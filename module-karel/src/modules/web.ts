@@ -1,6 +1,6 @@
 import { SubjectModule } from '../module'
 
-import { Submission, Drive } from "classroom-api";
+import { Submission, Drive } from "dt-types";
 import { Run, log } from "../runs";
 import { Result, WebTester } from "website-tester"
 import fs from 'fs'

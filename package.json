@@ -3,6 +3,7 @@
   "workspaces": [
     "classroom-api",
     "dt-utils",
+    "dt-types",
     "jskarel",
     "module-js",
     "module-karel",
@@ -10,5 +11,5 @@
     "codehskarel-tester",
     "peer-review-grader"
   ],
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.1.1"
 }

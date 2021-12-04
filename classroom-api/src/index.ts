@@ -1,10 +1,10 @@
 import { ClassroomApi } from './classroom-api'
-import { Submission } from './submission'
 import { StudentList } from './students'
 import { Authenticator  } from './authenticate'
-export * from './types'
+import { Submission } from 'dt-types'
+import { fromResponse } from './submission'
+//export * from './types'
 export { ClassroomApi, downloadFile, downloadZip, createDrive, saveFile } from './classroom-api'
-export { Submission } from './submission'
 export * from './students'
 export * from './mailer'
 export { downloadAll, downloadSome, downloadAtInterval } from './downloadHW'
@@ -25,5 +25,5 @@ export async function getSubmissions(subject: string, homework: string, studentL
 		}
 	}))
 
-	return submissions.filter(response => studentList.getStudentById(response.userId!)).map(s => Submission.fromResponse(s, studentList))
+	return submissions.filter(response => studentList.getStudentById(response.userId!)).map(s => fromResponse(s, studentList))
 }

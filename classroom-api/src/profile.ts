@@ -1,5 +1,5 @@
 import { ClassroomApi } from './classroom-api'
-import { UserProfile } from './types'
+import { UserProfile } from 'dt-types'
 import { Authenticator } from './authenticate'
 const translit = require('translitit-latin-to-mkhedruli-georgian')
 
@@ -64,7 +64,7 @@ const replace = [
 	['ბეკა', 'ბექა'],
 	['ტაზო', 'თაზო'],
 	['მატე', 'მათე'],
-	['ელიზაბეთ, 'ელისაბედ']
+	['ელიზაბეთ', 'ელისაბედ']
 ]
 
 export async function downloadStudentList(className: string, auth: Authenticator): Promise<UserProfile[]> {
