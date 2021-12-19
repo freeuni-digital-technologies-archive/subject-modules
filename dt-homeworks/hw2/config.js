@@ -4,7 +4,5 @@ module.exports = {
     deadline: '2021-10-14',
     testFileName: 'hw2tester.js',
     module: 'karel',
-    emailTemplate(){
-            return "HW2";
-    }
+    emailTemplates: {}
 }   

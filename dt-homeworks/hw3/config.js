@@ -4,7 +4,5 @@ module.exports = {
     deadline: '2021-10-21',
     testFileName: 'hw3tester.js',
     module: 'karel',
-    emailTemplate(){
-            return "H3";
-    }
+    emailTemplates: {}
 }   

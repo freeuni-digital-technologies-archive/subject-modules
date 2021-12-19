@@ -4,7 +4,5 @@ module.exports = {
     deadline: '2021-12-02',
     testFileName: '../../../webHwInterface/server-tests/hw6/server.js',
     module: 'web',
-    emailTemplate(){
-            return "HW2";
-    } 
+    emailTemplates: {}
 }   
