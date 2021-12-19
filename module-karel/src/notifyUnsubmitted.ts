@@ -29,7 +29,9 @@ function main() {
     	partitioned,
     	categoriesToNotify,
     	subject,
-    	templates
+    	hw,
+    	runOpts,
+    	{}
     	)
 }
 

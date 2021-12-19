@@ -35,6 +35,7 @@ export class Submission {
 		public id: string,
 		public emailId: string,
 		public emailAddress: string,
+		public state: string,
 		public alternateLink: string,
 		private late?: boolean
 	) {

@@ -28,7 +28,10 @@ function notifyLastRun() {
         return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
     }
     const module: SubjectModule = hw.module == 'karel' ? moduleKarel : moduleWeb
-    notify(results, categoriesToNotify, subjectFunction, hw, runOpts, module.emailTemplates)
+    const emailsToSend = notify(results, categoriesToNotify, subjectFunction, hw, runOpts, module.emailTemplates)
+    if (runOpts.trial) {
+        console.log(emailsToSend)        
+    }
 }
 
 // TODO refactor this

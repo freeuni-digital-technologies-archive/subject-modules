@@ -63,23 +63,27 @@ export const templates: Partitions<EmailTemplate> = {
     `,
     // TODO პირველი/მეორე და ა.შ ქონდეს დავალებასაც კონფიგურაციაში,
     // ასევე ლინკი საიტის.
-    failed: (s: S) => `
+    failed: (s: S) => {
+        const failed = s.results.filter(r => !r.passed)
+        const passed = s.results.filter(r => r.passed)
+        const testCount = s.results.length
+        const grade = passed.length/testCount*4
+        return `
         ${summaries.greeting(s)},
         
-        ფაილის წესები სრულყოფილად გაქვს დაცული და კოდშიც
-        სინტაქსური შეცდომები არაა, მაგრამ შენი კოდი ზოგ ტესტს არ გადის. 
-        დავალების სწორი ნაწილი ჩვეულებრივ ჩაგეთვლება, უბრალოდ ყოველი შემთხვევისთვის გიგზავნი ამ 
-        ინფორმაციას. 
-        აი რომელი ტესტები ვერ გაიარა შენმა კოდმა:
+        შენი დავალება მიღებულია და გადის ${passed.length} ტესტს ${testCount}-დან. 
+        ქულა იქნება ${grade} 4-დან. 
 
-        ${s.results.filter(r => !r.passed)}
+        ქვემოთ დავურთავ, რომელი ტესტები ვერ გაიარა შენმა კოდმა. დედლაინამდე თუ დრო გექნება, შეგიძლია ეს ნაწილებიც გამოასწორო. 
+თუ თვლი რომ რამე არასწორია, უპასუხე ამ მეილს, ოღონდ cc-ში დაამატე გიგი. 
 
-        დედლაინამდე თუ დრო გექნება, შეგიძლია ბოლომდე მიიყვანო. 
+        ${failed.map(t => t.message).join('\n***\n')}
 
+        
         ია
         
         ${fileInfo(s)}
-    `,
+    `},
     passed: (s: S) => `
         ${summaries.greeting(s)},
 

@@ -54,8 +54,8 @@ const properHwConfigProperties: HwConfigProperty[] = [
         type: "string"
     },
     {
-        name: "emailTemplate",
-        type: "function"
+        name: "emailTemplates",
+        type: "object"
     },
     {
         name: "module",
@@ -104,7 +104,8 @@ function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
         module: preHwConfig.module,
         deadline: preHwConfig.deadline, 
         configPath: path,
-        testFileName: preHwConfig.testFileName 
+        testFileName: preHwConfig.testFileName,
+        emailTemplates: preHwConfig.emailTemplates
     };
     return rvConfig;
 }

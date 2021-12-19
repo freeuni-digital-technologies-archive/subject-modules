@@ -30,5 +30,6 @@ export const moduleKarel: SubjectModule = {
 	downloadAtInterval: downloadAtInterval,
 	testSubmission: testSubmission,
 	prepareSubmission: defaultPrepareSubmission,
-	asynchronousTest: true
+	asynchronousTest: true,
+    emailTemplates: {}
 }

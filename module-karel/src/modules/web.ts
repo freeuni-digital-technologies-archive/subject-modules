@@ -75,7 +75,8 @@ export const moduleWeb: SubjectModule = {
 	downloadAtInterval: downloadAtInterval,
 	testSubmission: testSubmission,
 	prepareSubmission: prepareSubmission,
-	asynchronousTest: false
+	asynchronousTest: false,
+    emailTemplates: {}
 }
 
 
