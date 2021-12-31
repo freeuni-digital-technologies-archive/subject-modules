@@ -7,13 +7,14 @@ import { EmailTemplate } from './templates';
 
 // TODO ესენი გადასატანია config-ში სავარაუდოდ (ოღონდ სხვა ფორმით)
 /* Default Directory For Homework Configuration Files */
-const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
+export const DEFAULT_HW_CONFIG_PATH: string =  `../../dt-homeworks`;
 const DEFAULT_HW_CONFIG_FILENAME: string = "config.js";
 
 export function defaultHomeworkPath(hwId: string) {
     return `${DEFAULT_HW_CONFIG_PATH}/${hwId}/${DEFAULT_HW_CONFIG_FILENAME}`
 }
 
+// TODO არასავალდებულო პარამეტრები არ სწორდება ასეთი ლოგიკით
 
 export interface HwConfig {
     id: string,

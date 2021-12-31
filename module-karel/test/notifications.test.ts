@@ -11,7 +11,7 @@ fakeModule.emailTemplates = {
     invalid: () => "invalidtemplate"
 }
 
-describe.only('selecting correct email template', () => {
+describe('selecting correct email template', () => {
     // შემოწმებისას თემფლეითებს უბრალოდ არგუმენტი ჭირდებათ
     const s = dfs.defaultSubmission()
     const errorSubmission = dfs.defaultSubmission('error')

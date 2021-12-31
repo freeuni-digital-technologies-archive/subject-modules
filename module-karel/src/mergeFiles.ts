@@ -2,7 +2,7 @@ import { getArgs } from './cli'
 import { mergeResults } from './partitions'
 import fs from 'fs'
 
-
+// this file needs to go
 // last Checked result
 function main() {
     const { hw, runOpts } = getArgs()

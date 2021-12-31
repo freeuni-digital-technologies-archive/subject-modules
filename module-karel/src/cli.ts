@@ -10,7 +10,7 @@ export interface EnvOptions {
 }
 
 
-export function getArgs(): EnvOptions {
+export function getArgs(hwName?: string): EnvOptions {
     const parser = new ArgumentParser({
         addHelp: true
     })
@@ -27,7 +27,7 @@ export function getArgs(): EnvOptions {
     parser.addArgument(['-l', '--late'], {help: 'ignore late of id'})
     parser.addArgument(['-p', '--config-path'], {help: 'location of homework config'})
     const args = parser.parseArgs()
-    const hwId: string = args['hw']
+    const hwId: string = hwName || args['hw']
 
     if (!hwId) {
         console.log('provide submission id')
