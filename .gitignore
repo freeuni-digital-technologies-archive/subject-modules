@@ -1,4 +1,6 @@
 data/
+.idea/
+.yarn/
 
 # Logs
 logs
