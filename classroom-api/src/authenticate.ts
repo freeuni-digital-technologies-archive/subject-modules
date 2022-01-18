@@ -17,11 +17,11 @@ export class Authenticator {
     private credentialsPath: string
     constructor(tokenPath?: string, credentialsPath?: string) {
         if (!tokenPath) {
-            tokenPath = path.resolve(__dirname, 'token.json')
+            tokenPath = path.resolve(__dirname, '../token.json')
         }
         this.tokenPath = tokenPath
         if (!credentialsPath) {
-            credentialsPath = path.resolve(__dirname, 'credentials.json')
+            credentialsPath = path.resolve(__dirname, '../credentials.json')
         }
         this.credentialsPath = credentialsPath
     }

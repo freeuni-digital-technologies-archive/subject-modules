@@ -1,6 +1,7 @@
 import {google, classroom_v1, drive_v3} from 'googleapis'
 import { Authenticator } from './authenticate'
 import fs from "fs";
+import path from "path";
 
 export function downloadFile(drive: drive_v3.Drive, id: string): Promise<any> {
     return new Promise((resolve, reject) => {
@@ -21,24 +22,31 @@ export function downloadZip(drive: drive_v3.Drive, id: string, path: string): Pr
     return saveFile(drive, id, path)
 }
 
-export function saveFile(drive: drive_v3.Drive, id: string, path: string): Promise<string> {
+export function saveFile(drive: drive_v3.Drive, id: string, filePath: string): Promise<string> {
     return downloadFile(drive, id)
         .then((dataStream: any) => {
             return new Promise((resolve, reject) => {
-                // console.log(`writing to ${path}`);
-                const dest = fs.createWriteStream(path);
+                const dest = fs.createWriteStream(filePath);
                 dataStream
                   .on('end', () => {
-                    console.log('Done downloading file: ' + path);
+                    console.log('Done downloading file: ' + filePath);
                     dest.close();
-                    setTimeout(()=>resolve(path), 100) // weird erorrs occur without this timeout
-                    // resolve(path);
+                    setTimeout(()=>resolve(filePath), 100) // weird erorrs occur without this timeout
+                    // resolve(filePath);
                   })
                   .on('error', (err: any) => {
-                    console.error('Error downloading file path=' + path + ' id=' + id);
+                    console.error('Error downloading file path=' + filePath + ' id=' + id);
                     reject(err);
                   })
-                  .pipe(dest); // pipe to write stream
+                  .pipe(dest)
+                    .on('error', (err: any) => {
+                        if (err.code == 'ENOENT') {
+                            fs.mkdirSync(path.dirname(filePath), {recursive: true})
+                        } else {
+                            throw err
+                        }
+                    })
+                    // pipe to write stream
             });
         })
 }

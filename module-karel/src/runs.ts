@@ -129,7 +129,7 @@ export class Run {
         if (this.opts.trial) {
             outPath = 'tmp/'
         } else {
-            fs.mkdirSync(outPath)
+            fs.mkdirSync(outPath, {recursive: true})
         }
         const casted: any = output
         let length = 0
