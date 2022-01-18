@@ -3,7 +3,7 @@ import { summarizeResults } from '../src/sumResults'
 
 const emisFileName = 'test/files/sumResults/emis_list.csv'
 const manualResultsFileName = 'test/files/sumResults/manualResults'
-describe.only('reading emis csv file', () => {
+describe('reading emis csv file', () => {
     const results = summarizeResults(emisFileName, manualResultsFileName)
     const list = Object.keys(results)
     it('should filter out repeating headings', () => {
@@ -14,7 +14,7 @@ describe.only('reading emis csv file', () => {
     })
 })
 
-describe.only('getting list of homeworks to process', () => {
+describe('getting list of homeworks to process', () => {
     it('homeworks described in config files', () => {
         const results = summarizeResults(emisFileName, manualResultsFileName)
         const homeworks = Object.keys(results['sandg20'])
@@ -32,8 +32,9 @@ describe.only('getting list of homeworks to process', () => {
         expect(results['sandg20']['bonus_discussion']).equal(4)
     })
     it('quiz results', () => {
-        // TODO
-        
+        const results = summarizeResults(emisFileName, manualResultsFileName)
+        expect(results['mobali21']['quiz1']).equal(7)
+        expect(results['nbarb21']['quiz1']).equal(6)
     })
     
 })
