@@ -72,11 +72,7 @@ function addQuizCsvResults(results: any, studentNames: String[], manualResultsPa
         })
 }
 
-function parseCsvFile(filePath: string) {
-
-}
-
-    function addHomeworkResults(results: any, studentNames: string[], homeworksPath: string) {
+function addHomeworkResults(results: any, studentNames: string[], homeworksPath: string) {
     fs
         .readdirSync(homeworksPath, { withFileTypes: true })
         .filter(f => f.isDirectory() && !f.name.startsWith('.'))
