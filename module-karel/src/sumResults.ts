@@ -21,9 +21,13 @@ export function summarizeResults(
     homeworksPath: string = defaultHwPath) {
     const studentNames = readStudentList(emisFileName)
     const results: any = {}
-    studentNames.forEach(s => results[s] = {})
+    studentNames.forEach(s => results[s] = {sum: 0})
     addHomeworkResults(results, studentNames, homeworksPath)
     addManualResults(results, studentNames, manualResultsPath)
+    studentNames.forEach(emailId => {
+        const studentResults = results[emailId]
+        studentResults.sum = Object.values(studentResults).reduce((a: any, b: any) => a+b, 0)
+    })
     return results;
 }
 
@@ -42,6 +46,13 @@ function addManualResults(results: any, studentNames: String[], manualResultsPat
 
 function addSimpleCsvResults(results: any, studentNames: String[], manualResultsPath: string, resultsFile: string) {
     const name = resultsFile.split('.')[0]
+    studentNames.forEach(n => {
+        // @ts-ignore
+        if (!results[n][name]) {
+            // @ts-ignore
+            results[n][name] = 0
+        }
+    })
     readCsv(manualResultsPath, resultsFile)
         .forEach(line => {
             const emailId = line[0].toLowerCase()
@@ -62,6 +73,8 @@ function readCsv(manualResultsPath: string, resultsFile: string) {
 function addQuizCsvResults(results: any, studentNames: String[], manualResultsPath:string, resultsFile: string) {
     const quizId = resultsFile.split('quiz ')[1].split('-')[0]
     const name = 'quiz' + quizId
+    // @ts-ignore
+    studentNames.forEach(n => results[n][name] = 0)
     readCsv(manualResultsPath, resultsFile)
         .forEach(line => {
             const emailId = line[4].split('@')[0].toLowerCase()
@@ -80,7 +93,7 @@ function addHomeworkResults(results: any, studentNames: string[], homeworksPath:
         .map(hwName => {
             const hwPath = `${homeworksPath}/${hwName}/config.js`
             const hw = readHomeworkConfiguration(hwPath)
-            studentNames.forEach(s => results[s][hw.id] = {})
+            studentNames.forEach(s => results[s][hw.id] = 0)
             const hwResults = mergeResults(hw, {})
             hwResults
             .filter(r => studentNames.includes(r.emailId))
@@ -109,6 +122,17 @@ function readStudentList(emisFileName: string) {
  * დაითვლის შედეგების ქულებს
  */
 
+function convertToCsv(resultsList: any) {
+    let studentNames = readStudentList(defaultEmisPath)
+    let hwList = Object.keys(resultsList[studentNames[0]]).join(',')
+    let csv = `emailId,` + hwList + '\n'
+    csv += studentNames.map(emailId => {
+        const entries = resultsList[emailId]
+        const results = Object.values(entries)
+        return  `${emailId},${results.join(',')}`
+    }).join('\n')
+    return csv
+}
 if (require.main == module) {
-
+    console.log(convertToCsv(summarizeResults()))
 }
