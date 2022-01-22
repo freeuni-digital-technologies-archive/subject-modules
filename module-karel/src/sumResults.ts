@@ -30,7 +30,7 @@ export function summarizeResults(
 function addManualResults(results: any, studentNames: String[], manualResultsPath: string) {
     fs
         .readdirSync(manualResultsPath)
-        .filter(f => f.endsWith('csv'))
+        .filter(f => f.includes('.csv'))
         .forEach(f => {
             if (f.includes("quiz")) {
                 addQuizCsvResults(results, studentNames, manualResultsPath, f)
@@ -44,7 +44,7 @@ function addSimpleCsvResults(results: any, studentNames: String[], manualResults
     const name = resultsFile.split('.')[0]
     readCsv(manualResultsPath, resultsFile)
         .forEach(line => {
-            const emailId = line[0]
+            const emailId = line[0].toLowerCase()
             const score = Number(line[1])
             if (studentNames.includes(emailId)) {
                 results[emailId][name] = score
@@ -64,7 +64,7 @@ function addQuizCsvResults(results: any, studentNames: String[], manualResultsPa
     const name = 'quiz' + quizId
     readCsv(manualResultsPath, resultsFile)
         .forEach(line => {
-            const emailId = line[4].split('@')[0]
+            const emailId = line[4].split('@')[0].toLowerCase()
             const score = Number(line[9])
             if (studentNames.includes(emailId)) {
                 results[emailId][name] = score
@@ -110,6 +110,5 @@ function readStudentList(emisFileName: string) {
  */
 
 if (require.main == module) {
-
 
 }
