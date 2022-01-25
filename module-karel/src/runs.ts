@@ -14,7 +14,9 @@ export interface RunOpts {
     omit?: string[]
 }
 export function log<T>(e: T, message: string) {
-    console.log(message)
+    if (process.env.NODE_ENV === 'production') {
+        console.log(message)
+    }
     return e
 }
 export const data_path = path.resolve(__dirname, `../../../data`)

@@ -57,7 +57,8 @@ function downloadAtInterval(submission: Submission, drive: Drive,  index: number
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (run.opts.download) {
-                console.log(`${submission.emailId}: downloading`)
+                if (process.env.NODE_ENV === 'production')
+                    console.log(`${submission.emailId}: downloading`)
                 saveFile(drive, id, path)
                     .then(() => unzipSubmission(submission, path, run.moveDir))
                     .then((unzipDir: string) => resolve(unzipDir))

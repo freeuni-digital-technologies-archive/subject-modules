@@ -2,6 +2,9 @@ data/
 .idea/
 .yarn/
 
+invalid.csv
+results.csv
+
 # Logs
 logs
 *.log

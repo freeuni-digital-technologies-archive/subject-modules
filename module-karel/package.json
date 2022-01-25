@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node --trace-uncaught lib/index.js",
-    "notify": "node lib/notifications.js",
-    "test": "ts-mocha test/*.test.ts",
+    "start": "NODE_ENV=production node --trace-uncaught lib/index.js",
+    "notify": "NODE_ENV=production node lib/notifications.js",
+    "test": "ts-mocha test/**/*.test.ts",
     "daemon": "node lib/daemon.js"
   },
   "dependencies": {
