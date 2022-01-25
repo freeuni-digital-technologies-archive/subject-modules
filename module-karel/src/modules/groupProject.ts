@@ -16,9 +16,16 @@ export const moduleProject: SubjectModule = {
     emailTemplates: {}
 }
 
-// noinspection JSUnusedLocalSymbols
 async function testSubmission(testPath: string, dir: string): Promise<Result[]> {
-    return []
+    const projectGroups = readProjectGroups(testPath)
+    const project = projectGroups.find(p => p.dir === dir)
+    const teamName = project!.name
+    const teamMates = project!.members
+    return [{
+        passed: true,
+        message: `შენი გუნდის სახელია ${teamName}. 
+            ამ გუნდის სახელით დავალება ატვირთული აქვთ შემდეგ სტუდენტებს: ${teamMates.join(',')}`,
+    }]
 }
 
 function prepareSubmission(unzipPath: string, projectsPath : string): string {
@@ -45,6 +52,11 @@ export interface ProjectGroup {
 function addSubmissionToGroup(dir: string, emailId: string, teamName: string, projectsPath: string) {
     const projectFilesPath = projectsPath + '/files'
     const projectGroups = readProjectGroups(projectsPath)
+    const alreadyInTeam = projectGroups.find(e => e.members.includes(emailId))
+    if (alreadyInTeam && teamName !== alreadyInTeam.name) {
+        alreadyInTeam.members = alreadyInTeam.members.filter(m => m !== emailId)
+    }
+
     const existingProject = projectGroups.find(e => e.name === teamName)
 
     if (existingProject) {
@@ -116,4 +128,4 @@ function findRootFile(dir: string): string {
 
 
 export const filesNotFoundError = "დავალების ფაილები (index.html, about.html) ვერ მოიძებნა"
-export const teamNameNotFoundError = 'about.html-ში აუცილებელია ეწეროს team-name'
+export const teamNameNotFoundError = 'about.html-ში აუცილებელია შევსებული იყოს span id-ით team-name'

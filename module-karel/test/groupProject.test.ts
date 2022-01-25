@@ -1,17 +1,18 @@
 import { expect } from 'chai'
-import {moduleProject, ProjectGroup, readProjectGroups, teamNameNotFoundError} from "../src/modules/groupProject";
+import {moduleProject, ProjectGroup, readProjectGroups, teamNameNotFoundError } from "../src/modules/groupProject";
 import * as path from "path";
 import * as fs from "fs";
 
 const testDir = path.resolve(__dirname, './files/groupProject/')
 const tempDir = path.resolve(__dirname, './tempData')
+const testSubmission = moduleProject.testSubmission
 
 beforeEach(() => {
     try {
         fs.mkdirSync(tempDir)
     } catch(e) {
         // @ts-ignore
-        fs.rmdSync(tempDir, {recursive: true});
+        fs.rmdirSync(tempDir, {recursive: true});
         fs.mkdirSync(tempDir)
     }
 })
@@ -56,6 +57,27 @@ describe("prepare submission", () => {
         const team2 = projectGroups.find(p => p.name === 'team2')
         expect(team2.members).length(1)
         expect(team2.members).eql(['team2_member1'])
+    })
+})
+
+describe("test submission", () => {
+    it("include team members in the message", async () => {
+        const firstGroup = prepareSubmissions(['team1_member1'])
+        const results0 = await testSubmission(tempDir, firstGroup[0].dir)
+        expect(results0[0].message.includes('team1')).to.be.true
+        expect(results0[0].message.includes('member1')).to.be.true
+        expect(results0[0].message.includes('member2')).to.be.false
+
+        const students = ['team1_member2', 'team2_member1']
+        const projectGroups = prepareSubmissions(students)
+
+        const results1 = await testSubmission(tempDir, projectGroups[0].dir)
+        expect(results1[0].message.includes('team1')).to.be.true
+        expect(results1[0].message.includes('member1')).to.be.true
+        expect(results1[0].message.includes('member2')).to.be.true
+        const results2 = await testSubmission(tempDir, projectGroups[1].dir)
+        expect(results2[0].message.includes('team2')).to.be.true
+        expect(results2[0].message.includes('member1')).to.be.true
     })
 })
 
