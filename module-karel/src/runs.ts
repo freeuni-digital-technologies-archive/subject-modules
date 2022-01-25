@@ -3,6 +3,8 @@ import {Submission} from 'dt-types'
 import {Partitions} from './partitions'
 import {HwConfig} from './homework'
 import path from 'path'
+import {StudentList} from "classroom-api";
+import {config} from "./config";
 
 export interface RunOpts {
     trial?: boolean,
@@ -95,7 +97,9 @@ export class Run {
             .map(match => Number(match![1]))
             .sort((a, b) => b - a)
     }
+
     private getPreviousRunInfo(): Partitions<Submission[]> {
+        const students = new StudentList(config.STUDENTS_DATA_PATH)
         const output: any = {}
         if (!this.lastRun) {
             return output
@@ -106,7 +110,11 @@ export class Run {
             .forEach(file => {
                 const name = file.match(/(.*)\.json/)![1]
                 const contents = fs.readFileSync(dir + '/' + file, 'utf-8')
-                output[name] = JSON.parse(contents)
+                const data: Submission[] = JSON.parse(contents)
+                data.forEach(s => {
+                    s.georgianName = students.getStudentByEmail(s.emailId)?.georgianName
+                })
+                output[name] = data
             })
         return output
     }

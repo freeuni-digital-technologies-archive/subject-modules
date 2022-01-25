@@ -21,12 +21,19 @@ export function sendEmails(emails :Array<any>, interval :number) {
 }
 
 // TODO fix these types
-export function sendEmail(to :string, subject :string, text :string, callback :any, attachments :any) {
+export function sendEmail(to :string, subject :string, text :string, callback?:any, attachments?:any) {
     const mailOptions = {
         from: email,
         to: to,
         subject: subject,
-        text: text,
+        html: `
+            <!DOCTYPE html>
+            <html lang="en">
+            <body>
+            ${text}
+            </body>
+            </html>
+        `,
         attachments: undefined
     };
     if (attachments) {

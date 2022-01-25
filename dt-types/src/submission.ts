@@ -19,6 +19,7 @@ export class Submission {
 	public status?: string
 	public check?: boolean
 	public score?: number
+	public georgianName?: string
 	constructor(
 		public id: string,
 		public emailId: string,
