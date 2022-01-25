@@ -12,29 +12,19 @@ export const moduleProject: SubjectModule = {
     downloadAtInterval: moduleWeb.downloadAtInterval,
     testSubmission: testSubmission,
     prepareSubmission: prepareSubmission,
-    asynchronousTest: false,
+    asynchronousTest: true,
     emailTemplates: {}
 }
 
+// noinspection JSUnusedLocalSymbols
 async function testSubmission(testPath: string, dir: string): Promise<Result[]> {
-    const tester = new WebTester({targetFiles: ['index'], testsLocation: ''})
-    return tester.testSubmission(dir, false)
-        .then(async (result) => {
-            await tester.finish()
-            return result
-        })
-        .catch(async (e) => {
-            await tester.finish()
-            throw e
-        })
+    return []
 }
-
 
 function prepareSubmission(unzipPath: string, projectsPath : string): string {
     const dir  = findRootFile(unzipPath)
     // სამწუხაროდ აქ აუცილებელია რომ დირექტორიის სახელი emailId იყოს
     const emailId = path.basename(dir)
-    const p = `${dir}/index.html`
     const about = parse(fs.readFileSync(`${dir}/about.html`, 'utf-8'))
     const teamName = about.querySelector('span#team-name')
     if (!teamName || teamName.innerText.trim().length < 1) {
@@ -48,6 +38,7 @@ function prepareSubmission(unzipPath: string, projectsPath : string): string {
 export interface ProjectGroup {
     id: string,
     name: string,
+    dir: string,
     members: string[]
 }
 
@@ -55,22 +46,24 @@ function addSubmissionToGroup(dir: string, emailId: string, teamName: string, pr
     const projectFilesPath = projectsPath + '/files'
     const projectGroups = readProjectGroups(projectsPath)
     const existingProject = projectGroups.find(e => e.name === teamName)
+
     if (existingProject) {
         existingProject.members.push(emailId)
     } else {
         const id = getNewId(projectGroups.map(e => e.id))
+        const destination = `${projectFilesPath}/${id}`
         projectGroups.push({
             id: id,
+            dir: destination,
             name: teamName,
             members: [emailId]
         })
         try {
-            fse.copySync(dir, `${projectFilesPath}/${id}`)
+            fse.copySync(dir, destination)
         } catch (e) {
             fs.mkdirSync(projectFilesPath)
-            fse.copySync(dir, `${projectFilesPath}/${id}`)
+            fse.copySync(dir, destination)
         }
-
     }
     fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
 }
@@ -104,7 +97,7 @@ function findRootFile(dir: string): string {
     // TODO ასე მგონია find ფუნქცია იარსებებს ჯავასკრიპტში:)
     while (filesToBe.some(file => !files.includes(`${file}.html`))) {
         if (tries > 3) {
-            throw fileNotFoundError
+            throw filesNotFoundError
         }
         // saves us minutes of our lives
         files = files.filter(f => f !== '__MACOSX');
@@ -112,7 +105,7 @@ function findRootFile(dir: string): string {
             p = `${p}/${files[0]}`
             files = fs.readdirSync(p)
         } catch (e) {
-            throw fileNotFoundError
+            throw filesNotFoundError
             //throw "file with unsupported format: " + files[0]
         }
         tries++
@@ -122,6 +115,5 @@ function findRootFile(dir: string): string {
 
 
 
-export const zipFormatError = 'დავალება არ არის zip ფაილში'
-export const fileNotFoundError = "დავალების ფაილები (index.html, about.html) ვერ მოიძებნა"
+export const filesNotFoundError = "დავალების ფაილები (index.html, about.html) ვერ მოიძებნა"
 export const teamNameNotFoundError = 'about.html-ში აუცილებელია ეწეროს team-name'
