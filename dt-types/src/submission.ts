@@ -1,25 +1,13 @@
 // export ... Submission
 
 import { Attachment } from "./attachment"
-import { StudentSubmission } from "./classroom"
-import { sortByDate } from "dt-utils"
 
 
 export class Submission {
 	static turnedIn(s: any): boolean {
 		return s.state == 'TURNED_IN'
 	}
-	
-	static getTimeStamp(response: StudentSubmission): Date {
-		const timeStamp = response.submissionHistory!
-			.filter(e => e.stateHistory)
-			.map(e => e.stateHistory!)
-			.filter(Submission.turnedIn)
-			.map(e => e.stateTimestamp!)
-			.map(t => new Date(t))
-			.sort(sortByDate)[0]
-		return new Date(timeStamp)
-	}
+
 	public attachment?: Attachment
 	public timeStamp?: Date
 	// TODO create types package

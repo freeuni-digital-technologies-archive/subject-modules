@@ -1,8 +1,9 @@
-import { Submission, Drive, Result } from 'dt-types';
+import { Submission, Result } from 'dt-types';
 import { Run, log } from "../runs";
 
 import path from 'path'
 import { HwConfig } from '../homework'
+import { Drive } from "classroom-api"
 
 import { SubjectModule, defaultPrepareSubmission } from '../module'
 import { testSubmission } from "codehskarel-tester";

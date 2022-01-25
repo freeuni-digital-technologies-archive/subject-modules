@@ -1,11 +1,11 @@
 import { SubjectModule } from '../module'
 
-import { Result, WebTester } from "website-tester"
+import { Result } from "website-tester"
 import fs from 'fs'
 
 import fse from 'fs-extra'
 import path from 'path'
-import {moduleWeb} from "./web";
+import { moduleWeb } from "./web";
 import { parse } from 'node-html-parser'
 
 export const moduleProject: SubjectModule = {

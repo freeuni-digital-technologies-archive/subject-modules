@@ -1,7 +1,8 @@
 import { getSubmissions } from './index'
 import { log } from 'dt-utils'
 import { Submission } from "dt-types"
-import { Drive } from 'dt-types'
+import { drive_v3 } from 'googleapis'
+type Drive = drive_v3.Drive
 import { saveFile,createDrive } from './classroom-api'
 import { StudentList } from "./students";
 import fs from 'fs'

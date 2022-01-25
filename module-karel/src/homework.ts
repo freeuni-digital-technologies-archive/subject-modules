@@ -113,12 +113,13 @@ function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
 
 export function readHomeworkConfiguration(configPath: string): HwConfig {
     const absolutePath = path.resolve(__dirname, configPath)
-    const configFile = require(absolutePath);
-    if(!configFile){
-        console.log("Could not find homework configuration file");
+    let configFile = null
+    try {
+        configFile = require(absolutePath);
+    } catch(e) {
+        console.log("Could not find homework configuration file\n" + absolutePath)
         process.exit(-1);
     }
-
     const preHwConfig = configFile;
     checkGivenHwConfigroperties(preHwConfig);
 
@@ -160,7 +161,7 @@ export function getCurrentHWs() {
 
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
-            hw.deadlineMinutes = 'T23:59:59+04:00'
+            hw.deadlineMinutes = 'T23:59:59+30:00'
         return hw
     }).filter(hw => {
         var deadline = new Date(hw.deadline+hw.deadlineMinutes)

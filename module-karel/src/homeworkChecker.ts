@@ -1,5 +1,6 @@
 
-import { Submission, Drive } from "dt-types";
+import { Submission } from "dt-types";
+import { Drive } from 'classroom-api'
 import { Run, log } from "./runs";
 
 import path from 'path'
@@ -9,9 +10,11 @@ import { Result } from "website-tester" // TODO dt-types
 import { SubjectModule } from './module'
 import { moduleWeb, zipFormatError, fileNotFoundError } from './modules/web'
 import { moduleKarel } from './modules/karel'
+import { moduleProject, filesNotFoundError, teamNameNotFoundError } from "./modules/groupProject";
 
 // TODO this should be a private member when refactored to class
-let subjectModule: SubjectModule = moduleWeb // :|
+// @ts-ignore
+let subjectModule: SubjectModule = null // :|
 
 /* Combine all steps into one function */
 export async function getSubmissionsWithResults(configSubject: string, hw: HwConfig, run: Run, drive: Drive, saveFile: any, getSubmissions: (a: string, b: string) => Promise<Submission[]>){
@@ -31,13 +34,15 @@ export async function getSubmissionsWithResults(configSubject: string, hw: HwCon
     return submissions
 }
 
-
+const existingModules: any = {
+    'web': moduleWeb,
+    'karel': moduleKarel,
+    'groupProject': moduleProject
+}
 
 export function setSubmissionModule(hw: HwConfig) {
-    if (hw.module === 'web') {
-        subjectModule = moduleWeb
-    } else if (hw.module === 'karel') {
-        subjectModule = moduleKarel 
+    if (Object.keys(existingModules).includes(hw.module)) {
+        subjectModule = existingModules[hw.module]
     } else {
         console.log(`module ${hw.module} not found`)
         process.exit(1)
@@ -72,7 +77,7 @@ async function downloadAndTest(submission: Submission, drive: Drive, index: numb
     TODO ესენი მერე გავიტანოთ
 */
 function logError(submission: Submission, error: any) {
-    const knownErrors = [zipFormatError, fileNotFoundError]
+    const knownErrors = [zipFormatError, fileNotFoundError, filesNotFoundError, teamNameNotFoundError]
     if (knownErrors.includes(error)) {
         submission.incorrectFormat = true
         submission.results.push({

@@ -1,5 +1,5 @@
 import { ClassroomApi } from './classroom-api'
-import { UserProfile } from 'dt-types'
+import { UserProfile } from './types'
 import { Authenticator } from './authenticate'
 const translit = require('translitit-latin-to-mkhedruli-georgian')
 

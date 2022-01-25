@@ -29,3 +29,4 @@ async function main() {
 
 
 main()
+    .then(e => console.log("done."))

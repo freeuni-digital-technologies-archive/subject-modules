@@ -1,7 +1,6 @@
-import { Submission, Drive } from 'dt-types';
+import { Submission, Result } from 'dt-types';
+import { Drive } from 'classroom-api';
 import { Run, log } from "./runs";
-// TODO dt-types
-import { Result } from 'website-tester'
 import { Partitions } from "./partitions";
 import {  EmailTemplate } from './templates'
 
@@ -18,3 +17,4 @@ export interface SubjectModule {
 export function defaultPrepareSubmission(path: string, testPath: string): string {
 	return path
 }
+

@@ -1,8 +1,9 @@
 import { SubjectModule } from '../module'
 
-import { Submission, Drive } from "dt-types";
+import { Submission, Result } from "dt-types";
+import { Drive } from "classroom-api"
 import { Run, log } from "../runs";
-import { Result, WebTester } from "website-tester"
+import { WebTester } from "website-tester"
 import fs from 'fs'
 import unzipper from 'unzipper'
 
@@ -55,19 +56,16 @@ function downloadAtInterval(submission: Submission, drive: Drive,  index: number
     const path = `${run.moveDir}/${fileName}`
 
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (run.opts.download) {
-                if (process.env.NODE_ENV === 'production')
-                    console.log(`${submission.emailId}: downloading`)
-                saveFile(drive, id, path)
-                    .then(() => unzipSubmission(submission, path, run.moveDir))
-                    .then((unzipDir: string) => resolve(unzipDir))
-                    .catch((e: string) => reject(e))
-            } else {
-                resolve(getUnzipDir(submission, run.moveDir))
-            }
-        }, (index) * 200)
-
+        if (run.opts.download) {
+            if (process.env.NODE_ENV === 'production')
+                console.log(`${submission.emailId}: downloading`)
+            saveFile(drive, id, path)
+                .then(() => unzipSubmission(submission, path, run.moveDir))
+                .then((unzipDir: string) => resolve(unzipDir))
+                .catch((e: string) => reject(e))
+        } else {
+            resolve(getUnzipDir(submission, run.moveDir))
+        }
     })
 }
 
@@ -91,7 +89,8 @@ function unzipSubmission(submission: Submission, path: string, moveDir: string):
     try {
         fs.mkdirSync(dir)
     } catch (w) {
-        fs.rmdirSync(dir, {recursive: true})
+        // @ts-ignore
+        fs.rmSync(dir, {recursive: true})
         fs.mkdirSync(dir)
     }
     return fs.createReadStream(path)
