@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="build all" type="Multirun" separateTabs="false" reuseTabsWithFailures="true" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="true" delayTime="-1.0">
+    <runConfiguration name="build dt-types" type="npm" />
+    <runConfiguration name="build classroom" type="npm" />
+    <runConfiguration name="build main module" type="npm" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="build classroom" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/classroom-api/package.json" />
+    <command value="build" />
+    <node-interpreter value="project" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
