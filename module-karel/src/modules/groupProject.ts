@@ -31,15 +31,13 @@ async function testSubmission(testPath: string, dir: string): Promise<Result[]> 
 function prepareSubmission(unzipPath: string, projectsPath : string): string {
     const dir  = findRootFile(unzipPath)
     // სამწუხაროდ აქ აუცილებელია რომ დირექტორიის სახელი emailId იყოს
-    const emailId = path.basename(dir)
+    const emailId = path.basename(unzipPath)
     const about = parse(fs.readFileSync(`${dir}/about.html`, 'utf-8'))
     const teamName = about.querySelector('span#team-name')
     if (!teamName || teamName.innerText.trim().length < 1) {
         throw teamNameNotFoundError
     }
-    addSubmissionToGroup(dir, emailId, teamName.innerText, projectsPath)
-    // const contents = fs.readFileSync(p, 'utf-8')
-    return dir
+    return addSubmissionToGroup(dir, emailId, teamName.innerText, projectsPath)
 }
 
 export interface ProjectGroup {
@@ -61,6 +59,8 @@ function addSubmissionToGroup(dir: string, emailId: string, teamName: string, pr
 
     if (existingProject) {
         existingProject.members.push(emailId)
+        fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
+        return existingProject.dir
     } else {
         const id = getNewId(projectGroups.map(e => e.id))
         const destination = `${projectFilesPath}/${id}`
@@ -76,8 +76,9 @@ function addSubmissionToGroup(dir: string, emailId: string, teamName: string, pr
             fs.mkdirSync(projectFilesPath)
             fse.copySync(dir, destination)
         }
+        fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
+        return destination
     }
-    fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
 }
 
 export function readProjectGroups(projectsPath: string): ProjectGroup[] {
