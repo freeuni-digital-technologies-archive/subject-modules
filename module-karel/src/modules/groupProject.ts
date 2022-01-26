@@ -23,8 +23,7 @@ async function testSubmission(testPath: string, dir: string): Promise<Result[]> 
     const teamMates = project!.members
     return [{
         passed: true,
-        message: `შენი გუნდის სახელია ${teamName}. 
-            ამ გუნდის სახელით დავალება ატვირთული აქვთ შემდეგ სტუდენტებს: ${teamMates.join(',')}`,
+        message: `${teamName}: ${teamMates.join(', ')}`,
     }]
 }
 

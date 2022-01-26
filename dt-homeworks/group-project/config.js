@@ -1,3 +1,7 @@
+const fs = require('fs')
+const path = require('path')
+const existingProjects = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../../data/projects.json'), 'utf-8'))
+
 module.exports = {
     id: 'groupProject',
     classroomName: 'პროექტი',
@@ -22,14 +26,15 @@ module.exports = {
                 </div>
             `
         },
-        passed: submission => `
+        passed: submission => {
+            const group = existingProjects.find(p => p.members.includes(submission.emailId))
+            return `
             <p>პროექტის ფაილები მიღებულია, მაგრამ <strong>რომ არ გაგინულდეს</strong> გადაამოწმე ეს ინფორმაცია:</p>
             
-            <p>${submission.results[0]}</p>
-            
-            <p>გუნდის სახელი ყველა წევრს <strong>ზუსტად</strong>ერთნაირი უნდა გეწეროთ. წინააღმდეგ შემთხვევაში პროგრამაში
-            პლაგიატად დაფიქსირდება და <strong>განულდება</strong>. ამის უზრუნველყოფა შეგიძლიათ იმით, რომ ყველამ
-             ერთი zip ფაილი ატვირთოთ</p>
+            <p>შენი გუნდის სახელია ${group.name}. გუნდის წევრები: ${group.members.join(', ')}. რომელიმე წევრს თუ არ 
+            აუტვირთავს, არ არის პრობლემა, ავტომატურად დაემატება ატვირთვისას. თუ რომელიმე წევრმა ატვირთა და აქ არ ჩანს,
+            ე.ი. გუნდის სახელი არასწორად უწერია, ჩაასწოროს და თავიდან ატვირთოს. ყველა წევრს ერთი და იგივე სახელი უნდა
+            ქონდეს დაწერილი team-name-ში</p>
             
             <p>თუ რომელიმე გუნდელს ვერ ცნობ, წევრებმა შეცვალეთ გუნდის სახელი და თავიდან ატვირთეთ</p>
           
@@ -43,7 +48,7 @@ module.exports = {
              საიტზე პროექტის გვერდზე</a> დავამატებ სხვადასხვა
              ნამუშევრებიდან შეგროვებულ შენიშვნებს.</p>
             
-        `
+        `        }
 
     }
 }
