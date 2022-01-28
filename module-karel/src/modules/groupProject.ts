@@ -52,6 +52,10 @@ function addSubmissionToGroup(dir: string, emailId: string, teamName: string, pr
     const alreadyInTeam = projectGroups.find(e => e.members.includes(emailId))
     if (alreadyInTeam && teamName !== alreadyInTeam.name) {
         alreadyInTeam.members = alreadyInTeam.members.filter(m => m !== emailId)
+        if (alreadyInTeam.members.length < 1) {
+            // @ts-ignore
+            fs.rmSync(dir, {recursive: true})
+        }
     }
 
     const existingProject = projectGroups.find(e => e.name === teamName)
