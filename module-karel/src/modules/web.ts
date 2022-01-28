@@ -11,8 +11,8 @@ import path from 'path'
 import { HwConfig } from '../homework'
 
 
-export const zipFormatError = 'დავალება არ არის zip ფაილში'
-export const fileNotFoundError = "დავალების ფაილები ვერ მოიძებნა"
+export const zipFormatError = 'დავალება არ არის zip ფაილში ან ატვირთული zip ფაილი არ იხსნება. თავიდან შექმენი ზიპი და ატვირთე. <a href="https://freeuni-digital-technologies.github.io/homework/web_hws.html#ვებ-დავალებების-ატვირთვის-წესი">ინსტრუქცია სურათებით</a>'
+export const fileNotFoundError = "დავალების ფაილები ვერ მოიძებნა."
 
 async function testSubmission(testPath: string, dir: string): Promise<Result[]> {
     const tester = new WebTester({targetFiles: ['index'], testsLocation: ''})
