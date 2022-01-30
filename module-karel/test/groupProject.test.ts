@@ -2,6 +2,7 @@ import { expect } from 'chai'
 import {moduleProject, ProjectGroup, readProjectGroups, teamNameNotFoundError } from "../src/modules/groupProject";
 import * as path from "path";
 import * as fs from "fs";
+import * as fse  from "fs-extra";
 
 const testDir = path.resolve(__dirname, './files/groupProject/')
 const tempDir = path.resolve(__dirname, './tempData')
@@ -11,14 +12,12 @@ beforeEach(() => {
     try {
         fs.mkdirSync(tempDir)
     } catch(e) {
-        // @ts-ignore
-        fs.rmdirSync(tempDir, {recursive: true});
+        fse.removeSync(tempDir);
         fs.mkdirSync(tempDir)
     }
 })
 afterEach(() => {
-    // @ts-ignore
-    fs.rmSync(tempDir, {recursive: true});
+    fse.removeSync(tempDir);
 })
 
 describe("prepare submission", () => {

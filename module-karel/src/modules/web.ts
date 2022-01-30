@@ -9,6 +9,7 @@ import unzipper from 'unzipper'
 
 import path from 'path'
 import { HwConfig } from '../types/homework'
+import * as fse from "fs-extra";
 
 
 export const zipFormatError = 'დავალება არ არის zip ფაილში ან ატვირთული zip ფაილი არ იხსნება. თავიდან შექმენი ზიპი და ატვირთე. <a href="https://freeuni-digital-technologies.github.io/homework/web_hws.html#ვებ-დავალებების-ატვირთვის-წესი">ინსტრუქცია სურათებით</a>'
@@ -89,8 +90,7 @@ function unzipSubmission(submission: Submission, path: string, moveDir: string):
     try {
         fs.mkdirSync(dir)
     } catch (w) {
-        // @ts-ignore
-        fs.rmSync(dir, {recursive: true})
+        fse.removeSync(dir);
         fs.mkdirSync(dir)
     }
     return fs.createReadStream(path)
