@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import {data_path} from '../runs'
-import {DEFAULT_HW_CONFIG_PATH, readHomeworkConfiguration} from '../types/homework'
+import {DEFAULT_HW_CONFIG_PATH, readHomeworkConfiguration} from '../homework'
 import {mergeResults} from '../partitions'
 
 

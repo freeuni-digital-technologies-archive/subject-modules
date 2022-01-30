@@ -1,7 +1,7 @@
-import { Partitions } from '../partitions'
+import { Partitions } from './partitions'
 import fs from "fs";
 import path from 'path'
-import { EmailTemplate } from '../templates';
+import { EmailTemplate } from './templates';
 
 
 
@@ -138,7 +138,7 @@ export function readHomeworkConfiguration(configPath: string): HwConfig {
 function getConfigsOfCurrentHomeworks(): HwConfig[] {
     let homeworks: HwConfig[] = [];
     
-    fs.readdirSync( path.resolve(__dirname, "../" + DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+    fs.readdirSync( path.resolve(__dirname, DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
         
         if(subfolder == "README.md" || subfolder == ".git")
             return;

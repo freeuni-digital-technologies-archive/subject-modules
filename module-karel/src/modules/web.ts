@@ -8,7 +8,7 @@ import fs from 'fs'
 import unzipper from 'unzipper'
 
 import path from 'path'
-import { HwConfig } from '../types/homework'
+import { HwConfig } from '../homework'
 import * as fse from "fs-extra";
 
 

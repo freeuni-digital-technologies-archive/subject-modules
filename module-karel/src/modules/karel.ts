@@ -2,7 +2,7 @@ import { Submission, Result } from 'dt-types';
 import { Run, log } from "../runs";
 
 import path from 'path'
-import { HwConfig } from '../types/homework'
+import { HwConfig } from '../homework'
 import { Drive } from "classroom-api"
 
 import { SubjectModule, defaultPrepareSubmission } from '../types/module'
