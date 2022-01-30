@@ -54,7 +54,8 @@ function addSubmissionToGroup(dir: string, emailId: string, teamName: string, pr
         alreadyInTeam.members = alreadyInTeam.members.filter(m => m !== emailId)
         if (alreadyInTeam.members.length < 1) {
             // @ts-ignore
-            fs.rmSync(dir, {recursive: true})
+            fs.rmSync(alreadyInTeam.dir, {recursive: true})
+        //    TODO remove key too
         }
     }
 

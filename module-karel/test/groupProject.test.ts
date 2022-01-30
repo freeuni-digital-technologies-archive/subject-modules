@@ -58,6 +58,33 @@ describe("prepare submission", () => {
         expect(team2.members).length(1)
         expect(team2.members).eql(['team2_member1'])
     })
+
+
+})
+
+describe("resubmissions", () => {
+    it(`remove member from old group if submits new files for new group`, () => {
+        const students = ['team1_member1', 'team1_member2']
+        prepareSubmissions(students)
+        const updatedSubmissions = prepareSubmissions(['resubmitted/team1_member1'])
+        const team1 = findTeam(updatedSubmissions,'team1').members
+        expect(team1).eql(['team1_member2'])
+        const team3 = findTeam(updatedSubmissions,'team3').members
+        expect(team3).eql(['team1_member1'])
+    })
+
+    it(`delete old group and its files if group changes name (ie no members are left in the group`, () => {
+        const students = ['team1_member1', 'team1_member2']
+        const submissions = prepareSubmissions(students)
+        const team1 = findTeam(submissions, 'team1')
+        const newSubmissions = ['resubmitted/team1_member1', 'resubmitted/team1_member2']
+        const updatedSubmissions = prepareSubmissions(newSubmissions)
+        expect(fs.existsSync(team1.dir)).to.be.false
+
+    //    TODO
+    //     expect(findTeam(updatedSubmissions, 'team1')) undefined
+    })
+
 })
 
 describe("test submission", () => {
@@ -87,4 +114,8 @@ function prepareSubmissions(projectNames: string[]): ProjectGroup[] {
         moduleProject.prepareSubmission(testDir + '/' + p, tempDir)
     )
     return readProjectGroups(tempDir)
+}
+
+function findTeam(projects: ProjectGroup[], teamName: string) {
+    return projects.find(p => p.name === teamName)
 }
