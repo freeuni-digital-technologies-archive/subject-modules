@@ -141,7 +141,7 @@ describe("Integration Tests",() => {
 
         TODO: Not finished testing
     */
-    it("Finish Submissions Test ( False Force Check && Submission Does Not Qualify )",(done) => {
+    it.skip("Finish Submissions Test ( False Force Check && Submission Does Not Qualify )",(done) => {
         const run: Run = mock(Run);
 
         when(run.forceCheck(anything())).thenReturn(false);

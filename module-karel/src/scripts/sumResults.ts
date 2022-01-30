@@ -5,7 +5,7 @@ import {DEFAULT_HW_CONFIG_PATH, readHomeworkConfiguration} from '../types/homewo
 import {mergeResults} from '../partitions'
 
 
-const defaultHwPath = path.resolve(__dirname, DEFAULT_HW_CONFIG_PATH)
+const defaultHwPath = path.resolve(__dirname, '../' + DEFAULT_HW_CONFIG_PATH)
 const defaultEmisPath = data_path + '/emis.csv'
 const defaultManualResultsPath = data_path + '/manualResults'
 
@@ -32,7 +32,7 @@ export function summarizeResults(
         studentResults.sum = Number(sum.toFixed(2))
     })
     const invalidList = invalidEntries.map(e => `${e.name},${e.emailId}`).join('\n')
-    fs.writeFileSync(path.resolve(process.cwd(), '../invalid.csv'), invalidList)
+    fs.writeFileSync(path.resolve(process.cwd(), '../../invalid.csv'), invalidList)
     return results;
 }
 
