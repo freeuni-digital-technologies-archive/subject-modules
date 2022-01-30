@@ -8,6 +8,12 @@ import path from 'path'
 import { moduleWeb } from "./web";
 import { parse } from 'node-html-parser'
 
+
+/**
+ * ამ მოდულის მიზანია გუნდის სხვადასხვა წევრების ატვირთული
+ * ფაილებით გუნდებად დააჯგუფოს სტუდენტები და ახალ დირექტორიაში
+ * მხოლოდ გუნდების ფაილები იყოს.
+ */
 export const moduleProject: SubjectModule = {
     downloadAtInterval: moduleWeb.downloadAtInterval,
     testSubmission: testSubmission,

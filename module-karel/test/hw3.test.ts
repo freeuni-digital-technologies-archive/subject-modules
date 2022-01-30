@@ -1,8 +1,7 @@
 import { expect } from 'chai'
 
 
-import {Result, testSubmission} from 'codehskarel-tester'
-
+import { testSubmission} from 'codehskarel-tester'
 const testPath = `${process.cwd()}/resources`
 const solPath = `${process.cwd()}/test/files`
 
