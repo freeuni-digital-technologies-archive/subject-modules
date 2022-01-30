@@ -1,6 +1,6 @@
 import { ArgumentParser } from 'argparse'
 import path from 'path'
-import { HwConfig, readHomeworkConfiguration, defaultHomeworkPath } from './homework'
+import { HwConfig, readHomeworkConfiguration, defaultHomeworkPath } from './types/homework'
 import { RunOpts } from './runs'
 
 

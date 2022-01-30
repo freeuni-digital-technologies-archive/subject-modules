@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { summarizeResults } from '../src/sumResults'
+import { summarizeResults } from '../src/scripts/sumResults'
 
 const emisFileName = 'test/files/sumResults/emis_list.csv'
 const manualResultsFileName = 'test/files/sumResults/manualResults'

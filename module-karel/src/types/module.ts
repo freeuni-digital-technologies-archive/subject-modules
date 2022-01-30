@@ -1,8 +1,8 @@
 import { Submission, Result } from 'dt-types';
 import { Drive } from 'classroom-api';
-import { Run, log } from "./runs";
-import { Partitions } from "./partitions";
-import {  EmailTemplate } from './templates'
+import { Run, log } from "../runs";
+import { Partitions } from "../partitions";
+import {  EmailTemplate } from '../templates'
 
 
 export interface SubjectModule {

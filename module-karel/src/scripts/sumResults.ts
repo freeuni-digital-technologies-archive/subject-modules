@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import {data_path} from './runs'
-import {DEFAULT_HW_CONFIG_PATH, readHomeworkConfiguration} from './homework'
-import {mergeResults} from './partitions'
+import {data_path} from '../runs'
+import {DEFAULT_HW_CONFIG_PATH, readHomeworkConfiguration} from '../types/homework'
+import {mergeResults} from '../partitions'
 
 
 const defaultHwPath = path.resolve(__dirname, DEFAULT_HW_CONFIG_PATH)

@@ -1,8 +1,8 @@
-import { mergeResults, Partitions } from './partitions'
+import { mergeResults, Partitions } from '../partitions'
 
-import { getArgs } from './cli'
-import { notify } from './notifications'
-import { S } from './templates'
+import { getArgs } from '../cli'
+import { notify } from '../notifications'
+import { S } from '../templates'
 
 function main() {
 	const { hw, runOpts } = getArgs()

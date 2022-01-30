@@ -4,10 +4,10 @@ import { Drive } from 'classroom-api'
 import { Run, log } from "./runs";
 
 import path from 'path'
-import { HwConfig } from './homework'
+import { HwConfig } from './types/homework'
 
 import { Result } from "website-tester" // TODO dt-types
-import { SubjectModule } from './module'
+import { SubjectModule } from './types/module'
 import { moduleWeb, zipFormatError, fileNotFoundError } from './modules/web'
 import { moduleKarel } from './modules/karel'
 import { moduleProject, filesNotFoundError, teamNameNotFoundError } from "./modules/groupProject";

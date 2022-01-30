@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { Submission } from 'dt-types'
-import { SubjectModule } from '../src/module'
+import { SubjectModule } from '../src/types/module'
 import { Partitions } from '../src/partitions'
 import * as dfs from './types'
 import { notify } from '../src/notifications'

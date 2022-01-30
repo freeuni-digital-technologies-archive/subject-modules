@@ -1,5 +1,5 @@
-import { getArgs } from './cli'
-import { mergeResults } from './partitions'
+import { getArgs } from '../cli'
+import { mergeResults } from '../partitions'
 import fs from 'fs'
 
 // this file needs to go

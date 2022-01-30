@@ -1,7 +1,7 @@
-import { Partitions } from './partitions'
+import { Partitions } from '../partitions'
 import fs from "fs";
 import path from 'path'
-import { EmailTemplate } from './templates';
+import { EmailTemplate } from '../templates';
 
 
 

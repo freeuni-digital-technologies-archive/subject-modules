@@ -1,4 +1,4 @@
-import { SubjectModule } from '../module'
+import { SubjectModule } from '../types/module'
 
 import { Submission, Result } from "dt-types";
 import { Drive } from "classroom-api"
@@ -8,7 +8,7 @@ import fs from 'fs'
 import unzipper from 'unzipper'
 
 import path from 'path'
-import { HwConfig } from '../homework'
+import { HwConfig } from '../types/homework'
 
 
 export const zipFormatError = 'დავალება არ არის zip ფაილში ან ატვირთული zip ფაილი არ იხსნება. თავიდან შექმენი ზიპი და ატვირთე. <a href="https://freeuni-digital-technologies.github.io/homework/web_hws.html#ვებ-დავალებების-ატვირთვის-წესი">ინსტრუქცია სურათებით</a>'

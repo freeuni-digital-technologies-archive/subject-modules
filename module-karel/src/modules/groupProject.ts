@@ -1,4 +1,4 @@
-import { SubjectModule } from '../module'
+import { SubjectModule } from '../types/module'
 
 import { Result } from "website-tester"
 import fs from 'fs'

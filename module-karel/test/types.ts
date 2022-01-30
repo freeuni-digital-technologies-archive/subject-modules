@@ -1,8 +1,8 @@
-import { SubjectModule, defaultPrepareSubmission } from "../src/module"
+import { SubjectModule, defaultPrepareSubmission } from "../src/types/module"
 import { Submission } from 'dt-types'
 import { Partitions } from "../src/partitions"
 import { RunOpts } from "../src/runs"
-import { HwConfig } from "../src/homework"
+import { HwConfig } from "../src/types/homework"
 
 export const defaultModule: SubjectModule = {
 	downloadAtInterval: async () => "",

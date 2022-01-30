@@ -1,5 +1,5 @@
 import { Submission } from 'dt-types'
-import { HwConfig } from "./homework"
+import { HwConfig } from "./types/homework"
 import { Run, log, RunOpts } from './runs'
 
 type S = Submission

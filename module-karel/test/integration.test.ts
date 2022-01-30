@@ -5,7 +5,7 @@ import { Assertion, expect } from "chai";
 import { Run } from "../src/runs";
 
 import { mock, anything, when, deepEqual, instance } from "ts-mockito";
-import { HwConfig } from "../src/homework";
+import { HwConfig } from "../src/types/homework";
 import {Result, Submission} from "dt-types";
 import * as path from "path"; // ??
 

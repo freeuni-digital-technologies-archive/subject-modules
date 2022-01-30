@@ -1,4 +1,4 @@
-import { getCurrentHWs } from './homework'
+import { getCurrentHWs } from './types/homework'
 import shell from 'shelljs'
 import {CronJob} from 'cron'
 

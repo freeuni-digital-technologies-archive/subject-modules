@@ -4,10 +4,10 @@ import { Submission } from 'dt-types'
 import { sendEmails } from 'classroom-api'
 import { Run, RunOpts } from './runs'
 import { templates, S } from './templates'
-import { HwConfig } from './homework'
+import { HwConfig } from './types/homework'
 import { moduleKarel } from './modules/karel'
 import { moduleWeb } from './modules/web'
-import { SubjectModule } from './module'
+import { SubjectModule } from './types/module'
 
 
 function notifyLastRun() {
