@@ -112,7 +112,7 @@ function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
 }
 
 export function readHomeworkConfiguration(configPath: string): HwConfig {
-    const absolutePath = path.resolve(__dirname, configPath)
+    const absolutePath = path.resolve(__dirname, '../' + configPath)
     let configFile = null
     try {
         configFile = require(absolutePath);
@@ -138,7 +138,7 @@ export function readHomeworkConfiguration(configPath: string): HwConfig {
 function getConfigsOfCurrentHomeworks(): HwConfig[] {
     let homeworks: HwConfig[] = [];
     
-    fs.readdirSync( path.resolve(__dirname,DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
+    fs.readdirSync( path.resolve(__dirname, "../" + DEFAULT_HW_CONFIG_PATH) ).forEach(subfolder => {
         
         if(subfolder == "README.md" || subfolder == ".git")
             return;
