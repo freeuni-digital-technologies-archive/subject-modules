@@ -3,7 +3,7 @@ const path = require('path')
 const existingProjects = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../../data/projects.json'), 'utf-8'))
 
 module.exports = {
-    id: 'groupProject',
+    id: 'group-project',
     classroomName: 'პროექტი',
     deadline: '2022-01-31',
     // this is data dir where projects will be saved
