@@ -132,5 +132,8 @@ function findRootFile(dir: string): string {
 
 
 
-export const filesNotFoundError = "დავალების ფაილები სრულად ვერ მოიძებნა. აუცილებელია ატვირთული იყოს index.html და about.html (<strong>ორივე, ზუსტად ამ სახელებით</strong>). შემდეგი ატვირთვისთვის წაიკითხე პროექტის ინსტრუქცია."
+export const filesNotFoundError = `დავალების ფაილები სრულად ვერ მოიძებნა. აუცილებელია 
+ატვირთული იყოს index.html და about.html (<strong>ორივე, ზუსტად ამ სახელებით</strong>). 
+შემდეგი ატვირთვისთვის წაიკითხე პროექტის ინსტრუქცია. გაითვალისწინე, რომ ეს ორივე ფაილი
+უნდა იყოს ერთ ფოლდერში (ქვეფოლდერში არა).`
 export const teamNameNotFoundError = 'about.html-ში აუცილებელია შევსებული იყოს span id-ით team-name.'
