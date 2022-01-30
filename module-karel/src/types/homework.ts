@@ -161,7 +161,7 @@ export function getCurrentHWs() {
 
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
-            hw.deadlineMinutes = 'T23:59:59+30:00'
+            hw.deadlineMinutes = 'T23:59:59+04:00'
         return hw
     }).filter(hw => {
         var deadline = new Date(hw.deadline+hw.deadlineMinutes)
