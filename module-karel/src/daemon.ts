@@ -25,7 +25,7 @@ async function go(){
 async function main() {
 console.log("starting cron job")
 	go()
-	var job = new CronJob('0 28 * * * *', go, null, true, 'Asia/Tbilisi')
+	var job = new CronJob('0 10 * * * *', go, null, true, 'Asia/Tbilisi')
 	job.start()
 }
 

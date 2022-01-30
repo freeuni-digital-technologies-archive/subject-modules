@@ -28,10 +28,7 @@ function notifyLastRun() {
         return `ციფრული ტექნოლოგიები: დავალების შედეგი - ${hwName}`
     }
     const module: SubjectModule = hw.module == 'karel' ? moduleKarel : moduleWeb
-    const emailsToSend = notify(results, categoriesToNotify, subjectFunction, hw, runOpts, module.emailTemplates)
-    if (runOpts.trial) {
-        console.log(emailsToSend)        
-    }
+    notify(results, categoriesToNotify, subjectFunction, hw, runOpts, module.emailTemplates)
 }
 
 // TODO refactor this
@@ -65,7 +62,9 @@ export function notify(
     const failedEmail = runOpts.continue + '@freeuni.edu.ge'
     const continuefrom = runOpts.continue ? emails.map(e => e.to).indexOf(failedEmail) : 0
     const emailsToSend = emails.slice(continuefrom, emails.length)
-    if (! runOpts.trial) {
+    if (runOpts.trial) {
+        console.log(emailsToSend)
+    } else  {
         sendEmails(emailsToSend, 2000)
     }
     return emailsToSend
