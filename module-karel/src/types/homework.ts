@@ -112,7 +112,7 @@ function convertGivenHwConfigToInterface(preHwConfig: any, path: string){
 }
 
 export function readHomeworkConfiguration(configPath: string): HwConfig {
-    const absolutePath = path.resolve(__dirname, '../' + configPath)
+    const absolutePath = path.resolve(__dirname, configPath)
     let configFile = null
     try {
         configFile = require(absolutePath);
@@ -158,7 +158,6 @@ export function getCurrentHWs() {
     aWeekAfterNow.setDate(aWeekAfterNow.getDate()+10)
 
     const homeworks = getConfigsOfCurrentHomeworks();
-
     return homeworks.map(hw => {
         if(hw.deadlineMinutes === undefined)
             hw.deadlineMinutes = 'T23:59:59+04:00'
