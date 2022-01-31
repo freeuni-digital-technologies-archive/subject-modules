@@ -76,6 +76,7 @@ async function downloadAndTest(submission: Submission, drive: Drive, index: numb
     TODO ესენი მერე გავიტანოთ
 */
 function logError(submission: Submission, error: any) {
+    // LATER ცალკე კლასი იქნება ერორების და იმის მიხედვით
     const knownErrors = [zipFormatError, fileNotFoundError, filesNotFoundError, teamNameNotFoundError]
     if (knownErrors.includes(error)) {
         submission.incorrectFormat = true

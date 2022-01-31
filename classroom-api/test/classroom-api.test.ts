@@ -9,10 +9,6 @@ describe('test case', () => {
         //     .then(classroom => classroom.listCourseWork())
         //     .then(courseWork => console.log(courseWork))
     })
-    it('', () => {
-        createDrive().then(drive =>
-            downloadFile(drive, '1y4WJ_4mkH-l68zwm-xuaIAFWsNDlwdoC'))
-            .then(file => console.log(file))
-    })
+    
 })
 

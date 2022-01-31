@@ -3,7 +3,10 @@ import {WebTester} from "../src";
 import * as path from "path";
 
 describe('webTester', () => {
-    const webTester = new WebTester(path.resolve('./test/files/empty_project/index.js'))
+    const webTester = new WebTester({
+        targetFiles: ['index'],
+        testsLocation: path.resolve('./test/files/empty_project/tests.js')
+    })
     it('failing assignment', () => {
         const loc = path.resolve('./test/files/empty_project')
         return webTester.testSubmission(loc, false)
