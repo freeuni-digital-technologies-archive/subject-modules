@@ -40,7 +40,7 @@ export class Submission {
 	public setAttachment(a: Attachment, timeStamp: Date) {
 		this.attachment = a
 		this.timeStamp = timeStamp
-		// this.checkFormat()
+		this.checkFormat()
 	}
 
 	public addResults(results: any[]): Submission {
@@ -74,25 +74,35 @@ export class Submission {
 		return !this.crashed && this.onTime() && !this.incorrectFormat
 	}
 
-	public checkFormat(): Submission {
-		if (!this.correctTitle()) {
-			this.incorrectFormat = true
+	checkFormat(): Submission {
+		if (this.attachment!.title === this.emailId) {
 			this.results.push({
 				error: true,
-				message: "submission title is incorrect",
-				details: `title needs to contain ${this.emailId + '.k'}`
-			})
-		}
-		const invalidChars = this.invalidCharacters()
-		if (invalidChars) {
-			this.incorrectFormat = true
-			const chars = Array.from(new Set(invalidChars.map(e => e.replace(' ', ' (space)'))))
-			this.results.push({
-				error: true,
-				message: "submission title is incorrect",
-				details: `title contains invalid characters. Only digits, numbers, underscore and '.' are allowed. Your submission contained: ${chars}`
+				message: '',
+				details: 'ფაილის სახელი არ შეიძლება იყოს მხოლოდ email id. აუცილებელია მიწერილი ქონდეს .txt (თუ კარელის დავალებაა) ან .zip (თუ ვების დავალებაა)'
 			})
 		}
 		return this
 	}
+	// public checkFormat(): Submission {
+	// 	if (!this.correctTitle()) {
+	// 		this.incorrectFormat = true
+	// 		this.results.push({
+	// 			error: true,
+	// 			message: "submission title is incorrect",
+	// 			details: `title needs to contain ${this.emailId + '.k'}`
+	// 		})
+	// 	}
+	// 	const invalidChars = this.invalidCharacters()
+	// 	if (invalidChars) {
+	// 		this.incorrectFormat = true
+	// 		const chars = Array.from(new Set(invalidChars.map(e => e.replace(' ', ' (space)'))))
+	// 		this.results.push({
+	// 			error: true,
+	// 			message: "submission title is incorrect",
+	// 			details: `title contains invalid characters. Only digits, numbers, underscore and '.' are allowed. Your submission contained: ${chars}`
+	// 		})
+	// 	}
+	// 	return this
+	// }
 }
