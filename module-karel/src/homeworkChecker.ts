@@ -133,10 +133,13 @@ export function filterSubmissions(submissions: Submission[], run: Run, hw: HwCon
 export function logDownloadingSubmissions(submissions: Submission[]){
     //log(s, `downloading ${s.filter(e => e.onTime()).length}`
 
+    if (submissions.length < 1) {
+        console.log("no new submissions")
+        process.exit(0)
+    }
     const text = submissions.filter(submission => {
         return submission.onTime();
     }).length
-
     return log(submissions,`downloading ${text}`);
 }
 
