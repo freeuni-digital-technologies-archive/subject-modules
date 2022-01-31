@@ -121,8 +121,9 @@ export class Run {
 
     logRunInfo(output: Partitions<Submission[]> | any) {
         for (let partition in output) {
-            // TODO save this info
-            log({}, `${partition}: ${output[partition].length}`)
+            const info = output[partition].length
+            if (info > 0)
+                log({}, `${partition}: ${info}`)
         }
     }
     saveRunInfo(output: Partitions<Submission[]>) {

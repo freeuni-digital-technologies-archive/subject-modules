@@ -1,16 +1,15 @@
-
-import { Submission } from "dt-types";
-import { Drive } from 'classroom-api'
-import { Run, log } from "./runs";
+import {Submission} from "dt-types";
+import {Drive} from 'classroom-api'
+import {log, Run} from "./runs";
 
 import path from 'path'
-import { HwConfig } from './homework'
+import {HwConfig} from './homework'
 
-import { Result } from "website-tester" // TODO dt-types
-import { SubjectModule } from './types/module'
-import { moduleWeb, zipFormatError, fileNotFoundError } from './modules/web'
-import { moduleKarel } from './modules/karel'
-import { moduleProject, filesNotFoundError, teamNameNotFoundError } from "./modules/groupProject";
+import {Result} from "website-tester" // TODO dt-types
+import {SubjectModule} from './types/module'
+import {fileNotFoundError, moduleWeb, zipFormatError} from './modules/web'
+import {moduleKarel} from './modules/karel'
+import {filesNotFoundError, moduleProject, teamNameNotFoundError} from "./modules/groupProject";
 
 // TODO this should be a private member when refactored to class
 // @ts-ignore
@@ -131,8 +130,7 @@ export function filterSubmissions(submissions: Submission[], run: Run, hw: HwCon
 */
 
 export function logDownloadingSubmissions(submissions: Submission[]){
-    //log(s, `downloading ${s.filter(e => e.onTime()).length}`
-
+    //log(s, `downloading ${s.filter(e => e.onTime()).length}`h
     if (submissions.length < 1) {
         console.log("no new submissions")
         process.exit(0)
