@@ -8,24 +8,25 @@ async function go(){
 	console.log(homework)
 	homework.forEach(async v => {
 		console.log('yarn start --hw ' + v.id)
-		var res = shell.exec('yarn start --hw ' + v.id).stdout
+		var { stdout, code }  = shell.exec('yarn start --hw ' + v.id)
 		// console.log(res)
 		// console.log()
-		if(res.search('no new submissions')!=-1)
+		if(code != 0 || stdout.search('no new submissions')!=-1) {
+			console.log("skipping notifications")
 			return
+		}
 		await new Promise(resolve => setTimeout(resolve, 5000)); //sleep 5s
 		//console.log('yarn notify --hw ' + v.id + ' --trial true')
 		//shell.exec('yarn notify --hw ' + v.id + ' --trial true')
 		console.log('yarn notify --hw ' + v.id)
 		shell.exec('yarn notify --hw ' + v.id)
-		
 	})
 }
 
 async function main() {
 console.log("starting cron job")
 	go()
-	var job = new CronJob('0 /10 * * * *', go, null, true, 'Asia/Tbilisi')
+	var job = new CronJob('*/10 * * * *', go, null, true, 'Asia/Tbilisi')
 	job.start()
 }
 
