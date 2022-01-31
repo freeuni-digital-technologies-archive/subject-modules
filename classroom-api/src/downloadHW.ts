@@ -123,6 +123,13 @@ async function downloadWithFilter(pathToStore:string,
         .then(submissions => submissions.filter(s=>s.attachment!=undefined)) 
         .then(submissions => submissions.filter(submissionFilter))
         .then(submissions => submissions.filter(s=>allowLates || s.onTime()))
+        .then(submissions => {
+            if (submissions.length < 1) {
+                console.log("no new submissions")
+                process.exit(0)
+            }
+            return submissions
+        })
         .then(submissions => log(submissions, `downloading ${submissions.filter(s => s.onTime()).length}`))
         .then(submissions => submissions.map(
             (s, i) => downloadAtInterval(pathToStore, s, drive, i, createDirs, skipExisting)
