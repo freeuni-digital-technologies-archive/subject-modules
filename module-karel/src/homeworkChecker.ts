@@ -144,11 +144,9 @@ export function logDownloadingSubmissions(submissions: Submission[]){
 }
 
 function filterSubmissionsByAttachment(submissions: Submission[]): Submission[]{
-    let filtered: Submission[] =  submissions.filter(submission => {
-        let result = typeof submission.attachment !== 'undefined';
-        return result;
-    })
-    return filtered;
+    return submissions.filter(submission => {
+        return typeof submission.attachment !== 'undefined';
+    });
 }
 
 /*
