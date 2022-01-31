@@ -5,7 +5,6 @@ import {CronJob} from 'cron'
 // TODO იმის შემოწმება, ახლა გაეშვას თუ არა დავალება, აქ უნდა მოხდეს და არა yarn start-ში
 async function go(){
 	var homework = getCurrentHWs()
-	console.log(homework)
 	homework.forEach(async v => {
 		console.log('yarn start --hw ' + v.id)
 		var { stdout, code }  = shell.exec('yarn start --hw ' + v.id)
