@@ -144,7 +144,6 @@ function getConfigsOfCurrentHomeworks(): HwConfig[] {
             return;
 
         let currentConfigPath: string = `${DEFAULT_HW_CONFIG_PATH}/${subfolder}/${DEFAULT_HW_CONFIG_FILENAME}`;
-        console.log({currentConfigPath});
         let currentHomeworkConfig: HwConfig = readHomeworkConfiguration(currentConfigPath);
         homeworks.push(currentHomeworkConfig);
     })
