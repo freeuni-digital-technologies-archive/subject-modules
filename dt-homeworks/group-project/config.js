@@ -1,6 +1,10 @@
 const fs = require('fs')
 const path = require('path')
-const existingProjects = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../../data/projects.json'), 'utf-8'))
+try {
+    const existingProjects = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../../data/projects.json'), 'utf-8'))
+} catch (e) {
+    const existingProjects =  []
+}
 
 module.exports = {
     id: 'group-project',
