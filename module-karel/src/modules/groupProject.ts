@@ -1,7 +1,6 @@
 import { SubjectModule } from '../types/module'
 
 import { Result } from "website-tester"
-import fs from 'fs'
 
 import fse from 'fs-extra'
 import path from 'path'
@@ -23,7 +22,7 @@ export const moduleProject: SubjectModule = {
 }
 
 async function testSubmission(testPath: string, dir: string): Promise<Result[]> {
-    const projectGroups = readProjectGroups(testPath)
+    const projectGroups = ProjectsInfo.readProjectGroups(testPath + '/projects.json')
     const project = projectGroups.find(p => p.dir === dir)
     const teamName = project!.name
     const teamMates = project!.members
@@ -37,7 +36,7 @@ function prepareSubmission(unzipPath: string, projectsPath : string): string {
     const dir  = findRootFile(unzipPath)
     // სამწუხაროდ აქ აუცილებელია რომ დირექტორიის სახელი emailId იყოს
     const emailId = path.basename(unzipPath)
-    const about = parse(fs.readFileSync(`${dir}/about.html`, 'utf-8'))
+    const about = parse(fse.readFileSync(`${dir}/about.html`, 'utf-8'))
     const teamName = about.querySelector('span#team-name')
     if (!teamName || teamName.innerText.trim().length < 1) {
         throw teamNameNotFoundError
@@ -52,52 +51,20 @@ export interface ProjectGroup {
     members: string[]
 }
 
+
 function addSubmissionToGroup(dir: string, emailId: string, teamName: string, projectsPath: string) {
     const projectFilesPath = projectsPath + '/files'
-    const projectGroups = readProjectGroups(projectsPath)
-    const alreadyInTeam = projectGroups.find(e => e.members.includes(emailId))
-    if (alreadyInTeam && teamName !== alreadyInTeam.name) {
-        alreadyInTeam.members = alreadyInTeam.members.filter(m => m !== emailId)
-        if (alreadyInTeam.members.length < 1) {
-            fse.removeSync(alreadyInTeam.dir)
-        //    TODO remove key too
-        }
+    const pi = new ProjectsInfo(projectsPath + '/projects.json', projectFilesPath)
+    if (pi.changedTeam(emailId, teamName)) {
+        pi.removeFromTeam(emailId)
     }
-
-    const existingProject = projectGroups.find(e => e.name === teamName)
-
-    if (existingProject) {
-        existingProject.members.push(emailId)
-        fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
-        return existingProject.dir
+    if (pi.findTeamWithName(teamName)) {
+        return pi.addMemberToTeam(teamName, emailId, dir)
     } else {
-        const id = getNewId(projectGroups.map(e => e.id))
-        const destination = `${projectFilesPath}/${id}`
-        projectGroups.push({
-            id: id,
-            dir: destination,
-            name: teamName,
-            members: [emailId]
-        })
-        try {
-            fse.copySync(dir, destination)
-        } catch (e) {
-            fs.mkdirSync(projectFilesPath)
-            fse.copySync(dir, destination)
-        }
-        fs.writeFileSync(projectsPath + '/projects.json', JSON.stringify(projectGroups))
-        return destination
+        return pi.setupNewProject(teamName, emailId, dir)
     }
 }
 
-export function readProjectGroups(projectsPath: string): ProjectGroup[] {
-    const projectGroupsPath = projectsPath + '/projects.json'
-    try {
-        return JSON.parse(fs.readFileSync(projectGroupsPath, 'utf-8'))
-    } catch (e) {
-        return []
-    }
-}
 function getNewId(existingIds: string[]) {
     let id = generateNewId()
     while (existingIds.includes(id)) {
@@ -112,7 +79,7 @@ function generateNewId() {
 
 function findRootFile(dir: string): string {
     let p = dir
-    let files = fs.readdirSync(p)
+    let files = fse.readdirSync(p)
     let tries = 0
     // let filesToBe = hw.filesToCheck || ['index']
     let filesToBe = ['index', 'about']
@@ -125,7 +92,7 @@ function findRootFile(dir: string): string {
         files = files.filter(f => f !== '__MACOSX');
         try {
             p = `${p}/${files[0]}`
-            files = fs.readdirSync(p)
+            files = fse.readdirSync(p)
         } catch (e) {
             throw filesNotFoundError
             //throw "file with unsupported format: " + files[0]
@@ -135,7 +102,81 @@ function findRootFile(dir: string): string {
     return p
 }
 
+export class ProjectsInfo {
+    private projectGroups: ProjectGroup[]
 
+    constructor(private projectsGroupFile: string, private projectsDir: string) {
+        this.projectGroups = ProjectsInfo.readProjectGroups(projectsGroupFile)
+    }
+
+    save() {
+        fse.writeFileSync(this.projectsGroupFile, JSON.stringify(this.projectGroups))
+    }
+
+    findTeamWithName(teamName: string) {
+        return this.projectGroups.find(e => e.name === teamName)
+    }
+
+    findTeamWithMember(emailId: string) {
+        return this.projectGroups.find(e => e.members.includes(emailId))
+    }
+
+    changedTeam(emailId: string, teamName: string) {
+        const existing = this.findTeamWithMember(emailId)
+        return  existing && teamName !== existing.name
+    }
+
+    setupNewProject(teamName: string, emailId: string, dir: string) {
+        const id = getNewId(this.projectGroups.map(e => e.id))
+        const destination = `${this.projectsDir}/${id}`
+        this.projectGroups.push({
+            id: id,
+            dir: destination,
+            name: teamName,
+            members: [emailId]
+        })
+        try {
+            fse.copySync(dir, destination)
+        } catch (e) {
+            fse.mkdirSync(this.projectsDir)
+            fse.copySync(dir, destination)
+        }
+        this.save()
+        return destination
+    }
+
+    addMemberToTeam(teamName: string, emailId: string, dir: string) {
+        const existingProject = this.findTeamWithName(teamName)!
+        if (!existingProject.members.includes(emailId)) {
+            existingProject.members.push(emailId)
+        }
+        const destination = existingProject.dir
+        // @ts-ignore
+        fse.rmSync(destination, {recursive: true})
+        fse.copySync(dir, destination)
+        this.save()
+        return existingProject.dir
+    }
+
+    removeFromTeam(emailId: string) {
+        const alreadyInTeam = this.findTeamWithMember(emailId)!
+        alreadyInTeam.members = alreadyInTeam.members.filter(m => m !== emailId)
+        if (alreadyInTeam.members.length < 1) {
+            fse.removeSync(alreadyInTeam.dir)
+            this.projectGroups = this.projectGroups.filter(p => p.id == alreadyInTeam.id)
+        }
+        this.save()
+    }
+
+    static readProjectGroups(path: string): ProjectGroup[] {
+        try {
+            return JSON.parse(fse.readFileSync(path, 'utf-8'))
+        } catch (e) {
+            return []
+        }
+    }
+
+}
 
 export const filesNotFoundError = `დავალების ფაილები სრულად ვერ მოიძებნა. აუცილებელია 
 ატვირთული იყოს index.html და about.html (<strong>ორივე, ზუსტად ამ სახელებით</strong>). 

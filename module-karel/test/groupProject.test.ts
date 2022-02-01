@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import {moduleProject, ProjectGroup, readProjectGroups, teamNameNotFoundError } from "../src/modules/groupProject";
+import {moduleProject, ProjectGroup, ProjectsInfo, teamNameNotFoundError } from "../src/modules/groupProject";
 import * as path from "path";
 import * as fs from "fs";
 import * as fse  from "fs-extra";
@@ -112,7 +112,7 @@ function prepareSubmissions(projectNames: string[]): ProjectGroup[] {
     projectNames.forEach(p =>
         moduleProject.prepareSubmission(testDir + '/' + p, tempDir)
     )
-    return readProjectGroups(tempDir)
+    return ProjectsInfo.readProjectGroups(`${tempDir}/projects.json`)
 }
 
 function findTeam(projects: ProjectGroup[], teamName: string) {
