@@ -1,8 +1,9 @@
 import { expect } from 'chai'
-import {moduleProject, ProjectGroup, ProjectsInfo, teamNameNotFoundError } from "../src/modules/groupProject";
+import {moduleProject, ProjectGroup, teamNameNotFoundError } from "../src/modules/groupProject";
 import * as path from "path";
 import * as fs from "fs";
 import * as fse  from "fs-extra";
+import {ProjectsInfo} from "../src/types/projectsInfo";
 
 const testDir = path.resolve(__dirname, './files/groupProject/')
 const tempDir = path.resolve(__dirname, './tempData')

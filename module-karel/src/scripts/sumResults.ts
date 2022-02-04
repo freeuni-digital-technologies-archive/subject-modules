@@ -103,7 +103,7 @@ function addQuizCsvResults(results: any, studentNames: String[], manualResultsPa
 function addHomeworkResults(results: any, studentNames: string[], homeworksPath: string) {
     fs
         .readdirSync(homeworksPath, {withFileTypes: true})
-        .filter(f => f.isDirectory() && !f.name.startsWith('.'))
+        .filter(f => f.isDirectory() && !f.name.startsWith('.') && !f.name.includes('group-project'))
         .map(dir => dir.name)
         .map(hwName => {
             const hwPath = `${homeworksPath}/${hwName}/config.js`
