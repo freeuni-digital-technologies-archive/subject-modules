@@ -47,6 +47,7 @@ export class KarelTester {
                         } catch (err) {
                             const result = {
                                 passed: false,
+                                // @ts-ignore
                                 message: err.message
                             }
                             results.push(result)

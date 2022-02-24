@@ -1,8 +1,8 @@
 import { expect } from 'chai'
 import { summarizeResults } from '../src/scripts/sumResults'
 
-const emisFileName = 'test/files/sumResults/emis_list.csv'
-const manualResultsFileName = 'test/files/sumResults/manualResults'
+const emisFileName = __dirname + '/files/sumResults/emis_list.csv'
+const manualResultsFileName = __dirname + '/files/sumResults/manualResults'
 describe('reading emis csv file', () => {
     const results = summarizeResults(emisFileName, manualResultsFileName)
     const list = Object.keys(results)

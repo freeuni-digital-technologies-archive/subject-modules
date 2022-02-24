@@ -6,7 +6,7 @@ import { Result } from 'dt-types'
 const testPath = `${process.cwd()}/resources`
 const solPath = `${process.cwd()}/test/files`
 
-describe('hw4 test', () => {
+describe.skip('hw4 test', () => {
 	const testFile = `${testPath}/hw4tester.js`
 	it('one test should run and it should pass', (done) => {
 		testSubmission(testFile, `${solPath}/hw4.k`).then(results => {

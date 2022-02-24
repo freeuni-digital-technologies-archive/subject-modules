@@ -2,7 +2,7 @@ import { expect } from 'chai'
 
 import { KarelTester } from '../src/karelTester'
 
-const path = `${process.cwd()}/test/files`
+const path = `${__dirname}/files`
 
 describe('simple test case', () => {
     const testFile = `${path}/simpleTest.js`
