@@ -1,7 +1,7 @@
 {
-  "name": "module-karel",
+  "name": "main-module",
   "version": "1.0.0",
-  "description": "Karel module for digital technologies subject",
+  "description": "main module for digital technologies subject",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {

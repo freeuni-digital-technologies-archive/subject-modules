@@ -1,15 +1,13 @@
 import { expect } from 'chai'
 
-
-import {Result, testSubmission} from 'codehskarel-tester'
-
+import { testSubmission} from 'codehskarel-tester'
 const testPath = `${__dirname}/resources`
 const solPath = `${__dirname}/test/files`
 
-describe.skip('hw1 test', () => {
-	const testFile = `${testPath}/hw1tester.js`
+describe.skip('hw2 test', () => {
+	const testFile = `${testPath}/hw2tester.js`
 	it('one test should run and it should pass', (done) => {
-		testSubmission(testFile, `${solPath}/hw1.k`).then(results => {
+		testSubmission(testFile, `${solPath}/hw2.k`).then(results => {
 			expect(results.every(r=>r.passed)).be.true;
 			done()
 		})
