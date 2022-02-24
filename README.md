@@ -1,5 +1,17 @@
-# subject-modules 
-ამ გვერდზე არის მთავარი მიმოხილვა საგნის ყველა ნაწილის
+
+# 2022 update
+ფაილები, რომელიც გჭრდებათ
+- classroom-api/token.json
+- classroom-api/credentials.json
+
+კლონირების შემდეგ
+```shell
+./build_all.sh # yarn install-ს თავისით გამოიძახებს
+```
+
+# Archive
+აქედან უმეტესი ინფორმაცია outdated არის
+
 
 ## საჭირო ანგარიშები
 ასისტენტი/ლექტორი დასამატებელია პროექტზე/კურსზე ამ პლათფორმებზე
@@ -106,9 +118,9 @@ If run first time this will ask you to follow a link to generate token.json. Ask
 * Create data folder anwhere and create `submissions` folder inside.
 * Copy data folder path to `module-karel/src/runs.ts`. 
 ```js
-...
+// ...
 const data_path = `/home/khokho/work/dt/guide/subject-modules/data`
-...
+// ...
 ```
 
 ### Test Karel hw1
